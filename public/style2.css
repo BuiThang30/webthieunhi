@@ -1,0 +1,1131 @@
+/* Đặt font chữ và reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'LC Sac Trial';
+  font-style: normal;
+  font-weight: normal;
+  src: local('LC Sac Trial Regular'), url('fonts/LCSac Trial-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: '1FTV Cakelan';
+  src: url('fonts/1FTV-Cakelan.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue1';
+  src: url('fonts/HelveticaNeueUltraLight.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('fonts/HelveticaNeueLight.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Thin';
+  src: url('fonts/HelveticaNeueThin.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #111;
+  font-family: 'Helvetica Neue1';
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  margin-top: 2.625rem; /* 42px */
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem; /* 14px */
+  background: rgba(0, 0, 0, 0.0);
+  border: 0.064rem solid black; /* 1.031px */
+  border-radius: 4.51rem; /* 72.154px */
+  padding: 0.125rem 0.125rem; /* 2px */
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  border-radius: 2.75rem; /* 44px */
+  border: 0.0625rem solid black; /* 1px */
+  width: 31.25rem; /* 500px */
+  height: 4.0625rem; /* 65px */
+  padding: 0 0.9375rem; /* 15px */
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  font-family: '1FTV Cakelan';
+  font-style: normal;
+  font-size: 1.25rem; /* 20px */
+  font-weight: 400;
+  padding: 0 0.9375rem; /* 15px */
+  height: 4.0625rem; /* 65px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.nav-menu a::before {
+  content: "";
+  position: absolute;
+  width: 7.5rem; /* 120px */
+  height: 4rem; /* 64px */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9); 
+  border: 0.04375rem solid #FFF; /* 0.7px */
+  border-radius: 2.75rem; /* 44px */
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.nav-menu a.active::before,
+.nav-menu a:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+.nav-menu a:hover {
+  background-color: transparent;
+  border-radius: 2.749rem; /* 44.487px */
+  transition: 0.3s;
+}
+
+.mr-6 {
+  margin-right: 0.375rem; /* 6px */
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: black;
+  border-radius: 3.125rem; /* 50px */
+  border: 0.0625rem solid black; /* 1px */
+  padding: 0 0.625rem; /* 10px */
+  height: 4.0625rem; /* 65px */
+}
+
+.search-box input {
+  padding: 0.625rem 0.9375rem; /* 10px 15px */
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  width: 20.875rem; /* 334px */
+}
+
+.search-box input::placeholder {
+  color: #bbb;
+}
+
+.search-box .search-icon {
+  width: 2.454rem; /* 39.297px */
+  height: 2.502rem; /* 40.038px */
+  margin-left: 0.5rem; /* 8px */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box .search-icon:hover {
+  filter: invert(0.7);
+}
+
+.search-box input {
+  color: #FFF;
+  font-family: 'Helvetica Neue1';
+  font-size: 1.87rem; /* 29.92px */
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+  aspect-ratio: 83/45;
+  background: url("image/backgroundhome.png") lightgray 50% 100% / 100% 276.657% no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  color: #FFF;
+  font-family: "LC Sac Trial";
+  font-size: 9.743rem; /* 155.885px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 0.625rem; /* 10px */
+}
+
+.hero-text p {
+  color: #FFF;
+  font-family: "LC Sac Trial";
+  font-size: 2.06rem; /* 32.906px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 9.375rem; /* 150px */
+  background: #fdfbf7;
+}
+
+.welcome h2 {
+  color: #000;
+  font-family: "LC Sac Trial";
+  font-size: 5.47rem; /* 87.555px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1.25rem; /* 20px */
+}
+
+.line {
+  width: 32.36rem; /* 517px */
+  height: 0.125rem; /* 2px */
+  background: #444;
+  margin: 3.125rem auto 3.75rem; /* 50px 0 60px */
+}
+
+.welcome p {
+  max-width: 73.5rem; /* 1176px */
+  margin: 0.625rem auto 3.75rem; /* 10px 0 60px */
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.2;
+  text-align: justify; 
+  font-family: Helvetica Neue;
+  font-size: 1.87rem; /* 29.92px */
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-color: #0a0a0a;
+  color: white;
+  text-align: center;
+  padding: 3.125rem 1.25rem; /* 50px 20px */
+}
+
+.newsletter h2 {
+  color: #FFF;
+  font-family: "LC Sac Trial";
+  font-size: 2.06rem; /* 32.906px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.newsletter .divider {
+  height: 0.0625rem; /* 1px */
+  width: 20.09375rem; /* 321.5px */
+  background-color: white;
+  margin: 0.625rem auto; /* 10px 0 */
+}
+
+.newsletter .subtext {
+  font-size: 1.018rem; /* 16.303px */
+  color: #FFF;
+  font-family: 'Helvetica Neue';
+  margin-bottom: 1.25rem; /* 20px */
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem; /* 10px */
+  flex-wrap: wrap;
+}
+
+.input-wrapper {
+  background-color: white;  
+  border-radius: 1.25rem; /* 20px */
+}
+
+.newsletter input[type="email"] {
+  padding: 0.625rem; /* 10px */
+  border-radius: 1.25rem; /* 20px */
+  border: none;
+  width: 31.25rem; /* 500px */
+  height: 2.625rem; /* 42px */
+  text-align: justify;
+  font-family: 'Helvetica Neue';
+  font-size: 1.018rem; /* 16.303px */
+}
+
+.newsletter button {
+  padding: 0.8125rem 1.25rem; /* 13px 20px */
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1.018rem; /* 16.303px */
+  font-family: 'Helvetica Neue';
+  border-left: 0.0625rem solid black; /* 1px */
+  border-radius: 6.25rem; /* 100px */
+}
+
+.newsletter button:hover {
+  background-color: #ddd;
+}
+
+/*BLOG*/
+
+.hero_blog {
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+  aspect-ratio: 83/45;
+  background: url("image/backgroundhome.png") lightgray 50% 100% / 100% 276.657% no-repeat;
+  background-size: 100% auto;;
+  display: flex;
+  align-items: end;
+  color: white;
+  position: relative;
+}
+
+.hero_blog h1 {
+  padding: 3.125rem; /* 50px */
+  color: #FEFBF5;
+  text-align: justify;
+  font-family: "LC Sac Trial";
+  font-size: 8.18rem; /* 131.289px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.slider-container {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  background: #FEFBF5;
+  border-top: 0.0625rem solid black; /* 1px */
+  border-bottom: 0.0625rem solid black; /* 1px */
+  border-radius: 0;
+  padding: 2.5rem 0; /* 40px */
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+.slide.active {
+  display: block;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem; /* 40px */
+  margin: 2.5rem 0; /* 40px 0 */
+}
+
+/*top*/
+.card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 46.875rem; /* 750px */
+}
+
+.card-top h3,
+.card-top p {
+  text-align: justify;
+  width: 100%;
+  max-width: 46.562rem; /* 749.633px */
+  color: #000;
+  font-family: "LC Sac Trial";
+  font-size: 2.20rem; /* 35.267px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-top small,
+.card-top u {
+  color: #000;
+  text-align: justify;
+  font-family: 'Helvetica Neue';
+  font-size: 1.5rem; /* 24px */
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 100%;
+  max-width: 46.562rem; /* 749.633px */
+}
+
+.line-cardtop {
+  width: 20.9rem; /* 334.539px */
+  height: 0.0625rem; /* 1px */
+  background: black;
+  margin: 0.625rem 0; /* 10px 0 */
+}
+
+.card-top .thumb.large {
+  width: 46.562rem; /* 749.633px */
+  height: 25rem; /* 400.502px */
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-bottom: 0.625rem; /* 10px */
+  border-radius: 0.5rem; /* 8px */
+  transition: 0.3s;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 46.875rem; /* 750px */
+}
+
+.card-top img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/*bottom*/
+
+.card-bottom h3,
+.card-bottom p {
+  text-align: justify;
+  width: 100%;
+  max-width: 46.562rem; /* 749.633px */
+  color: #000;
+  font-family: "LC Sac Trial";
+  font-size: 1.437rem; /* 23.006px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-bottom small,
+.card-bottom u {
+  color: #000;
+  text-align: justify;
+  font-family: 'Helvetica Neue';
+  font-size: 0.978rem; /* 15.656px */
+  max-width: 30.375rem; /* 486px */
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 100%;
+}
+
+.line-cardbottom {
+  width: 13.64rem; /* 218.236px */
+  height: 0.0625rem; /* 1px */
+  background: black;
+  margin: 1.875rem 0 0.625rem; /* 30px 0 10px */
+}
+
+.card-bottom .thumb.small {
+  width: 30.375rem; /* 486px */
+  height: 16.625rem; /* 266px */
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-bottom: 0.625rem; /* 10px */
+  border-radius: 0.375rem; /* 6px */
+  transition: 0.3s;
+}
+
+.card-bottom img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.slider-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem; /* 12px */
+  margin: 1.25rem 0; /* 20px 0 */
+}
+
+.slider-indicators span {
+  width: 0.75rem; /* 12px */
+  height: 0.75rem; /* 12px */
+  border-radius: 50%;
+  background: black;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slider-indicators span.active {
+  background: white;
+  border: 0.0625rem solid black; /* 1px */
+}
+
+/*BLOG2*/
+
+.container-blog2 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.25rem; /* 20px */
+  background-color: #FEFBF5;
+}
+
+.title-blog2 {
+  padding-top: 3.125rem; /* 50px */
+  margin-bottom: 0;
+  color: #000;
+  text-align: center;
+  font-family: "LC Sac Trial";
+  font-size: 5.142rem; /* 82.279px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subtitle-blog2 {
+  margin-bottom: 3.125rem; /* 50px */
+  color: #000;
+  text-align: center;
+  font-family: "LC Sac Trial";
+  font-size: 5.142rem; /* 82.279px */
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.divider-blog2 {
+  width: 45.547rem; /* 728.772px */
+  border: none;
+  border-top: 0.1875rem solid #223344; /* 3px */
+  margin: 1.25rem auto; /* 20px 0 */
+}
+
+.content-blog2 {
+  text-align: justify;
+  max-width: 95.25rem; /* 1524px */
+  margin: 4.375rem auto 0 auto; /* 70px 0 0 */
+  font-family: 'Helvetica Neue';
+  font-size: 1.87rem; /* 29.92px */
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.2;
+  padding-top: 3.75rem; /* 60px */
+  padding-bottom: 5rem; /* 80px */
+}
+
+.container-blog2 p {
+  margin-bottom: 1.875rem; /* 30px */
+}
+
+.content-blog2 a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.pb-30 {
+  padding-bottom: 1.875rem; /* 30px */
+}
+.pb-120 {
+  padding-bottom: 7.5rem; /* 120px */
+}
+.mb-80 {
+  margin-bottom: 5rem; /* 80px */
+}
+
+/*QUIZ*/
+
+.hero_quiz {
+  width: 100%;
+  height: 80vh;
+  flex-shrink: 0;
+  aspect-ratio: 83/45;
+  background: url("image/backgroundquiz.png") lightgray 50% 20.5% / 100% 276.657% no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.content_quiz {
+  background-color: #fdf8f3;
+  padding: 2.5rem 0; /* 40px to rem */
+  text-align: center;
+  width: 100%;
+  border-top: 0.1875rem solid lightblue; /* 3px to rem */
+}
+
+.content_wrapper {
+  max-width: 95.25rem; /* 1524px to rem */
+  margin: 0 auto;
+  padding: 0 3.75rem; /* 60px to rem */
+  text-align: justify;
+  margin-top: 3.125rem; /* 50px to rem */
+}
+
+.content_wrapper p {
+  color: #000;
+  font-size: 1.87rem; /* 29.92px to rem */
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: "Helvetica Neue";
+  margin-bottom: 2.5rem; /* 40px to rem */
+}
+
+.content_wrapper h2 {
+  letter-spacing: -0.01875rem; /* -0.3px to rem */
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "LC Sac Trial";
+  font-size: 3.08rem; /* 49.266px to rem */
+  margin-bottom: 1.25rem; /* 20px to rem */
+}
+
+.btn-start {
+  text-align: center; 
+  margin-top: 1.875rem; /* 30px to rem */
+}
+
+.start-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #FFF;
+  font-family: "LC Sac Trial";
+  font-size: 4.65rem; /* 74.495px to rem */
+  font-style: normal;
+  font-weight: 400;
+  line-height: 6.4375rem; /* 103px to rem */
+  width: 40.56rem; /* 649px to rem */
+  height: 6.4375rem; /* 103px to rem */
+  flex-shrink: 0;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 1.25rem; /* 20px to rem */
+}
+
+.start-btn:hover {
+  background-color: #333;
+}
+
+.quiz-option {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0.625rem; /* 10px to rem */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 40.56rem; /* 649px to rem */
+  height: 6.4375rem; /* 103px to rem */
+}
+
+.quiz-option:hover {
+  transform: scale(1.03);
+}
+
+.quiz-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.9375rem; /* 15px to rem */
+}
+
+.quiz-option {
+  margin-top: 2.5rem; /* 40px to rem */
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 40.56rem; /* 649px to rem */
+  height: 6.4375rem; /* 103px to rem */
+}
+
+.option-label {
+  background-color: transparent;
+  border-radius: 100px;
+  width: 9.6875rem; /* 155px to rem */
+  height: 6.4375rem; /* 103px to rem */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FFF;
+  font-family: "LC Sac Trial";
+  font-size: 4.65rem; /* 74.495px to rem */
+  font-weight: 400;
+}
+
+.option-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: "Helvetica Neue";
+  font-size: 1.87rem; /* 29.92px to rem */
+  font-weight: 300;
+  letter-spacing: -0.03125rem; /* -0.5px to rem */
+}
+
+.quiz-option.correct .option-label,
+.quiz-option.incorrect .option-label {
+  background-color: inherit;
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+
+.correct {
+  background-color: #28a745 !important;
+}
+
+.incorrect {
+  background-color: #dc3545 !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.explain h3 {
+  color: #000;
+  font-size: 1.87rem; /* 29.92px to rem */
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: "Helvetica Neue";
+  margin-bottom: 0.625rem; /* 10px to rem */
+  margin-top: 3.125rem; /* 50px to rem */
+  text-align: center;
+}
+
+.explain hr {
+  width: 69.59rem; /* 1113.5px to rem */
+  margin: 0 auto;
+}
+
+.explain h4 {
+  letter-spacing: -0.01875rem; /* -0.3px to rem */
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "LC Sac Trial";
+  font-size: 3.08rem; /* 49.266px to rem */
+  margin-bottom: 1.25rem; /* 20px to rem */
+  text-align: center;
+  margin-top: 5rem; /* 80px to rem */
+}
+
+.explain p {
+  color: #000;
+  font-size: 1.87rem; /* 29.92px to rem */
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: "Helvetica Neue";
+  margin-bottom: 2.5rem; /* 40px to rem */
+}
+
+/* Responsive Styles */
+
+/* Màn hình ~1536px (1920px scale 125%) */
+
+@media (max-width: 1536px) {
+  .hero-text h1 {
+    font-size: 8rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.9rem;
+  }
+
+  /* Nav menu */
+  .nav-menu {
+    width: 30rem;
+  }
+  
+  .nav-menu a {
+    font-size: 1.15rem;
+    padding: 0 1rem;
+  }
+
+  /* Search box */
+  .search-box input {
+    width: 19rem;
+    font-size: 1.65rem;
+  }
+
+  /* Welcome section */
+  .welcome {
+    padding: 8rem;
+  }
+  
+  .welcome h2 {
+    font-size: 4.8rem;
+  }
+  
+  .welcome p {
+    font-size: 1.65rem;
+    max-width: 62rem;
+  }
+  
+  .line {
+    width: 29rem;
+  }
+
+  /* Newsletter adjustments */
+  .newsletter input[type="email"] {
+    width: 26rem;
+  }
+
+  /*BLOG*/
+  .hero_blog h1 {
+    font-size: 6.5rem;
+  }
+  .title-blog2,
+  .subtitle-blog2 {
+    font-size: 4.5rem;
+  }
+  .content-blog2 {
+    font-size: 1.6rem;
+    max-width: 90rem;
+  }
+}
+
+/* 1440px */
+@media (max-width: 1440px) {
+  /* Điều chỉnh kích thước chữ header */
+
+  .hero-text h1 {
+    font-size: 7.5rem;
+  }
+  
+  .hero-text p {
+    font-size: 1.8rem;
+  }
+  
+  /* Điều chỉnh nav menu */
+  .nav-menu {
+    width: 28rem;
+  }
+  
+  .nav-menu a {
+    font-size: 1.1rem;
+    padding: 0 0.8rem;
+  }
+  
+  /* Điều chỉnh search box */
+  .search-box input {
+    width: 18rem;
+    font-size: 1.6rem;
+  }
+  
+  /* Điều chỉnh welcome section */
+  .welcome {
+    padding: 7rem;
+  }
+  
+  .welcome h2 {
+    font-size: 4.5rem;
+  }
+  
+  .welcome p {
+    font-size: 1.6rem;
+    max-width: 60rem;
+  }
+  
+  .line {
+    width: 28rem;
+  }
+  
+  /* Newsletter adjustments */
+  .newsletter input[type="email"] {
+    width: 25rem;
+  }
+
+  /*BLOG*/
+
+  .hero_blog {
+    background-size: 100% auto; /* Fit chiều ngang, không bị crop chiều dọc */
+    background-position: center bottom; /* Canh dưới để không thừa khoảng trống */
+    height: auto; /* Nếu muốn co theo ảnh */
+    aspect-ratio: auto; /* Không khóa tỉ lệ cũ */
+  }
+
+  .hero_blog h1 {
+    font-size: 6rem;
+    padding: 2rem;
+  }
+  .card-top,
+  .card-bottom {
+    max-width: 40rem;
+  }
+  .card-top .thumb.large {
+    width: 40rem;
+    height: 22rem;
+  }
+  .card-bottom .thumb.small {
+    width: 26rem;
+    height: 14rem;
+  }
+  .title-blog2,
+  .subtitle-blog2 {
+    font-size: 4rem;
+  }
+  .divider-blog2 {
+    width: 36rem;
+  }
+}
+
+/* 1024px */
+@media (max-width: 1024px) {
+  /* Hero section */
+  .hero-text h1 {
+    font-size: 6rem;
+  }
+
+  .hero-text p {
+    font-size: 1.6rem;
+  }
+
+  /* Nav menu */
+  .nav-menu {
+    width: 25rem;
+  }
+
+  .nav-menu a {
+    font-size: 1.05rem;
+    padding: 0 0.7rem;
+  }
+
+  /* Search box */
+  .search-box input {
+    width: 16rem;
+    font-size: 1.5rem;
+  }
+
+  /* Welcome section */
+  .welcome {
+    padding: 6rem;
+  }
+
+  .welcome h2 {
+    font-size: 4rem;
+  }
+
+  .welcome p {
+    font-size: 1.5rem;
+    max-width: 55rem;
+  }
+
+  .line {
+    width: 26rem;
+  }
+
+  /* Newsletter adjustments */
+  .newsletter input[type="email"] {
+    width: 23rem;
+  }
+
+  /*BLOG*/
+
+  .row {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .card-top,
+  .card-bottom {
+    max-width: 100%;
+  }
+  .card-top .thumb.large,
+  .card-bottom .thumb.small {
+    width: 100%;
+    height: auto;
+  }
+  .content-blog2 {
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+
+/* 768px */
+@media (max-width: 768px) {
+  .nav-menu {
+    width: 90%;
+  }
+
+  .nav-menu a {
+    font-size: 1rem;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+  }
+
+  .welcome {
+    padding: 5rem;
+  }
+
+  .welcome h2 {
+    font-size: 3rem;
+  }
+
+  .newsletter input[type="email"] {
+    width: 80%;
+  }
+
+  .newsletter button {
+    width: auto;
+  }
+  
+  /*BLOG*/
+
+  .hero_blog {
+    height: auto;
+    aspect-ratio: auto;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  .hero_blog h1 {
+    font-size: 4rem;
+    padding: 1rem;
+  }
+  .row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .title-blog2,
+  .subtitle-blog2 {
+    font-size: 3rem;
+  }
+  .divider-blog2 {
+    width: 80%;
+  }
+
+}
+
+/* 480px */
+@media (max-width: 480px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .nav-menu a {
+    padding: 0.5rem;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+
+  .welcome {
+    padding: 3rem;
+  }
+
+  .welcome h2 {
+    font-size: 2.5rem;
+  }
+
+  .newsletter input[type="email"] {
+    width: 100%;
+  }
+  
+  /*BLOG*/
+  .hero_blog h1 {
+    font-size: 2.5rem;
+  }
+  .card-top h3,
+  .card-bottom h3 {
+    font-size: 1.2rem;
+  }
+  .card-top p,
+  .card-bottom p {
+    font-size: 1rem;
+  }
+  .title-blog2,
+  .subtitle-blog2 {
+    font-size: 2rem;
+  }
+  .content-blog2 {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+}

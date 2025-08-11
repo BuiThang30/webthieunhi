@@ -1,0 +1,792 @@
+/* Đặt font chữ và reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'LC Sac Trial';
+  font-style: normal;
+  font-weight: normal;
+  src: local('LC Sac Trial Regular'), url('fonts/LCSac Trial-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: '1FTV Cakelan';
+  src: url('fonts/1FTV-Cakelan.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue1';
+  src: url('fonts/HelveticaNeueUltraLight.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('fonts/HelveticaNeueLight.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Thin';
+  src: url('fonts/HelveticaNeueThin.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #111;
+  font-family: 'Helvetica Neue1';
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  margin-top: 42px;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(0, 0, 0, 0.0);
+  border: 1.031px solid black;
+  border-radius: 72.154px;
+  padding: 2px 2px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  border-radius: 44px;
+  border: 1px solid black;
+  width: 500px;
+  height: 65px;
+  padding: 0 15px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  font-family: '1FTV Cakelan';
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0 15px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+
+.nav-menu a::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9); 
+  border: 0.7px solid #FFF;
+  border-radius: 44px;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+
+.nav-menu a.active::before,
+.nav-menu a:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(0.9);
+}
+
+
+.nav-menu a:hover {
+  background-color: transparent;
+  border-radius: 44.487px;
+  transition: 0.3s;
+}
+
+.mr-6 {
+  margin-right: 6px;
+}
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: black;
+  border-radius: 50px;
+  border: 1px solid black;
+  padding: 0 10px;
+  height: 65px;
+}
+
+.search-box input {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  width: 334px;
+}
+
+.search-box input::placeholder {
+  color: #bbb;
+}
+
+.search-box .search-icon {
+  width: 39.297px;
+  height: 40.038px;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box .search-icon:hover {
+  filter: invert(0.7);
+}
+
+
+.search-box input{
+  color:#FFF;
+  font-family: 'Helvetica Neue1';
+  font-size:29.92px;
+  font-style:normal;
+  font-weight:100;
+  line-height:normal;
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+  aspect-ratio: 83/45;
+  background: url("image/backgroundhome.png") lightgray 50% 100% / 100% 276.657% no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  color: #FFF;
+  font-family: "LC Sac Trial";
+  font-size: 155.885px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  color: #FFF;
+  font-family: "LC Sac Trial";
+  font-size: 32.906px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  padding: 150px;
+  background: #fdfbf7;
+}
+
+.welcome h2 {
+  color: #000;
+  font-family: "LC Sac Trial";
+  font-size: 87.555px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.line {
+  width: 517px;;
+  height: 2px;
+  background: #444;
+  margin: 50px auto 60px;
+}
+
+.welcome p {
+  max-width: 1176px;
+  margin: 10px auto 60px;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: justify; 
+  font-family: Helvetica Neue;
+  font-size: 29.92px;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background-color: #0a0a0a;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.newsletter h2 {
+  color: #FFF;
+  font-family: "LC Sac Trial";
+  font-size: 32.906px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.newsletter .divider {
+  height: 1px;
+  width: 321.5px;
+  background-color: white;
+  margin: 10px auto;
+}
+
+.newsletter .subtext {
+  font-size: 16.303px;
+  color: #FFF;
+  font-family: 'Helvetica Neue';
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.input-wrapper{
+  background-color: white;  
+  border-radius: 20px;
+}
+
+.newsletter input[type="email"] {
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  width: 500px;
+  height: 42px;
+  text-align: justify;
+  font-family: 'Helvetica Neue';
+  font-size: 16.303px;
+}
+
+.newsletter button {
+  padding: 13px 20px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight:600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16.303px;
+  font-family: 'Helvetica Neue';
+  border-left: 1px solid black; 
+  border-radius: 100px;  
+}
+
+.newsletter button:hover {
+  background-color: #ddd;
+}
+
+/*BLOG*/
+
+.hero_blog {
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+  aspect-ratio: 83/45;
+  background: url("image/backgroundhome.png") lightgray 50% 100% / 100% 276.657% no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items:end;
+  color: white;
+  position: relative;
+}
+
+.hero_blog h1{
+  padding: 50px;
+  color: #FEFBF5;
+  text-align: justify;
+  font-family: "LC Sac Trial";
+  font-size: 131.289px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.slider-container {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  background: #FEFBF5;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  padding: 40px 0;
+}
+
+.slider-wrapper {
+  position: relative;
+}
+
+.slide {
+  display: none;
+}
+.slide.active {
+  display: block;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+/*top*/
+.card-top {
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  max-width: 750px;
+}
+
+.card-top h3,
+.card-top p{
+  text-align: justify;
+  width: 100%;
+  max-width: 749.633px;
+  color: #000;
+  font-family: "LC Sac Trial";
+  font-size: 35.267px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-top small,
+.card-top u{
+  color: #000;
+  text-align: justify;
+  font-family: 'Helvetica Neue';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 100%;
+  max-width: 749.633px;
+}
+
+.line-cardtop{
+  width: 334.539px; 
+  height: 1px; 
+  background:black; 
+  margin: 10px 0;
+}
+
+.card-top .thumb.large {
+  width: 749.633px;
+  height: 400.502px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  max-width: 750px;
+}
+
+.card-top img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/*bottom*/
+
+.card-bottom h3,
+.card-bottom p{
+  text-align: justify;
+  width: 100%;
+  max-width: 749.633px;
+  color: #000;
+  font-family: "LC Sac Trial";
+  font-size: 23.006px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card-bottom small,
+.card-bottom u{
+  color: #000;
+  text-align: justify;
+  font-family: 'Helvetica Neue';
+  font-size: 15.656px; 
+  max-width:486px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  width: 100%;
+}
+
+.line-cardbottom{
+  width:218.236px; 
+  height: 1px; 
+  background:black; 
+  margin: 30px 0 10px;
+}
+
+.card-bottom .thumb.small {
+  width: 486px;
+  height: 266px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.card-bottom img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.slider-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.slider-indicators span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: black;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slider-indicators span.active {
+  background: white;
+  border: 1px solid black;
+}
+
+/*BLOG2*/
+
+.container-blog2 {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #FEFBF5;
+}
+
+.title-blog2{
+  padding-top: 50px;
+  margin-bottom: 0;
+  color: #000;
+  text-align: center;
+  font-family: "LC Sac Trial";
+  font-size: 82.279px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.subtitle-blog2{
+  margin-bottom: 50px;
+  color: #000;
+  text-align: center;
+  font-family: "LC Sac Trial";
+  font-size: 82.279px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.divider-blog2 {
+  width: 728.772px;
+  border: none;
+  border-top: 3px solid #223344;
+  margin: 20px auto;
+}
+
+.content-blog2 {
+  text-align: justify;
+  max-width: 1524px;
+  margin: 70px auto 0 auto;
+  font-family: 'Helvetica Neue';
+  font-size: 29.92px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.2;
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+.container-blog2 p{
+  margin-bottom: 30px;
+}
+
+.content-blog2 a {
+  color:#000;
+  text-decoration: underline;
+}
+
+.pb-30{
+  padding-bottom:30px;
+}
+.pb-120{
+  padding-bottom:120px;
+}
+.mb-80{
+  margin-bottom: 80px;
+}
+
+/*QUIZ*/
+
+.hero_quiz {
+  width: 100%;
+  height: 80vh;
+  flex-shrink: 0;
+  aspect-ratio: 83/45;
+  background: url("image/backgroundquiz.png") lightgray 50% 20.5% / 100% 276.657% no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.content_quiz {
+  background-color: #fdf8f3;
+  padding: 40px 0;
+  text-align: center;
+  width: 100%;
+  border-top: 3px solid lightblue;
+}
+
+.content_wrapper {
+  max-width: 1524px;
+  margin: 0 auto;
+  padding: 0 60px;
+  text-align: justify;
+  margin-top: 50px;
+}
+
+.content_wrapper p {
+  color: #000;
+  font-size: 29.92px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: "Helvetica Neue";
+  margin-bottom: 40px;
+}
+
+.content_wrapper h2 {
+  letter-spacing: -0.3px; 
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "LC Sac Trial";
+  font-size: 49.266px;
+  margin-bottom: 20px;
+}
+
+.btn-start{
+  text-align: center; 
+  margin-top: 30px;
+}
+
+.start-btn {
+  display: inline-block;
+  background-color: #000;
+  color: #FFF;
+  font-family: "LC Sac Trial";
+  font-size: 74.495px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 103px;
+  width: 649px;
+  height: 103px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 20px ;
+}
+
+.start-btn:hover {
+  background-color: #333;
+}
+
+.quiz-option {
+  display: inline-flex;
+  align-items: center;
+  background-color: #000;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 649px;
+  height: 103px;
+}
+.quiz-option:hover {
+  transform: scale(1.03);
+}
+.quiz-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.quiz-option {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 649px;
+  height: 103px;
+}
+
+.option-label {
+  background-color: transparent;
+  border-radius: 100px;
+  width: 155px;
+  height: 103px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #FFF;
+  font-family: "LC Sac Trial";
+  font-size: 74.495px;
+  font-weight: 400;
+}
+
+.option-text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: "Helvetica Neue";
+  font-size: 29.92px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+
+.quiz-option.correct .option-label,
+.quiz-option.incorrect .option-label {
+  background-color: inherit;
+  border: 1px solid #FFF;
+  color: #FFF;
+}
+
+.correct {
+  background-color: #28a745 !important;
+}
+
+.incorrect {
+  background-color: #dc3545 !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.explain h3{
+  color: #000;
+  font-size: 29.92px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: "Helvetica Neue";
+  margin-bottom: 10px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.explain hr{
+  width: 1113.5px;
+  margin: 0 auto;
+}
+
+.explain h4{
+  letter-spacing: -0.3px; 
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "LC Sac Trial";
+  font-size: 49.266px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.explain p{
+  color: #000;
+  font-size: 29.92px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: "Helvetica Neue";
+  margin-bottom: 40px;
+}
+
