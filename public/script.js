@@ -101,3 +101,36 @@ document.querySelectorAll(".quiz-option").forEach(btn => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+
+  const currentPath = window.location.pathname;
+  const match = currentPath.match(/\/quiz(\d*)/);
+  const currentNumber = match && match[1] ? parseInt(match[1], 10) : null;
+
+  prevBtn.addEventListener("click", () => {
+    if (!currentNumber) {
+      return;
+    }
+    if (currentNumber === 2) {
+      window.location.href = "/quiz";
+    } else {
+      window.location.href = `/quiz${currentNumber - 1}`;
+    }
+  });
+  nextBtn.addEventListener("click", () => {
+    if (!currentNumber) {
+      window.location.href = "/quiz2";
+    } else if (currentNumber < 6) {
+      window.location.href = `/quiz${currentNumber + 1}`;
+    }
+  });
+
+  if (!currentNumber) {
+    prevBtn.style.visibility = "hidden";
+  }
+  if (currentNumber === 6) {
+    nextBtn.style.visibility = "hidden";
+  }
+});

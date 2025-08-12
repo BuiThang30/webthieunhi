@@ -52,17 +52,17 @@ body {
   display: flex;
   justify-content: center;
   z-index: 100;
-  margin-top: 2.625rem; /* 42px */
+  margin-top: 2.625rem;
 }
 
 .nav-wrapper {
   display: flex;
   align-items: center;
-  gap: 0.875rem; /* 14px */
+  gap: 0.875rem;
   background: rgba(0, 0, 0, 0.0);
-  border: 0.064rem solid black; /* 1.031px */
-  border-radius: 4.51rem; /* 72.154px */
-  padding: 0.125rem 0.125rem; /* 2px */
+  border: 0.064rem solid black;
+  border-radius: 4.51rem;
+  padding: 0.125rem 0.125rem;
 }
 
 .nav-menu {
@@ -70,11 +70,11 @@ body {
   align-items: center;
   justify-content: space-between;
   background: black;
-  border-radius: 2.75rem; /* 44px */
-  border: 0.0625rem solid black; /* 1px */
-  width: 31.25rem; /* 500px */
-  height: 4.0625rem; /* 65px */
-  padding: 0 0.9375rem; /* 15px */
+  border-radius: 2.75rem;
+  border: 0.0625rem solid black;
+  width: 31.25rem;
+  height: 4.0625rem;
+  padding: 0 0.9375rem;
 }
 
 .nav-menu a {
@@ -83,10 +83,10 @@ body {
   position: relative;
   font-family: '1FTV Cakelan';
   font-style: normal;
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.25rem;
   font-weight: 400;
-  padding: 0 0.9375rem; /* 15px */
-  height: 4.0625rem; /* 65px */
+  padding: 0 0.9375rem;
+  height: 4.0625rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,13 +96,13 @@ body {
 .nav-menu a::before {
   content: "";
   position: absolute;
-  width: 7.5rem; /* 120px */
-  height: 4rem; /* 64px */
+  width: 7.5rem;
+  height: 4rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.9); 
-  border: 0.04375rem solid #FFF; /* 0.7px */
-  border-radius: 2.75rem; /* 44px */
+  border: 0.04375rem solid #FFF;
+  border-radius: 2.75rem;
   opacity: 0;
   transition: 0.3s ease;
 }
@@ -115,31 +115,31 @@ body {
 
 .nav-menu a:hover {
   background-color: transparent;
-  border-radius: 2.749rem; /* 44.487px */
+  border-radius: 2.749rem;
   transition: 0.3s;
 }
 
 .mr-6 {
-  margin-right: 0.375rem; /* 6px */
+  margin-right: 0.375rem;
 }
 
 .search-box {
   display: flex;
   align-items: center;
   background: black;
-  border-radius: 3.125rem; /* 50px */
-  border: 0.0625rem solid black; /* 1px */
-  padding: 0 0.625rem; /* 10px */
-  height: 4.0625rem; /* 65px */
+  border-radius: 3.125rem;
+  border: 0.0625rem solid black;
+  padding: 0 0.625rem;
+  height: 4.0625rem;
 }
 
 .search-box input {
-  padding: 0.625rem 0.9375rem; /* 10px 15px */
+  padding: 0.625rem 0.9375rem;
   border: none;
   outline: none;
   background: transparent;
   color: white;
-  width: 20.875rem; /* 334px */
+  width: 20.875rem;
 }
 
 .search-box input::placeholder {
@@ -147,9 +147,9 @@ body {
 }
 
 .search-box .search-icon {
-  width: 2.454rem; /* 39.297px */
-  height: 2.502rem; /* 40.038px */
-  margin-left: 0.5rem; /* 8px */
+  width: 2.454rem;
+  height: 2.502rem;
+  margin-left: 0.5rem;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -161,7 +161,7 @@ body {
 .search-box input {
   color: #FFF;
   font-family: 'Helvetica Neue1';
-  font-size: 1.87rem; /* 29.92px */
+  font-size: 1.87rem;
   font-style: normal;
   font-weight: 100;
   line-height: normal;
@@ -198,17 +198,17 @@ body {
 .hero-text h1 {
   color: #FFF;
   font-family: "LC Sac Trial";
-  font-size: 9.743rem; /* 155.885px */
+  font-size: 9.743rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 0.625rem; /* 10px */
+  margin-bottom: 0.625rem; 
 }
 
 .hero-text p {
   color: #FFF;
   font-family: "LC Sac Trial";
-  font-size: 2.06rem; /* 32.906px */
+  font-size: 2.06rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -217,35 +217,35 @@ body {
 /* Welcome Section */
 .welcome {
   text-align: center;
-  padding: 9.375rem; /* 150px */
+  padding: 9.375rem;
   background: #fdfbf7;
 }
 
 .welcome h2 {
   color: #000;
   font-family: "LC Sac Trial";
-  font-size: 5.47rem; /* 87.555px */
+  font-size: 5.47rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 1.25rem;
 }
 
 .line {
-  width: 32.36rem; /* 517px */
-  height: 0.125rem; /* 2px */
+  width: 32.36rem;
+  height: 0.125rem;
   background: #444;
-  margin: 3.125rem auto 3.75rem; /* 50px 0 60px */
+  margin: 3.125rem auto 3.75rem;
 }
 
 .welcome p {
-  max-width: 73.5rem; /* 1176px */
-  margin: 0.625rem auto 3.75rem; /* 10px 0 60px */
-  font-size: 1.125rem; /* 18px */
+  max-width: 73.5rem;
+  margin: 0.625rem auto 3.75rem;
+  font-size: 1.125rem;
   line-height: 1.2;
   text-align: justify; 
   font-family: Helvetica Neue;
-  font-size: 1.87rem; /* 29.92px */
+  font-size: 1.87rem;
 }
 
 /* Newsletter Section */
@@ -253,68 +253,68 @@ body {
   background-color: #0a0a0a;
   color: white;
   text-align: center;
-  padding: 3.125rem 1.25rem; /* 50px 20px */
+  padding: 3.125rem 1.25rem;
 }
 
 .newsletter h2 {
   color: #FFF;
   font-family: "LC Sac Trial";
-  font-size: 2.06rem; /* 32.906px */
+  font-size: 2.06rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 .newsletter .divider {
-  height: 0.0625rem; /* 1px */
-  width: 20.09375rem; /* 321.5px */
+  height: 0.0625rem;
+  width: 20.09375rem;
   background-color: white;
-  margin: 0.625rem auto; /* 10px 0 */
+  margin: 0.625rem auto;
 }
 
 .newsletter .subtext {
-  font-size: 1.018rem; /* 16.303px */
+  font-size: 1.018rem;
   color: #FFF;
   font-family: 'Helvetica Neue';
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 1.25rem;
 }
 
 .newsletter form {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem; /* 10px */
+  gap: 0.625rem;
   flex-wrap: wrap;
 }
 
 .input-wrapper {
   background-color: white;  
-  border-radius: 1.25rem; /* 20px */
+  border-radius: 1.25rem;
 }
 
 .newsletter input[type="email"] {
-  padding: 0.625rem; /* 10px */
-  border-radius: 1.25rem; /* 20px */
+  padding: 0.625rem;
+  border-radius: 1.25rem;
   border: none;
-  width: 31.25rem; /* 500px */
-  height: 2.625rem; /* 42px */
+  width: 31.25rem;
+  height: 2.625rem;
   text-align: justify;
   font-family: 'Helvetica Neue';
-  font-size: 1.018rem; /* 16.303px */
+  font-size: 1.018rem;
 }
 
 .newsletter button {
-  padding: 0.8125rem 1.25rem; /* 13px 20px */
+  padding: 0.8125rem 1.25rem;
   border: none;
   background-color: white;
   color: black;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s;
-  font-size: 1.018rem; /* 16.303px */
+  font-size: 1.018rem;
   font-family: 'Helvetica Neue';
-  border-left: 0.0625rem solid black; /* 1px */
-  border-radius: 6.25rem; /* 100px */
+  border-left: 0.0625rem solid black;
+  border-radius: 6.25rem;
 }
 
 .newsletter button:hover {
@@ -337,11 +337,11 @@ body {
 }
 
 .hero_blog h1 {
-  padding: 3.125rem; /* 50px */
+  padding: 3.125rem;
   color: #FEFBF5;
   text-align: justify;
   font-family: "LC Sac Trial";
-  font-size: 8.18rem; /* 131.289px */
+  font-size: 8.18rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -353,10 +353,10 @@ body {
   text-align: center;
   justify-content: center;
   background: #FEFBF5;
-  border-top: 0.0625rem solid black; /* 1px */
-  border-bottom: 0.0625rem solid black; /* 1px */
+  border-top: 0.0625rem solid black;
+  border-bottom: 0.0625rem solid black;
   border-radius: 0;
-  padding: 2.5rem 0; /* 40px */
+  padding: 2.5rem 0;
 }
 
 .slider-wrapper {
@@ -373,8 +373,8 @@ body {
 .row {
   display: flex;
   justify-content: center;
-  gap: 2.5rem; /* 40px */
-  margin: 2.5rem 0; /* 40px 0 */
+  gap: 2.5rem;
+  margin: 2.5rem 0;
 }
 
 /*top*/
@@ -382,17 +382,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
-  max-width: 46.875rem; /* 750px */
+  max-width: 46.875rem;
 }
 
 .card-top h3,
 .card-top p {
   text-align: justify;
   width: 100%;
-  max-width: 46.562rem; /* 749.633px */
+  max-width: 46.562rem;
   color: #000;
   font-family: "LC Sac Trial";
-  font-size: 2.20rem; /* 35.267px */
+  font-size: 2.20rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -403,19 +403,19 @@ body {
   color: #000;
   text-align: justify;
   font-family: 'Helvetica Neue';
-  font-size: 1.5rem; /* 24px */
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   width: 100%;
-  max-width: 46.562rem; /* 749.633px */
+  max-width: 46.562rem;
 }
 
 .line-cardtop {
-  width: 20.9rem; /* 334.539px */
-  height: 0.0625rem; /* 1px */
+  width: 20.9rem;
+  height: 0.0625rem;
   background: black;
-  margin: 0.625rem 0; /* 10px 0 */
+  margin: 0.625rem 0;
 }
 
 .card-top .thumb.large {
@@ -423,8 +423,8 @@ body {
   height: 25rem; /* 400.502px */
   flex-shrink: 0;
   object-fit: cover;
-  margin-bottom: 0.625rem; /* 10px */
-  border-radius: 0.5rem; /* 8px */
+  margin-bottom: 0.625rem;
+  border-radius: 0.5rem;
   transition: 0.3s;
 }
 
@@ -432,7 +432,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
-  max-width: 46.875rem; /* 750px */
+  max-width: 46.875rem;
 }
 
 .card-top img:hover {
@@ -446,10 +446,10 @@ body {
 .card-bottom p {
   text-align: justify;
   width: 100%;
-  max-width: 46.562rem; /* 749.633px */
+  max-width: 46.562rem;
   color: #000;
   font-family: "LC Sac Trial";
-  font-size: 1.437rem; /* 23.006px */
+  font-size: 1.437rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -460,8 +460,8 @@ body {
   color: #000;
   text-align: justify;
   font-family: 'Helvetica Neue';
-  font-size: 0.978rem; /* 15.656px */
-  max-width: 30.375rem; /* 486px */
+  font-size: 0.978rem;
+  max-width: 30.375rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -469,19 +469,19 @@ body {
 }
 
 .line-cardbottom {
-  width: 13.64rem; /* 218.236px */
-  height: 0.0625rem; /* 1px */
+  width: 13.64rem;
+  height: 0.0625rem; 
   background: black;
-  margin: 1.875rem 0 0.625rem; /* 30px 0 10px */
+  margin: 1.875rem 0 0.625rem;
 }
 
 .card-bottom .thumb.small {
-  width: 30.375rem; /* 486px */
-  height: 16.625rem; /* 266px */
+  width: 30.375rem;
+  height: 16.625rem;
   flex-shrink: 0;
   object-fit: cover;
-  margin-bottom: 0.625rem; /* 10px */
-  border-radius: 0.375rem; /* 6px */
+  margin-bottom: 0.625rem;
+  border-radius: 0.375rem;
   transition: 0.3s;
 }
 
@@ -493,13 +493,13 @@ body {
 .slider-indicators {
   display: flex;
   justify-content: center;
-  gap: 0.75rem; /* 12px */
-  margin: 1.25rem 0; /* 20px 0 */
+  gap: 0.75rem;
+  margin: 1.25rem 0;
 }
 
 .slider-indicators span {
-  width: 0.75rem; /* 12px */
-  height: 0.75rem; /* 12px */
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
   background: black;
   display: inline-block;
@@ -509,7 +509,7 @@ body {
 
 .slider-indicators span.active {
   background: white;
-  border: 0.0625rem solid black; /* 1px */
+  border: 0.0625rem solid black;
 }
 
 /*BLOG2*/
@@ -517,55 +517,55 @@ body {
 .container-blog2 {
   width: 100%;
   margin: 0 auto;
-  padding: 0 1.25rem; /* 20px */
+  padding: 0 1.25rem;
   background-color: #FEFBF5;
 }
 
 .title-blog2 {
-  padding-top: 3.125rem; /* 50px */
+  padding-top: 3.125rem;
   margin-bottom: 0;
   color: #000;
   text-align: center;
   font-family: "LC Sac Trial";
-  font-size: 5.142rem; /* 82.279px */
+  font-size: 5.142rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 .subtitle-blog2 {
-  margin-bottom: 3.125rem; /* 50px */
+  margin-bottom: 3.125rem;
   color: #000;
   text-align: center;
   font-family: "LC Sac Trial";
-  font-size: 5.142rem; /* 82.279px */
+  font-size: 5.142rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 .divider-blog2 {
-  width: 45.547rem; /* 728.772px */
+  width: 45.547rem;
   border: none;
-  border-top: 0.1875rem solid #223344; /* 3px */
-  margin: 1.25rem auto; /* 20px 0 */
+  border-top: 0.1875rem solid #223344;
+  margin: 1.25rem auto;
 }
 
 .content-blog2 {
   text-align: justify;
-  max-width: 95.25rem; /* 1524px */
-  margin: 4.375rem auto 0 auto; /* 70px 0 0 */
+  max-width: 95.25rem;
+  margin: 4.375rem auto 0 auto;
   font-family: 'Helvetica Neue';
-  font-size: 1.87rem; /* 29.92px */
+  font-size: 1.87rem;
   font-style: normal;
   font-weight: 300;
   line-height: 1.2;
-  padding-top: 3.75rem; /* 60px */
-  padding-bottom: 5rem; /* 80px */
+  padding-top: 3.75rem;
+  padding-bottom: 5rem;
 }
 
 .container-blog2 p {
-  margin-bottom: 1.875rem; /* 30px */
+  margin-bottom: 1.875rem;
 }
 
 .content-blog2 a {
@@ -574,13 +574,13 @@ body {
 }
 
 .pb-30 {
-  padding-bottom: 1.875rem; /* 30px */
+  padding-bottom: 1.875rem;
 }
 .pb-120 {
-  padding-bottom: 7.5rem; /* 120px */
+  padding-bottom: 7.5rem;
 }
 .mb-80 {
-  margin-bottom: 5rem; /* 80px */
+  margin-bottom: 5rem;
 }
 
 /*QUIZ*/
@@ -602,44 +602,44 @@ body {
 
 .content_quiz {
   background-color: #fdf8f3;
-  padding: 2.5rem 0; /* 40px to rem */
+  padding: 2.5rem 0;
   text-align: center;
   width: 100%;
-  border-top: 0.1875rem solid lightblue; /* 3px to rem */
+  border-top: 0.1875rem solid lightblue;
 }
 
 .content_wrapper {
-  max-width: 95.25rem; /* 1524px to rem */
+  max-width: 95.25rem;
   margin: 0 auto;
-  padding: 0 3.75rem; /* 60px to rem */
+  padding: 0 3.75rem;
   text-align: justify;
-  margin-top: 3.125rem; /* 50px to rem */
+  margin-top: 3.125rem;
 }
 
 .content_wrapper p {
   color: #000;
-  font-size: 1.87rem; /* 29.92px to rem */
+  font-size: 1.87rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   font-family: "Helvetica Neue";
-  margin-bottom: 2.5rem; /* 40px to rem */
+  margin-bottom: 2.5rem;
 }
 
 .content_wrapper h2 {
-  letter-spacing: -0.01875rem; /* -0.3px to rem */
+  letter-spacing: -0.01875rem;
   color: #000;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   font-family: "LC Sac Trial";
-  font-size: 3.08rem; /* 49.266px to rem */
-  margin-bottom: 1.25rem; /* 20px to rem */
+  font-size: 3.08rem;
+  margin-bottom: 1.25rem;
 }
 
 .btn-start {
   text-align: center; 
-  margin-top: 1.875rem; /* 30px to rem */
+  margin-top: 1.875rem;
 }
 
 .start-btn {
@@ -647,17 +647,17 @@ body {
   background-color: #000;
   color: #FFF;
   font-family: "LC Sac Trial";
-  font-size: 4.65rem; /* 74.495px to rem */
+  font-size: 4.65rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 6.4375rem; /* 103px to rem */
-  width: 40.56rem; /* 649px to rem */
-  height: 6.4375rem; /* 103px to rem */
+  line-height: 6.4375rem;
+  width: 40.56rem;
+  height: 6.4375rem;
   flex-shrink: 0;
   border-radius: 100px;
   text-align: center;
   text-decoration: none;
-  margin-bottom: 1.25rem; /* 20px to rem */
+  margin-bottom: 1.25rem;
 }
 
 .start-btn:hover {
@@ -673,10 +673,10 @@ body {
   color: #fff;
   cursor: pointer;
   overflow: hidden;
-  margin: 0.625rem; /* 10px to rem */
+  margin: 0.625rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  width: 40.56rem; /* 649px to rem */
-  height: 6.4375rem; /* 103px to rem */
+  width: 40.56rem;
+  height: 6.4375rem;
 }
 
 .quiz-option:hover {
@@ -686,11 +686,11 @@ body {
 .quiz-row {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 0.9375rem; /* 15px to rem */
+  margin-bottom: 0.9375rem;
 }
 
 .quiz-option {
-  margin-top: 2.5rem; /* 40px to rem */
+  margin-top: 2.5rem;
   display: flex;
   align-items: center;
   background-color: #000;
@@ -700,21 +700,21 @@ body {
   cursor: pointer;
   overflow: hidden;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  width: 40.56rem; /* 649px to rem */
-  height: 6.4375rem; /* 103px to rem */
+  width: 40.56rem;
+  height: 6.4375rem;
 }
 
 .option-label {
   background-color: transparent;
   border-radius: 100px;
-  width: 9.6875rem; /* 155px to rem */
-  height: 6.4375rem; /* 103px to rem */
+  width: 9.6875rem;
+  height: 6.4375rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #FFF;
   font-family: "LC Sac Trial";
-  font-size: 4.65rem; /* 74.495px to rem */
+  font-size: 4.65rem;
   font-weight: 400;
 }
 
@@ -725,9 +725,9 @@ body {
   justify-content: center;
   color: #FFF;
   font-family: "Helvetica Neue";
-  font-size: 1.87rem; /* 29.92px to rem */
+  font-size: 1.87rem;
   font-weight: 300;
-  letter-spacing: -0.03125rem; /* -0.5px to rem */
+  letter-spacing: -0.03125rem;
 }
 
 .quiz-option.correct .option-label,
@@ -751,43 +751,112 @@ body {
 
 .explain h3 {
   color: #000;
-  font-size: 1.87rem; /* 29.92px to rem */
+  font-size: 1.87rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   font-family: "Helvetica Neue";
-  margin-bottom: 0.625rem; /* 10px to rem */
-  margin-top: 3.125rem; /* 50px to rem */
+  margin-bottom: 0.625rem;
+  margin-top: 3.125rem;
   text-align: center;
 }
 
 .explain hr {
-  width: 69.59rem; /* 1113.5px to rem */
+  width: 69.59rem;
   margin: 0 auto;
 }
 
 .explain h4 {
-  letter-spacing: -0.01875rem; /* -0.3px to rem */
+  letter-spacing: -0.01875rem;
   color: #000;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   font-family: "LC Sac Trial";
-  font-size: 3.08rem; /* 49.266px to rem */
-  margin-bottom: 1.25rem; /* 20px to rem */
+  font-size: 3.08rem;
+  margin-bottom: 1.25rem;
   text-align: center;
-  margin-top: 5rem; /* 80px to rem */
+  margin-top: 5rem;
 }
 
 .explain p {
   color: #000;
-  font-size: 1.87rem; /* 29.92px to rem */
+  font-size: 1.87rem;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   font-family: "Helvetica Neue";
-  margin-bottom: 2.5rem; /* 40px to rem */
+  margin-bottom: 2.5rem;
 }
+
+.correct-quiz {
+  text-align: center;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  font-family: "LC Sac Trial";
+  font-size: 19.77rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  color: #FEFBF5;
+  margin-bottom: -2rem;
+}
+
+.wrong-quiz {
+  text-align: center;
+  color: #000;
+  font-family: "LC Sac Trial";
+  font-size: 19.77rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.content_quiz6 {
+  padding: 1rem 0;
+}
+.finish{
+  background-color: #FEFBF5;
+  padding:5rem 0 5rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #FEFBF5;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.round-btn {
+  width: 22.5rem;
+  height: 6.43rem;
+  border-radius: 999rem;
+  border: 0.125rem solid #000;
+  background-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.round-btn img {
+  width: 5rem;
+  height: auto;
+}
+
+.round-btn:hover {
+  background-color: #000;
+}
+
+.round-btn:hover img {
+  filter: invert(1);
+}
+
+
 
 /* Responsive Styles */
 
@@ -835,23 +904,67 @@ body {
   .line {
     width: 29rem;
   }
-
-  /* Newsletter adjustments */
+    /* Newsletter adjustments */
   .newsletter input[type="email"] {
     width: 26rem;
   }
 
   /*BLOG*/
+  .content-blog2 {
+    font-size: 1.6rem;
+    max-width: 80rem;
+  }
   .hero_blog h1 {
-    font-size: 6.5rem;
+    font-size: 6rem;
+    padding: 2rem;
+  }
+  .card-top{
+    max-width: 40rem;
+  }
+  .card-bottom{
+    max-width:26rem;;
+  }
+  .card-top .thumb.large {
+    width: 40rem;
+    height: 22rem;
+  }
+  .card-bottom .thumb.small {
+    width: 26rem;
+    height: 14rem;
   }
   .title-blog2,
   .subtitle-blog2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
-  .content-blog2 {
+  .divider-blog2 {
+    width: 36rem;
+  }
+  /*QUIZ*/
+  .content_wrapper {
+      max-width: 85%;
+  }
+  .start-btn,
+  .quiz-option {
+      width: 36rem;
+  }
+  
+  .content_wrapper h2 {
+      font-size: 2.8rem;
+  }
+  .option-text{
     font-size: 1.6rem;
-    max-width: 90rem;
+  }
+
+    .correct-quiz,
+  .wrong-quiz {
+    font-size: 17rem;
+  }
+  .round-btn {
+    width: 20rem;
+    height: 5.8rem;
+  }
+  .round-btn img {
+    width: 4.5rem;
   }
 }
 
@@ -876,11 +989,15 @@ body {
     font-size: 1.1rem;
     padding: 0 0.8rem;
   }
+
+  .nav-menu a::before{
+    width: 6.8rem;
+  }
   
   /* Điều chỉnh search box */
   .search-box input {
     width: 18rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   
   /* Điều chỉnh welcome section */
@@ -908,20 +1025,15 @@ body {
 
   /*BLOG*/
 
-  .hero_blog {
-    background-size: 100% auto; /* Fit chiều ngang, không bị crop chiều dọc */
-    background-position: center bottom; /* Canh dưới để không thừa khoảng trống */
-    height: auto; /* Nếu muốn co theo ảnh */
-    aspect-ratio: auto; /* Không khóa tỉ lệ cũ */
-  }
-
   .hero_blog h1 {
     font-size: 6rem;
     padding: 2rem;
   }
-  .card-top,
-  .card-bottom {
+  .card-top{
     max-width: 40rem;
+  }
+  .card-bottom{
+    max-width:26rem;;
   }
   .card-top .thumb.large {
     width: 40rem;
@@ -938,10 +1050,45 @@ body {
   .divider-blog2 {
     width: 36rem;
   }
+
+  /*QUIZ*/
+  .start-btn,
+  .quiz-option {
+      width: 34rem;
+      font-size: 4rem;
+      height: 5.5rem;
+  }
+  
+  .option-label {
+      width: 8rem;
+      height: 5.5rem;
+      font-size: 4rem;
+  }
+  
+  .content_wrapper h2 {
+      font-size: 2.6rem;
+  }
+  
+  .content_wrapper p,
+  .option-text {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+  .correct-quiz,
+  .wrong-quiz {
+    font-size: 15rem;
+  }
+  .round-btn {
+    width: 18rem;
+    height: 5.5rem;
+  }
+  .round-btn img {
+    width: 4.2rem;
+  }
 }
 
-/* 1024px */
-@media (max-width: 1024px) {
+/* 1200px */
+@media (max-width: 1280px) {
   /* Hero section */
   .hero-text h1 {
     font-size: 6rem;
@@ -959,6 +1106,10 @@ body {
   .nav-menu a {
     font-size: 1.05rem;
     padding: 0 0.7rem;
+  }
+
+  .nav-menu a::before{
+    width: 6.4rem;
   }
 
   /* Search box */
@@ -1002,12 +1153,53 @@ body {
   }
   .card-top .thumb.large,
   .card-bottom .thumb.small {
-    width: 100%;
+    width: 80vh;
     height: auto;
   }
   .content-blog2 {
     padding: 2rem;
     font-size: 1.5rem;
+  }
+
+  /*QUIZ*/
+  .content_wrapper {
+      padding: 0 1.5rem;
+  }
+  
+  .hero_quiz {
+      height: 60vh;
+  }
+  
+  .start-btn,
+  .quiz-option {
+      width: 28rem;
+      font-size: 3rem;
+      height: 4.5rem;
+      line-height: 4.5rem;
+  }
+  
+  .option-label {
+      width: 6rem;
+      height: 4.5rem;
+      font-size: 3rem;
+  }
+  .content_wrapper h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+  }
+  .quiz-row{
+    flex-direction: column
+  }
+  .correct-quiz,
+  .wrong-quiz {
+    font-size: 12rem;
+  }
+  .round-btn {
+    width: 15rem;
+    height: 4.8rem;
+  }
+  .round-btn img {
+    width: 3.5rem;
   }
 }
 
@@ -1020,6 +1212,11 @@ body {
 
   .nav-menu a {
     font-size: 1rem;
+  }
+
+  .nav-menu a::before{
+    width: 3.8rem;
+    height: 3rem;
   }
 
   .search-box input {
@@ -1075,6 +1272,40 @@ body {
     width: 80%;
   }
 
+  /*QUIZ*/
+
+  .content_wrapper {
+    padding: 0 1rem;
+  }
+  .start-btn, .quiz-option {
+    width: 100%;
+    font-size: 3rem;
+  }
+  .content_wrapper h2 {
+    font-size: 2rem;
+  }
+  .content_wrapper p {
+    font-size: 1.25rem;
+  }
+  .option-label {
+    width: 8rem;
+    font-size: 3rem;
+  }
+
+  .option-text{
+    font-size: 1rem;
+  }
+  .correct-quiz,
+  .wrong-quiz {
+    font-size: 9rem;
+  }
+  .round-btn {
+    width: 12rem;
+    height: 4rem;
+  }
+  .round-btn img {
+    width: 3rem;
+  }
 }
 
 /* 480px */
@@ -1128,4 +1359,29 @@ body {
     padding: 1rem;
   }
 
+  /*QUIZ*/
+  .start-btn, .quiz-option {
+    font-size: 2.5rem;
+  }
+  .content_wrapper h2 {
+    font-size: 1.5rem;
+  }
+  .content_wrapper p {
+    font-size: 1rem;
+  }
+  .option-label {
+    width: 6rem;
+    font-size: 2.5rem;
+  }
+  .correct-quiz,
+  .wrong-quiz {
+    font-size: 6rem;
+  }
+  .round-btn {
+    width: 9rem;
+    height: 3rem;
+  }
+  .round-btn img {
+    width: 2rem;
+  }
 }
