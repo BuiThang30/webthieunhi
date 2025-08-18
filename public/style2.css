@@ -668,7 +668,7 @@ th, td {
 .content_wrapper {
   max-width: 95.25rem;
   margin: 0 auto;
-  padding: 0 3.75rem;
+  padding: 0 5%;
   text-align: justify;
   margin-top: 3.125rem;
 }
@@ -820,7 +820,7 @@ th, td {
 }
 
 .explain hr {
-  width: 69.59rem;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -1013,7 +1013,7 @@ th, td {
   }
   /*QUIZ*/
   .content_wrapper {
-      max-width: 85%;
+    max-width: 85%;
   }
   .start-btn,
   .quiz-option {
@@ -1144,7 +1144,7 @@ th, td {
   
   .content_wrapper p,
   .option-text {
-    max-width: 80%;
+    max-width: 100%;
     font-size: 1rem;
     line-height: 1.2;
   }
@@ -1240,9 +1240,6 @@ th, td {
   }
 
   /*QUIZ*/
-  .content_wrapper {
-    padding: 0 1.5rem;
-  }
   
   .hero_quiz {
     height: 60vh;
@@ -1384,7 +1381,6 @@ th, td {
   /*QUIZ*/
 
   .content_wrapper {
-    padding: 0 1rem;
     width: 100%;
   }
   .start-btn, .quiz-option {
