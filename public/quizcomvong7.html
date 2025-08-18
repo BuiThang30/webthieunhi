@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web thieu nhi</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-wrapper">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <div class="nav-menu">
+        <a href="/home">home</a>
+        <a href="/blog" >blog</a>
+        <a href="/home#about">about</a>
+        <a href="/quiz" class="active mr-6">quiz</a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <img src="image/search.svg" alt="Search" class="search-icon">
+        <ul class="suggestions"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero_quiz backgroundquizcomvong">
+  </section>
+
+  <!--Content quiz-->
+  <div class="content_quiz">
+    <div class="content_wrapper">
+      <h2>
+        Price elasticity of demand
+      </h2>
+      <p>
+        To investigate customers’ reaction to an increase in foods’ price, you did a survey on 2000 consumers chosen randomly. The question of the survey is “Would you buy fresh cốm in Mrs. Phuong store if the price is increased by 20%?”. The result shows that 302 people said no and the rest said yes. Should you increase the price?
+      </p>
+      <div class="quiz-row">
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">A.</span>
+            <span class="option-text">No, because the demand for fresh cốm is quite elastic, so an increase in price could cause losses in customers and revenues</span>
+        </button>
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">B.</span>
+            <span class="option-text">Yes, because the demand for fresh cốm is quite inelastic, so an increase in price could make us lose some customers but better off overall</span>
+        </button>
+      </div>
+
+      <div class="quiz-row" style="justify-content: center;">
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">C.</span>
+            <span class="option-text">Yes, because the demand for fresh cốm is very inelastic, so an increase in price could increase revenues by a lot</span>
+        </button>
+         <button class="quiz-option" data-correct="true">
+            <span class="option-label">D.</span>
+            <span class="option-text">No, because your rivals could take advantage of this change to apply promotions on their products</span>
+        </button>
+      </div>
+
+      <div id="answer-section" class="hidden">
+        <div class="explain">
+          <h3><strong>Answer: Point D</strong></h3>
+          <hr>
+          <h4>Explanation:</h4>
+          <p> 
+            The demand is actually quite inelastic, as a 20% increase in price only leads to a 15% decrease in customers. Intuitively, it seems to be quite a good deal to increase the price, but actually, 1.2 x 0.85 = 1.02 - this only results in a 2% increase in total revenues. Moreover, the survey just asks about whether or not they will continue to buy fresh cốm here, without considering the amount or quantity. Finally, competitors could decrease their products’ price to attract our customers during this event. Cumulatively, although economics theories may suggest otherwise, there are a lot of risks in realities where we can not hold ceteris paribus. This wise decision will save you from losing a lot of customers.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button class="round-btn" id="prev-btn">
+          <img src="image/arrow-left.svg" alt="Prev">
+        </button>
+        <button class="round-btn" id="next-btn">
+          <img src="image/arrow-right.svg" alt="Next">
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Newsletter</h2>
+    <div class="divider"></div>
+    <p class="subtext">Enter your Email Address</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="email" placeholder="Enter your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

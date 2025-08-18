@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web thieu nhi</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-wrapper">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <div class="nav-menu">
+        <a href="/home">home</a>
+        <a href="/blog" >blog</a>
+        <a href="/home#about">about</a>
+        <a href="/quiz" class="active mr-6">quiz</a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <img src="image/search.svg" alt="Search" class="search-icon">
+        <ul class="suggestions"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero_quiz">
+  </section>
+
+  <!--Content quiz-->
+  <div class="content_quiz">
+    <div class="content_wrapper">
+      <h2>
+        Free trade and trade protectionism
+      </h2>
+      <p>
+        Little John sources some of his ingredients from international suppliers. Recently, the government introduced a subsidy for local rice producers to make their products cheaper compared to imported rice. This has led to a decrease in the cost of rice used in Little John’s pho.
+      </p>
+      <p>
+      Which of the following best describes the impact of the government’s subsidy on Little John’s business and the broader trade policy?
+      </p>
+      <div class="quiz-row" style=" flex-direction: column;">
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label">A.</span>
+            <span class="option-text">Free Trade - The subsidy on local rice promotes free trade by reducing barriers for Little John by making local products cheaper.</span>
+        </button>
+        <button class="quiz-option" style="width: 100%;" data-correct="true">
+            <span class="option-label">B.</span>
+            <span class="option-text">Trade Protectionism - The subsidy for local rice producers is a form of trade protectionism, designed to support local industries by making domestically produced rice cheaper than imported rice.</span>
+        </button>
+      </div>
+
+      <div class="quiz-row" style=" flex-direction: column;" >
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label" >C.</span>
+            <span class="option-text">Comparative Advantage - The subsidy allows Little John to benefit from comparative advantage by making it cheaper for him to use locally produced rice.</span>
+        </button>
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label">D.</span>
+            <span class="option-text">Absolute Advantage - The subsidy provides Little John with absolute advantage by allowing him to use cheaper local rice compared to imported rice.</span>
+        </button>
+      </div>
+      <div id="answer-section" class="hidden">
+        <div class="explain">
+          <h3><strong>Answer: Point B</strong></h3>
+          <hr>
+          <h4>Explanation:</h4>
+          <ul class="paragraph-list" style="list-style-type: disc;  font-family: 'Helvetica Neue';">
+            <li><p>Free Trade refers to the absence of trade barriers, which is not supported by the subsidy that aims to make local products cheaper and indirectly affects imported goods.</p></li>
+            <li><p>Trade Protectionism involves measures like subsidies that protect local industries from foreign competition by making their products more competitive compared to imports. In this case, the subsidy for local rice producers is intended to reduce the cost of local rice, making it more competitive relative to imported rice.</p></li>
+            <li><p>Comparative Advantage is about the ability to produce goods at a lower opportunity cost, which is not directly influenced by the subsidy but rather by overall cost efficiencies and productivity.</p></li>
+            <li><p>Absolute Advantage refers to the ability to produce more of a good with the same resources, which is not directly related to the effect of a subsidy.</p></li>
+        </ul>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="round-btn" id="prev-btn">
+          <img src="image/arrow-left.svg" alt="Prev">
+        </button>
+        <button class="round-btn" id="next-btn">
+          <img src="image/arrow-right.svg" alt="Next">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Newsletter</h2>
+    <div class="divider"></div>
+    <p class="subtext">Enter your Email Address</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="email" placeholder="Enter your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

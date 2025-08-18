@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web thieu nhi</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-wrapper">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <div class="nav-menu">
+        <a href="/home">home</a>
+        <a href="/blog" >blog</a>
+        <a href="/home#about">about</a>
+        <a href="/quiz" class="active mr-6">quiz</a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <img src="image/search.svg" alt="Search" class="search-icon">
+        <ul class="suggestions"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero_quiz">
+  </section>
+
+  <!--Content quiz-->
+  <div class="content_quiz">
+    <div class="content_wrapper">
+      <h2>
+        Inflation/ Deflation/ Disinflation
+      </h2>
+      <p>
+        Little John owns a pho shop and is reviewing his finances for the year. Last year, the cost of ingredients for making one bowl of pho was $10. This year, the cost has increased to $12 per bowl. The Consumer Price Index (CPI) for this year is 120, while last year's CPI was 100.
+      </p>
+      <p>
+       Using this information, what is the inflation rate for the cost of ingredients in Little John's pho shop?
+      </p>
+      <div class="quiz-row" style=" flex-direction: column;">
+        <button class="quiz-option" style="width: 100%;" data-correct="true">
+            <span class="option-label">A.</span>
+            <span class="option-text"> 20% - The cost of ingredients increased by 20% from last year to this year.</span>
+        </button>
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label">B.</span>
+            <span class="option-text">12% - The inflation rate, based on the change in the Consumer Price Index, is 12%.</span>
+        </button>
+      </div>
+
+      <div class="quiz-row" style=" flex-direction: column;" >
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label" >C.</span>
+            <span class="option-text"> 50% - The cost of ingredients increased by 50% from last year to this year.</span>
+        </button>
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label">D.</span>
+            <span class="option-text">10% - The inflation rate is calculated to be 10% based on the price increase in ingredients.</span>
+        </button>
+      </div>
+      <div id="answer-section" class="hidden">
+        <div class="explain">
+          <h3><strong>Answer: Point A</strong></h3>
+          <hr>
+          <h4>Explanation:</h4>
+          <p>
+            To calculate the inflation rate using the CPI:
+          </p>
+          <ul class="paragraph-list" style="list-style-type: none;  font-family: 'Helvetica Neue';">
+            <li><p>Calculate the percentage increase in CPI:</p> <p>Inflation Rate = (CPI This Year − CPI Last Year ) / CPI Last Year× 100</p></li>
+            <li><p>Substituting the values: <p>Inflation Rate= (120−100)×100 = 20%</p></li>
+            <li><p>This shows the general inflation rate based on the CPI.</p></li>
+        </ul>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="round-btn" id="prev-btn">
+          <img src="image/arrow-left.svg" alt="Prev">
+        </button>
+        <button class="round-btn" id="next-btn">
+          <img src="image/arrow-right.svg" alt="Next">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Newsletter</h2>
+    <div class="divider"></div>
+    <p class="subtext">Enter your Email Address</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="email" placeholder="Enter your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

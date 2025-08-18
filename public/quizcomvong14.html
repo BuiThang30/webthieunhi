@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web thieu nhi</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-wrapper">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <div class="nav-menu">
+        <a href="/home">home</a>
+        <a href="/blog" >blog</a>
+        <a href="/home#about">about</a>
+        <a href="/quiz" class="active mr-6">quiz</a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <img src="image/search.svg" alt="Search" class="search-icon">
+        <ul class="suggestions"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero_quiz backgroundquizcomvong">
+  </section>
+
+  <!--Content quiz-->
+  <div class="content_quiz">
+    <div class="content_wrapper">
+      <h2>
+        Opportunity costs
+      </h2>
+      <p>
+        Who should specialized in producing which products?
+      </p>
+
+      <div class="quiz-row">
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">A.</span>
+            <span class="option-text">Me Tri village should specialized in producing cốm patty, and Mrs. Phuong should specialized in producing cốm sticky rice</span>
+        </button>
+        <button class="quiz-option" data-correct="true">
+            <span class="option-label">B.</span>
+            <span class="option-text">Me Tri village should specialized in producing cốm sticky rice, and Mrs. Phuong should specialized in producing cốm patty</span>
+        </button>
+      </div>
+
+      <div class="quiz-row" style="justify-content: center;">
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">C.</span>
+            <span class="option-text">Me Tri village should specialized in producing both products</span>
+         <button class="quiz-option" data-correct="false">
+            <span class="option-label">D.</span>
+            <span class="option-text">Mrs. Phuong should specialized in producing both products</span>
+        </button>
+      </div>
+
+      <div id="answer-section" class="hidden">
+        <div class="explain">
+          <h3><strong>Answer: Point B</strong></h3>
+          <hr>
+          <h4>Explanation:</h4>
+          <p>
+            Mrs. Phuong and Me Tri village have to forgo 1/4 and 1/2 cốm sticky rice, respectively, to produce a cốm patty, so Mrs. Phuong should specialized in producing cốm patty. Similarly, Mrs. Phuong and Me Tri village have to give up 4 and 2 cốm patties respectively to make a cốm sticky rice, so Me Tri village should specialized in producing sticky rice.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button class="round-btn" id="prev-btn">
+          <img src="image/arrow-left.svg" alt="Prev">
+        </button>
+        <button class="round-btn" id="next-btn">
+          <img src="image/arrow-right.svg" alt="Next">
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Newsletter</h2>
+    <div class="divider"></div>
+    <p class="subtext">Enter your Email Address</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="email" placeholder="Enter your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

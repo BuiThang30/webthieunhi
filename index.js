@@ -9,37 +9,17 @@ app.get('/', (req, res) => {
   res.redirect('/home');
 });
 
-app.get('/home', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'home.html'));
+// Route động cho tất cả các trang
+app.get('/:page', (req, res) => {
+  const page = req.params.page; // lấy tên trang từ URL
+  const filePath = path.join(__dirname, 'public', `${page}.html`);
+  res.sendFile(filePath, (err) => {
+    if (err) {
+      res.status(404).send('Trang không tồn tại');
+    }
+  });
 });
 
-app.get('/blog', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'blog.html'));
-});
-
-app.get('/quiz', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'quiz.html'));
-});
-
-app.get('/blog2', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'blog2.html'));
-});
-
-app.get('/quiz2', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'quiz2.html'));
-});
-app.get('/quiz3', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'quiz3.html'));
-});
-app.get('/quiz4', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'quiz4.html'));
-});
-app.get('/quiz5', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'quiz5.html'));
-});
-app.get('/quiz6', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'quiz6.html'));
-});
-app.listen(PORT, () => {
-  console.log(`Server đang chạy tại http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server đang chạy tại http://172.19.233.236:${PORT}`);
 });

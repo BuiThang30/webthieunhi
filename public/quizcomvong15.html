@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web thieu nhi</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-wrapper">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <div class="nav-menu">
+        <a href="/home">home</a>
+        <a href="/blog" >blog</a>
+        <a href="/home#about">about</a>
+        <a href="/quiz" class="active mr-6">quiz</a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <img src="image/search.svg" alt="Search" class="search-icon">
+        <ul class="suggestions"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero_quiz backgroundquizcomvong">
+  </section>
+
+  <!--Content quiz-->
+  <div class="content_quiz">
+    <div class="content_wrapper">
+      <h2>
+        Opportunity costs
+      </h2>
+      <p>
+        You now have to offer a plausible price for each Me Tri village sticky rice
+      </p>
+
+      <div class="quiz-row">
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">A.</span>
+            <span class="option-text">2 cốm patties</span>
+        </button>
+        <button class="quiz-option" data-correct="true">
+            <span class="option-label">B.</span>
+            <span class="option-text">3 cốm patties</span>
+        </button>
+      </div>
+
+      <div class="quiz-row" style="justify-content: center;">
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">C.</span>
+            <span class="option-text">4 cốm patties</span>
+         <button class="quiz-option" data-correct="false">
+            <span class="option-label">D.</span>
+            <span class="option-text">5 cốm patties</span>
+        </button>
+      </div>
+
+      <div id="answer-section" class="hidden">
+        <div class="explain">
+          <h3><strong>Answer: Point B</strong></h3>
+          <hr>
+          <h4>Explanation:</h4>
+          <p>
+            Ordinarily, Me Tri village can produce 1 sticky rice by giving up 2 cốm patties, so they would only consent to trade 1 sticky rice for more than 2 cốm patties. Meanwhile, Mrs. Phuong can produce a cốm sticky rice by forgoing 4 cốm patties, so she would only buy a cốm sticky rice with a price of less than 4 cốm patties. Therefore, 3 cốm patties for 1 cốm sticky rice is a reasonable deal
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button class="round-btn" id="prev-btn">
+          <img src="image/arrow-left.svg" alt="Prev">
+        </button>
+        <button class="round-btn" id="next-btn">
+          <img src="image/arrow-right.svg" alt="Next">
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Newsletter</h2>
+    <div class="divider"></div>
+    <p class="subtext">Enter your Email Address</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="email" placeholder="Enter your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

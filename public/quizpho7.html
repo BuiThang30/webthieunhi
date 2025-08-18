@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web thieu nhi</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-wrapper">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <div class="nav-menu">
+        <a href="/home">home</a>
+        <a href="/blog" >blog</a>
+        <a href="/home#about">about</a>
+        <a href="/quiz" class="active mr-6">quiz</a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <img src="image/search.svg" alt="Search" class="search-icon">
+        <ul class="suggestions"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero_quiz">
+  </section>
+
+  <!--Content quiz-->
+  <div class="content_quiz">
+    <div class="content_wrapper">
+      <h2>
+        Price Elasticity of Supply
+      </h2>
+      <p>
+        There has been a craze about stone-grilled Chinese sausage going around in Vietnam recently. Everyone is hunting to get a bite of these sausages, and the price for one can get as high as 30000 VND. Little John got wind of this trend and asked you if he should jump on the bandwagon as well - shut down his pho store to invest in grillers.
+      </p>
+      <p>
+       As his economic consultant, would you support him to follow the trend?
+      </p>
+      <div class="quiz-row">
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">A.</span>
+            <span class="option-text">Yes. It’s good to capitalise on the currently high prices.</span>
+        </button>
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">B.</span>
+            <span class="option-text">Yes. Selling sausages is more profitable than selling pho.</span>
+        </button>
+      </div>
+
+      <div class="quiz-row">
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">C.</span>
+            <span class="option-text">No, due to high price elasticity of demand for sausages.</span>
+        </button>
+        <button class="quiz-option" data-correct="true">
+            <span class="option-label">D.</span>
+            <span class="option-text">No, due to the low price elasticity of supply for sausages.</span>
+        </button>
+      </div>
+      <div id="answer-section" class="hidden">
+        <div class="explain">
+          <h3><strong>Answer: Point D</strong></h3>
+          <hr>
+          <h4>Explanation:</h4>
+          <p>
+           Little John’s supply for Chinese sausages is rather price-inelastic, at least in the foreseeable future. The reason is that Little John would have to take great risks and high overheads in shutting down his pho store and investing in brand new grillers. Also, his current factors of production to make pho are also not suitable for grilling sausages, which reduces the mobilisation of resources. These factors contribute to a price-inelastic supply of Chinese sausages, which prevents Little John from gaining huge amounts of revenues in the short run when the trend is still ongoing.
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="round-btn" id="prev-btn">
+          <img src="image/arrow-left.svg" alt="Prev">
+        </button>
+        <button class="round-btn" id="next-btn">
+          <img src="image/arrow-right.svg" alt="Next">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Newsletter</h2>
+    <div class="divider"></div>
+    <p class="subtext">Enter your Email Address</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="email" placeholder="Enter your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

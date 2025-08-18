@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web thieu nhi</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-wrapper">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <div class="nav-menu">
+        <a href="/home">home</a>
+        <a href="/blog" >blog</a>
+        <a href="/home#about">about</a>
+        <a href="/quiz" class="active mr-6">quiz</a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <img src="image/search.svg" alt="Search" class="search-icon">
+        <ul class="suggestions"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero_quiz backgroundquizcomvong">
+  </section>
+
+  <!--Content quiz-->
+  <div class="content_quiz">
+    <div class="content_wrapper">
+      <h2>
+        Elasticity of Supply
+      </h2>
+      <p>
+        The quantity supplied in cốm market increased steadily recently. What could be the causes?
+      </p>
+      <div class="quiz-row">
+        <button class="quiz-option" data-correct="true">
+            <span class="option-label">A.</span>
+            <span class="option-text">The recent volatility in geopolitics leads to an increase in materials needed to manufacture trucks - the main transportation used to distribute cốm</span>
+        </button>
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">B.</span>
+            <span class="option-text">A new tax on cốm is applied on cốm suppliers. As a result, the market price of cốm goes up</span>
+        </button>
+      </div>
+
+      <div class="quiz-row" style="justify-content: center;">
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">C.</span>
+            <span class="option-text">The summer holidays have just ended, most of the tourists had left Hanoi</span>
+        </button>
+         <button class="quiz-option" data-correct="false">
+            <span class="option-label">D.</span>
+            <span class="option-text">A cốm festival has just been held in Ho Chi Minh city, though not so successful due to a heavy rain</span>
+        </button>
+      </div>
+
+      <div id="answer-section" class="hidden">
+        <div class="explain">
+          <h3><strong>Answer: Point A</strong></h3>
+          <hr>
+          <h4>Explanation:</h4>
+          <p> 
+            The increase transporting costs will lead to an increase in cốm's price. This will attract participants to enter the market, especially who have alternatives such as cars or mottorbikes - this could be competitive advantage for them. Hence, it would lead to a rise in supply.
+          </p>
+
+          <p>
+            The net receiver of the tax is the government, neither the supplier nor the customer. Suppose the tax is 1$, the initial price is 10$. After the implementation of the tax, there are two possible scenarios. Firstly, suppliers decided to put all the tax on customers, so the price will go up to 11$; the receiver of the 1$ difference is the government, suppliers still receive the initial 10$, but customers lost 1$, so not only the supply remains unchanged, but also the demand decreases. The second scenario is suppliers put part of the tax on themselves, suppose 50%; then the price for customers is 10.5$, but for suppliers, it’s just 9.5$ - still a loss. 
+          </p>
+
+          <p>
+            This will reduce the amount of customers and the demand in general - no incentive to increase the supply
+          <p>
+            This may increase the quantity demanded by a slight amount, but since the supply is inelastic, as we have discussed before, that change would not really affect the quantity supplied.
+          </p>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button class="round-btn" id="prev-btn">
+          <img src="image/arrow-left.svg" alt="Prev">
+        </button>
+        <button class="round-btn" id="next-btn">
+          <img src="image/arrow-right.svg" alt="Next">
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Newsletter</h2>
+    <div class="divider"></div>
+    <p class="subtext">Enter your Email Address</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="email" placeholder="Enter your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

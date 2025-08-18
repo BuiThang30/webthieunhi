@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web thieu nhi</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-wrapper">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <div class="nav-menu">
+        <a href="/home">home</a>
+        <a href="/blog" >blog</a>
+        <a href="/home#about">about</a>
+        <a href="/quiz" class="active mr-6">quiz</a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <img src="image/search.svg" alt="Search" class="search-icon">
+        <ul class="suggestions"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero_quiz">
+  </section>
+
+  <!--Content quiz-->
+  <div class="content_quiz">
+    <div class="content_wrapper">
+      <h2>
+        Aggregate Demand
+      </h2>
+      <p>
+        Over the past few months, Little John has observed the following economic changes:
+      <ul class="paragraph-list" style="list-style-type: decimal;  font-family: 'Helvetica Neue';">
+        <li><p>The local government has recently increased its spending on infrastructure projects, leading to higher local employment and increased disposable income among residents.</p></li>
+        <li><p>There has been a noticeable rise in consumer confidence, which has encouraged residents to spend more on dining out. Little John notices this due to the sustained high revenues at his pho shop.</p></li>
+        <li><p>Concurrently, there has been a slight increase in interest rates set by the central bank to combat potential inflation.</p></li>
+      </ul>
+      <p>
+        Considering these economic changes, which of the following statements accurately reflects the likely impact on aggregate demand for the local economy, and potentially Little John’s pho shop?
+      </p>
+      <div class="quiz-row" style=" flex-direction: column;">
+        <button class="quiz-option" style="width: 100%;" data-correct="true">
+            <span class="option-label">A.</span>
+            <span class="option-text">Aggregate Demand is likely to increase - Increased government spending and higher consumer confidence are expected to boost aggregate demand, while the rise in interest rates may partially offset this increase.</span>
+        </button>
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label">B.</span>
+            <span class="option-text">Aggregate Demand is likely to decrease - The increase in government spending and consumer confidence will be more than offset by the impact of higher interest rates on disposable income and spending.</span>
+        </button>
+      </div>
+
+      <div class="quiz-row" style=" flex-direction: column;" >
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label" >C.</span>
+            <span class="option-text"> Aggregate Demand is likely to remain unchanged - The combined effects of increased government spending, higher consumer confidence, and increased interest rates will balance each other out, leaving aggregate demand unchanged.</span>
+        </button>
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label">D.</span>
+            <span class="option-text">Aggregate Demand is likely to increase significantly - Higher government spending and increased consumer confidence will lead to a large increase in aggregate demand, while the increase in interest rates will have no significant impact.</span>
+        </button>
+      </div>
+      <div id="answer-section" class="hidden">
+        <div class="explain">
+          <h3><strong>Answer: Point A</strong></h3>
+          <hr>
+          <h4>Explanation:</h4>
+          <ul class="paragraph-list" style="list-style-type: disc;  font-family: 'Helvetica Neue';">
+            <li><p>Aggregate Demand refers to the total demand for goods and services within an economy. Increased government spending and higher consumer confidence both contribute positively to aggregate demand by increasing overall spending.</p></li>
+            <li><p>The rise in interest rates can dampen aggregate demand to some extent, as higher interest rates generally lead to higher borrowing costs, which can reduce consumer spending and investment. However, the impact of increased government spending and consumer confidence is likely to be significant enough to still result in a net increase in aggregate demand, although it may not be as large as it would be without the interest rate increase.</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="round-btn" id="prev-btn">
+          <img src="image/arrow-left.svg" alt="Prev">
+        </button>
+        <button class="round-btn" id="next-btn">
+          <img src="image/arrow-right.svg" alt="Next">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Newsletter</h2>
+    <div class="divider"></div>
+    <p class="subtext">Enter your Email Address</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="email" placeholder="Enter your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

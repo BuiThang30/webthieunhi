@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web thieu nhi</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-wrapper">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <div class="nav-menu">
+        <a href="/home">home</a>
+        <a href="/blog" >blog</a>
+        <a href="/home#about">about</a>
+        <a href="/quiz" class="active mr-6">quiz</a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <img src="image/search.svg" alt="Search" class="search-icon">
+        <ul class="suggestions"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero_quiz">
+  </section>
+
+  <!--Content quiz-->
+  <div class="content_quiz">
+    <div class="content_wrapper">
+      <h2>
+         Aggregate Supply
+      </h2>
+      <p>
+        Little John has recently encountered the following changes:
+      <ul class="paragraph-list" style="list-style-type: decimal;  font-family: 'Helvetica Neue';">
+        <li><p>The farms he sourced his ingredient from implemented advanced inventory management software, which reduces waste and improves supply chain efficiency.</p></li>
+        <li><p>A sudden increase in the price of raw materials, such as meat and vegetables, has raised his production costs.</p></li>
+      </ul>
+      <p>
+        Which aspects of aggregate supply are most directly impacted by these changes?
+      </p>
+      <div class="quiz-row" style=" flex-direction: column;">
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label">A.</span>
+            <span class="option-text">Short-Run Aggregate Supply (SRAS) - The improvement in inventory management reduces costs and waste in the short run, while the increase in raw material prices raises production costs, which may decrease SRAS.</span>
+        </button>
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label">B.</span>
+            <span class="option-text">Long-Run Aggregate Supply (LRAS) - The changes in inventory management and raw material prices primarily affect short-term production but do not significantly alter the economy’s long-run productive capacity.</span>
+        </button>
+      </div>
+
+      <div class="quiz-row" style=" flex-direction: column;" >
+        <button class="quiz-option" style="width: 100%;" data-correct="true">
+            <span class="option-label" >C.</span>
+            <span class="option-text"> Both Long-Run Aggregate Supply (LRAS) and Short-Run Aggregate Supply (SRAS) - The improvement in inventory management increase the production capability of John’s shop in the long run, but the increasing price of ingredients decrease his short run production capabilities.</span>
+        </button>
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label">D.</span>
+            <span class="option-text">Natural Rate of Output - The impact on the natural rate of output is minimal as it is not directly affected by short-term efficiency improvements or fluctuations in raw material costs.</span>
+        </button>
+      </div>
+      <div id="answer-section" class="hidden">
+        <div class="explain">
+          <h3><strong>Answer: Point C</strong></h3>
+          <hr>
+          <h4>Explanation:</h4>
+          <ul class="paragraph-list" style="list-style-type: disc;  font-family: 'Helvetica Neue';">
+            <li><p>Short-Run Aggregate Supply (SRAS) represents the total quantity of goods and services that firms are willing to produce at different price levels in the short run. The increase in raw material prices raises production costs, which may decrease SRAS.</p></li>
+            <li><p>Long-Run Aggregate Supply (LRAS) is concerned with the economy’s total productive capacity in the long run and is influenced by factors such as technology, labour, and capital rather than short-term changes. As John’s software is a form of technological improvement, it may increase LRAS</p></li>
+            <li><p>Natural Rate of Output refers to the economy’s sustainable level of output in the long run, which is less affected by short-term changes in production costs or efficiency.</p></li>
+        </ul>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="round-btn" id="prev-btn">
+          <img src="image/arrow-left.svg" alt="Prev">
+        </button>
+        <button class="round-btn" id="next-btn">
+          <img src="image/arrow-right.svg" alt="Next">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Newsletter</h2>
+    <div class="divider"></div>
+    <p class="subtext">Enter your Email Address</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="email" placeholder="Enter your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web thieu nhi</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-wrapper">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <div class="nav-menu">
+        <a href="/home">home</a>
+        <a href="/blog" >blog</a>
+        <a href="/home#about">about</a>
+        <a href="/quiz" class="active mr-6">quiz</a>
+      </div>
+
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <img src="image/search.svg" alt="Search" class="search-icon">
+        <ul class="suggestions"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero_quiz">
+  </section>
+
+  <!--Content quiz-->
+  <div class="content_quiz">
+    <div class="content_wrapper">
+      <h2>
+        Demand
+      </h2>
+      <p>
+        These customers come to your store:
+      </p>
+
+      <ul class="paragraph-list" style="list-style-type: upper-roman;  font-family: 'Helvetica Neue';">
+        <li><p>Customer A is craving for a bowl of pho but does not bring any money to buy.</p></li>
+        <li><p>Customer B brings some money, but upon looking at the menu, he does not want to have a bowl.</p></li>
+        <li><p>Customer C goes right in, orders a bowl of pho and pays you.</p></li>
+      </ul>
+      <p>
+        Which customers construct the demand for Little John’s store?
+      </p>
+      <div class="quiz-row">
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">A.</span>
+            <span class="option-text">Customer A</span>
+        </button>
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">B.</span>
+            <span class="option-text">Customer B</span>
+        </button>
+      </div>
+
+      <div class="quiz-row">
+        <button class="quiz-option" data-correct="true">
+            <span class="option-label">C.</span>
+            <span class="option-text">Customer C</span>
+        </button>
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">D.</span>
+            <span class="option-text">Customers A, B, and C</span>
+        </button>
+      </div>
+      <div id="answer-section" class="hidden">
+        <div class="explain">
+          <h3><strong>Answer: Point C</strong></h3>
+          <hr>
+          <h4>Explanation:</h4>
+          <p>
+            The demand for a good is constructed when consumers both can and want to buy the good on offer. Customer A wants pho but cannot buy it without any money. Customer B has the money, but he doesn’t want to eat pho. Only customer C has the money to buy pho and indeed wants a bowl of pho.
+          </p>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="round-btn" id="prev-btn">
+          <img src="image/arrow-left.svg" alt="Prev">
+        </button>
+        <button class="round-btn" id="next-btn">
+          <img src="image/arrow-right.svg" alt="Next">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Newsletter</h2>
+    <div class="divider"></div>
+    <p class="subtext">Enter your Email Address</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="email" placeholder="Enter your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web thieu nhi</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-wrapper">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <div class="nav-menu">
+        <a href="/home">home</a>
+        <a href="/blog" >blog</a>
+        <a href="/home#about">about</a>
+        <a href="/quiz" class="active mr-6">quiz</a>
+      </div>
+
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <img src="image/search.svg" alt="Search" class="search-icon">
+        <ul class="suggestions"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero_quiz">
+  </section>
+
+  <!--Content quiz-->
+  <div class="content_quiz">
+    <div class="content_wrapper">
+      <h2>
+        Price Elasticity of Demand
+      </h2>
+      <p>
+        The current average price of a bowl of pho in Hanoi is 35000 VND today. Little John did some cost analysis and found out that it cost him around 25000 VND to make a bowl of pho, which means he can actually decrease the price a little without going bankrupt. The thing is: “Should he do so?” In a recent survey conducted in his store, Little John found out that people think his pho is of average quality, which can be found in other restaurants as well. The main reason they stop at his vendor is because of convenience, that is, they just happen to be there.
+      </p>
+      <p>
+        So should Little John decrease the price of his pho?
+      </p>
+      <div class="quiz-row">
+        <button class="quiz-option" data-correct="true">
+            <span class="option-label">A.</span>
+            <span class="option-text">YES</span>
+        </button>
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">B.</span>
+            <span class="option-text">Nahhh</span>
+        </button>
+      </div>
+
+      <div id="answer-section" class="hidden">
+        <div class="explain">
+          <h3><strong>Answer: Point A</strong></h3>
+          <hr>
+          <h4>Explanation:</h4>
+          <p>
+            From the information, it can be deduced that Little John’s pho has a lot of close substitutes, which are pho from other restaurants. Hence, the price elasticity of the demand for his pho is rather price-elastic. A decrease in price will actually lead to a more than proportionate increase in quantity demand, and the loss in revenues due to lower price is more than compensated for by the greater gain in revenues due to more pho sold every day.
+            <span style="font-style: italic;">
+              A note to be taken, tho, is that higher revenues does not equate high profits. A store might make more revenues and capture a larger market share, yet at the expense of their profits.
+            </span>
+          </p>
+
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button class="round-btn" id="prev-btn">
+          <img src="image/arrow-left.svg" alt="Prev">
+        </button>
+        <button class="round-btn" id="next-btn">
+          <img src="image/arrow-right.svg" alt="Next">
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Newsletter</h2>
+    <div class="divider"></div>
+    <p class="subtext">Enter your Email Address</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="email" placeholder="Enter your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

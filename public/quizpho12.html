@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web thieu nhi</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-wrapper">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <div class="nav-menu">
+        <a href="/home">home</a>
+        <a href="/blog" >blog</a>
+        <a href="/home#about">about</a>
+        <a href="/quiz" class="active mr-6">quiz</a>
+      </div>
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <img src="image/search.svg" alt="Search" class="search-icon">
+        <ul class="suggestions"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero_quiz">
+  </section>
+
+  <!--Content quiz-->
+  <div class="content_quiz">
+    <div class="content_wrapper">
+      <h2>
+        Absolute advantage and comparative advantage
+      </h2>
+      <p>
+        Little John is considering expanding his menu to include both pho and other Vietnamese dishes. John can prepare 100 bowls of pho or 50 spring rolls in a day. His neighbour, Linh, has a different skill set and can prepare 80 bowls of pho or 60 spring rolls in a day.
+      </p>
+      <p>
+      Which of the following statements correctly describes the absolute and comparative advantages between Little John and Linh in producing pho and spring rolls?
+      </p>
+      <div class="quiz-row" style=" flex-direction: column;">
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label">A.</span>
+            <span class="option-text">John has an absolute advantage in preparing both pho and spring rolls. Linh has a comparative advantage in preparing pho.</span>
+        </button>
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label">B.</span>
+            <span class="option-text">Linh has an absolute advantage in preparing both pho and spring rolls. John has a comparative advantage in preparing pho.</span>
+        </button>
+      </div>
+
+      <div class="quiz-row" style=" flex-direction: column;" >
+        <button class="quiz-option" style="width: 100%;" data-correct="true">
+            <span class="option-label" >C.</span>
+            <span class="option-text">John has a comparative advantage in preparing pho, and Linh has a comparative advantage in preparing spring rolls.</span>
+        </button>
+        <button class="quiz-option" style="width: 100%;" data-correct="false">
+            <span class="option-label">D.</span>
+            <span class="option-text">John has a comparative advantage in preparing spring rolls, and Linh has a comparative advantage in preparing pho.</span>
+        </button>
+      </div>
+      <div id="answer-section" class="hidden">
+        <div class="explain">
+          <h3><strong>Answer: Point C</strong></h3>
+          <hr>
+          <h4>Explanation:</h4>
+          <ul class="paragraph-list" style="list-style-type: disc;  font-family: 'Helvetica Neue';">
+            <li><p>Absolute Advantage is when one producer can make more of a good or service with the same resources compared to another producer. Linh has an absolute advantage in both pho and spring rolls because she can produce more of both with the same resources than Minh.</p></li>
+            <li><p class="pb-30">Comparative Advantage is determined by comparing opportunity costs. For Little John:
+              <ul class="paragraph-list" style="list-style-type: circle;">
+                <li><p>The opportunity cost of making 1 bowl of pho is 0.5 spring rolls (50 spring rolls / 100 bowls of pho).</p></li>
+                <li><p>The opportunity cost of making 1 spring roll is 2 bowls of pho (100 bowls of pho / 50 spring rolls).</p></li>
+              </ul>
+            </p></li>
+            <li><p class="pb-30">For Linh:
+              <ul class="paragraph-list" style="list-style-type: circle;">
+                <li><p>The opportunity cost of making 1 bowl of pho is 0.75 spring rolls (60 spring rolls / 80 bowls of pho).</p></li>
+                <li><p>The opportunity cost of making 1 spring roll is 1.33 bowls of pho (80 bowls of pho / 60 spring rolls).</p></li>
+              </ul>
+            </p></li>
+            <li><p>Since John has a lower opportunity cost for producing pho (0.5 spring rolls vs. Linh's 0.75 spring rolls), he has a comparative advantage in making pho. Similarly, Linh has a lower opportunity cost for making spring rolls compared to John, so Linh has a comparative advantage in making spring rolls.</p></li>
+            <li><p>Note that absolute advantage is simply a subset of comparative advantage. Thus, you can describe all cases in terms of comparative advantage without getting it wrong.</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="round-btn" id="prev-btn">
+          <img src="image/arrow-left.svg" alt="Prev">
+        </button>
+        <button class="round-btn" id="next-btn">
+          <img src="image/arrow-right.svg" alt="Next">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Newsletter</h2>
+    <div class="divider"></div>
+    <p class="subtext">Enter your Email Address</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="email" placeholder="Enter your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

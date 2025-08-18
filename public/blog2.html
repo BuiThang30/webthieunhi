@@ -10,6 +10,7 @@
   <!-- Navbar -->
   <div class="navbar">
     <div class="nav-wrapper">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
       <div class="nav-menu">
         <a href="/home">home</a>
         <a href="/blog" class="active">blog</a>
@@ -18,8 +19,9 @@
       </div>
 
       <div class="search-box">
-        <input type="text" placeholder="Search">
+        <input type="text" class="search-input" placeholder="Search">
         <img src="image/search.svg" alt="Search" class="search-icon">
+        <ul class="suggestions"></ul>
       </div>
     </div>
   </div>
@@ -28,233 +30,287 @@
   <section class="hero_blog"> </section>
 
   <!--content-->
-  <div class="slider-container">
+  <!--CHỮ-->
+  <div id="slider-text" class="slider-container">
     <div class="slider-wrapper">
       <div class="slide active">
         <div class="container-blog2">
-          <h1 class="title-blog2">Changing demand</h1>
-          <h2 class="subtitle-blog2">How do you come to want less or more of something?</h2>
+          <h1 class="title-blog2 pb-30">But what is Economics?</h1>
           <hr class="divider-blog2" />
           <div class="content-blog2">
             <p>
-                In <a href="#">Part 1</a>, we have explored how the demand for a certain good is conceived, 
-                and see how the quantity demanded of a good (in our case, breadsticks!) can be affected by changing prices. 
-                Now, what if I say that even when the price of breadsticks doesn’t change, demand can still change. 
-                This is equivalent to saying that “Well even though the breadsticks are just as cheap and good, 
-                you may still want less of them.” So how does this happen? Economists offer us 5 main factors 
-                affecting the demand for a good/service.
+              You are given a limited amount of money each month, let's say 2,000,000 VND. You need to allocate this money between your expenses like breakfast, lunch, snacks, transportation, and entertaining activities.
             </p>
 
             <p>
-                First, let’s come back to our breadstick lady and look at you! A consumer in the market of breadsticks! 
-                A loyal customer of your favorite bread lady!
+              With a scarce amount of money, you can't afford everything you desire with your limited income. "What are you gonna do with 2,000,000VND? A hearty breakfast? A palatable lunch? A movie hangout with your beloved friends? Well the list goes on, but with only 2,000,000VND, you cannot choose everything. In economics, this is scarcity, where people have unlimited needs and wants but only limited resources''
             </p>
 
             <p>
-                Have you ever woken up in the morning and felt like eating something else for breakfast? 
-                Somehow on this kind of morning the breadsticks are so oily, salty and fatty because you have 
-                been munching these sticks for several days in a row. Sick of the pate and the bread, you make your 
-                way to the soy milk auntie next to your bread lady and just drink a cup of soy milk for the day 
-                (Of course, you will feel so guilty as if you’re cheating on your favorite bread lady). 
-                In this case, whatever the prices of the bread, 2,000VND, 10,000VND or 50,000VND, 
-                you would still prefer a cup of soy milk and would buy less bread. 
-                Economists say that “Your demand for breadsticks has decreased due to changing tastes and preferences”, 
-                because at every price, you don’t prefer bread as much and would not buy as many breadsticks as you used to.
+              In the realm of Economics, we delve into how individuals, institutions, and society make choices in the face of scarcity and how those choices motivate behavior.
             </p>
 
             <p>
-                Now, let’s imagine another situation: 
-                You have been very distracting in class, your teacher has called your parents, and your mom decided to impose sanctions by cutting your breakfast allowance by 50%. 
-                This is similar to having a cut in your income. 
-                And this is kinda obvious, isn’t it? If you have less money to spend, of course you won’t buy as many breadsticks. 
-                If not then how are you gonna settle for your lunch? In this case, economists say that “Your demand for breadsticks has decreased due to decreasing income”.
-            </p>
-                
+              This month, your favorite singer released a new physical album. You're a music enthusiast who loves the experience of owning a physical album. When you unwrap the album, feel the cover, and look through the booklet with artwork and lyrics, you're engaging multiple senses. This not only makes you appreciate the music more but also creates lasting memories connected to the artist and their work. However, with limited resources like money or allowances, you have to make choices about what brings you the most satisfaction. For you, the joy of owning and experiencing a physical album might outweigh the convenience of using a ride-hailing service like Grab or Be. You choose to prioritize what makes you truly happy. Therefore, you choose to explore transportation options like public transportation like BRT instead of GRAB or BE drivers to reduce costs and free up funds for your desired purchase.
             <p>
-                Oh wait! Your income drops, but there’s a pho stall just opened near your school and they are having a 50% grand opening discount. Great! This means you can enjoy a hearty bowl of pho in the morning, and still have some money to spare for lunch and dinner. How about the bread lady? Oops, probably she’d have to wait till your mom’s sanctions are lifted, or the pho stall ends their discount. In Economics, pho and breadsticks here are called substitutes because they cater for the same need: breakfast! And you have seen it, the price of pho - a substitute for breadsticks - can affect the demand for breadsticks themselves. Economists say that “Your demand for breadsticks has decreased due to changing prices of substitutes”
+              In this scenario, Microeconomics comes into play as you make decisions about how to allocate your limited budget among various goods and services.
             </p>
 
             <p>
-                Alright now that’s 3 factors. There’s one more, just as important: Your expectations of the prices of breadsticks. Remember that MASSIVE drop in prices of pork in Hanoi two years ago? Think about it, pate is mainly made of pork, so if pork price drops, breadstick sellers will likely lower their prices to attract customers while still retaining some profits. Knowing this, you decide to hold back your spending on breadsticks so enjoy the cheap prices in the future. In such cases, economists say that “Your demand for breadsticks has decreased because your expectations of future prices change”.
+              Microeconomics deals with resource allocation on a (well you nail it) small scale, examining how individuals make choices to maximize their utility or satisfaction given their limited resources and the prices of goods and services in the market. It delves into topics such as consumer behavior, production decisions by firms, and market interactions, all of which influence how resources are allocated within the economy.
             </p>
 
             <p>
-                Cool! Now that we have looked at you as an individual breadstick consumer. Let us now scale up and consider thousands of such consumers around Hanoi. While most factors will have the same effects as above, there is one more very easy, yet so important, factor: The number of people who eat breadsticks for breakfast! Well, if there are more people who want breadsticks for breakfast, more breadsticks are sold regardless of the prices, and the demand for breadsticks will increase. Duh! Obvious right? Economists therefore say that “The demand for breadsticks increased due to increase in population (here the number of people who enjoy breadsticks for breakfast)”.
+              When many individuals like you make similar decisions to allocate their limited resources toward certain products or services, the impact of each of our decisions accumulates to affect the overall demand in different sectors. If many consumers prioritize buying physical albums over dining out or other entertainment options, this can decrease consumer spending in those other sectors. This shift in spending patterns can have ripple effects throughout the economy: restaurants might experience a decline in revenue, leading them to reduce their workforce or cut back on hours; movie theaters might see fewer ticket sales, affecting their profitability and potentially leading to closures or layoffs. On the other hand, the music industry might see a boost, leading to increased production, more jobs, and possibly higher wages for those involved in producing and selling physical albums.
             </p>
 
             <p>
-                Oh, and in case you wonder how we visually represent this increase/ decrease in demand of the whole market, we move the entire demand curve right and left, respectively. As you can see in the diagram below, when the demand curve is to the right, more breadsticks are demanded at every price, reflecting the nature of increasing demand as we discussed above. The same applies a leftward shift indicating a drop in demand.:
+              As its name suggests, MACROeconomics deals with something big. While microeconomics focuses on something small like... you - a consumer in a large economy - MACROeconomics looks at the entire economy as a whole. Just imagine hundreds of thousands of consumers and businesses in an economy interacting and affecting one another. Studying the causes, consequences, and policies for such interactions is the main interest of macroeconomics.
             </p>
+
+            <p>
+              Through our series of blog posts, we will bring you through the canonical in both micro and macroeconomics, but of course not in the yapping, listing style found in many textbooks. We shall explore the economics that lurks around us in our everyday activities! If you have been hooked, click on any of the posts below to start the journey.
+            </p>
+
           </div>
           <hr class="divider-blog2 pb-120"/>
-          
-          <div class="row bottom-row pb-30">
-            <div class="card-bottom">
-              <a href="/blog?slide=1">
-                <img src="image/test.jpg" class="thumb small" />
-              </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
-            </div>
-            <div class="card-bottom">
-              <a href="/blog?slide=1">
-                <img src="image/test.jpg" class="thumb small" />
-              </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
-            </div>
-            <div class="card-bottom">
-              <a href="/blog?slide=1">
-                <img src="image/test.jpg" class="thumb small" />
-              </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
-            </div>
-          </div>
         </div>
       </div>
 
       <!--Slide 2-->
       <div class="slide">
-        <div class="container-blog2">
-          <h1 class="title-blog2">Changing demand</h1>
-          <h2 class="subtitle-blog2">How do you come to want less or more of something?</h2>
+        <div class="container-blog2" data-title="But what is economics?">
+          <h1 class="title-blog2 pb-30">But what is a market?</h1>
           <hr class="divider-blog2" />
           <div class="content-blog2">
             <p>
-              In <a href="#">Part 1</a>, we have explored how the demand for a certain good is conceived, 
-              and see how the quantity demanded of a good (in our case, breadsticks!) can be affected by changing prices. 
-              Now, what if I say that even when the price of breadsticks doesn’t change, demand can still change. 
-              This is equivalent to saying that “Well even though the breadsticks are just as cheap and good, 
-              you may still want less of them.” So how does this happen? Economists offer us 5 main factors 
-              affecting the demand for a good/service.
+              When you see the term “market”, as a Vietnamese I bet this image will pop up in your mind: A vibrant, cacophonic (sometimes), bustling area with aunties sitting on plastic tools selling hundreds of types of produce.
             </p>
+            
+            <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+              <img src="image/ndslide2.jpg" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+            </div>
+            
+            <p>
+              Well, yes. This is a market indeed, even in the context of Economics. But when an economist mentions “market”, they mean something broader and more general
+            </p>
+            
+            <p>
+              A market is where buyers and sellers meet up to exchange goods/ services, the price and quantity of which are determined by demand and supply.
+            </p>
+            
+            <p>
+              So if you think about it, the traditional Vietnamese market is indeed a market, because that’s where buyers (say, your mom) meet up with sellers (the aunties) to purchase goods or services (meat, vegetables, etc.). And based on the way you define a “market”, there can be multiple markets within a single traditional Vietnamese market: the market of meat, the market of vegetables, or even the markets of something specific like egg or bean sprouts.
+            </p>
+            
+            <p>
+              Now, the next question curious souls love to ask is: “Are these markets the same?”
+            </p>
+
+            <p>
+              In finding the answer to this question, let us examine the different types of market that economists have conceptualized over hundreds of years.
+            </p>
+
+            <p>
+              First, let’s go to your nearest market and look at the stalls selling pork. If you take a walk throughout the entire market, you would find that there is little, if not zero, difference in the products sold by these stalls: Spare ribs? Loin? Legs? Belly? And the prices offered by the stalls are more or less equal as well, which is actually quite reasonable. Imagine if a stall offers you a much higher price compared to the rest, then obviously you will walk to the next stall to purchase your pork, right? Okay, let’s not talk about bargaining first and assume that you have perfect information - that is, you know every single pork auntie in the market and the price they sell their pork at. Finally, what if one day you want to sell pork at such a market? Well, just grab a table, buy some pork and go sell it - not much of a barrier is it? Well, these features are characteristic of a perfect competition market, or at least one that approaches perfect competition
+            </p>
+
+            <p style="margin-bottom: 0.8rem;">
+              In a perfect competition market,
+            </p>
+            
+            <ul class="paragraph-list">
+              <li style="margin-bottom: 0.8rem;"><p>There are many, many producers</p></li>
+              <li style="margin-bottom: 0.8rem;"><p>Producers sell identical goods and services</p></li>
+              <li style="margin-bottom: 0.8rem;"><p>Producers cannot adjust the prices themselves</p></li>
+              <li style="margin-bottom: 0.8rem;"><p>One cannot easily enter the market to sell goods without much barrier</p></li>
+              <li><p>Consumers have perfect information, that is, they know every single producer.</p></li>
+            </ul>
+
+            <p>
+              You may say that this is so unrealistic. And yes! It never occurs in reality. So now, to upgrade our market, let’s look at some of the more realistic market structures.
+            </p>
+
+            <p>
+              Okay, let’s add some spice to our pork market above. Let us consider stuff that is closer to our real world. The stalls might offer the same parts of a pig, but is the quality the same? The answer is obviously no. Some stalls will have fresher meat, while others offer leaner, less fatty meat. We can say that although the products - pork - are similar, they are differentiated. And this is where the bargaining steps in - stall owners might argue that their pork is fresher or of better quality than others, so they are justified to sell it at a higher price, and you as a buyer will decide whether to buy from them or not. Now, it might be more difficult for new sellers to enter the market, since they might not know the sources of fresh, high-quality pork. But still, if they really want it, they can just set up their own stall. This is a monopolistic competition market, and it is more realistic than a perfect competition one.
+            </p>
+
+            <p style="margin-bottom: 0.8rem;">
+              In a monopolistic competition market,
+            </p>
+
+            <ul class="paragraph-list">
+              <li style="margin-bottom: 0.8rem;"><p>Welp, there are still many, many producers</p></li>
+              <li style="margin-bottom: 0.8rem;"><p>Producers sell similar but differentiated goods and services</p></li>
+              <li style="margin-bottom: 0.8rem;"><p>Producers can adjust the price a bit based their products’ quality, i.e. they have a bit of market power</p></li>
+              <li><p>There are a few barriers to entering the market as a seller, but it is still easy.</p></li>
+            </ul>
+            
+            <p>
+              Alright, too much protein! Let’s look at another product: kohlrabi in a summer market (kohlrabi only grows during winter, for your information). Selling a product that is not in season can set a few producers out from the rest of the market, simply because others do not have the same products. Let’s say it’s the first day of lunar May, and families are scrambling around, finding kohlrabi to make spring rolls. And where do they find kohlrabi? They go to the few stalls that sell kohlrabi to buy it. These stalls, capitalizing on the few number of sellers, might increase their prices above normal to reap higher profits. And if you want to join these kohlrabi sellers to earn money also, you need to find a kohlrabi supplier, which is not in season, making it very difficult to join the market. Such a market as this kohlrabi market is called an oligopolistic market.
+            </p>
+
+            <p style="margin-bottom: 0.8rem;">
+              In an oligopolistic market,
+            </p>
+
+            <ul class="paragraph-list">
+              <li style="margin-bottom: 0.8rem;"><p>There are a few number of producers</p></li>
+              <li style="margin-bottom: 0.8rem;"><p>These producers sell similar but differentiated goods and services</p></li>
+              <li style="margin-bottom: 0.8rem;"><p>These producers have great market power due to the few number of competitors, allowing them to adjust the prices more comfortably</p></li>
+              <li><p>It is relatively difficult to join the market as a seller</p></li>
+            </ul>
+
+            <p>
+              Finally, let’s talk about a monopoly market - a market where there is only one prevalent seller. At times, you might find fresh ginseng sold at the traditional market. And ginseng is very rare, so usually only one stall happens to have it on offer. Ginseng is therefore unique and with no substitutes available. And let me ask you, if you were that lucky ginseng seller, what would you do? If it were me, I would certainly raise my price to earn more money, since there is no one else offering the same products, and buyers are forced to purchase ginseng from me. You might argue that this can be unethical, because what if that ginseng is used to treat some patients? Exactly, unfairness and anti-competitive behavior are issues with monopolies that have long been looked at. And needless to say, it is even more challenging to find that fresh ginseng and open up another stall at the market.
+            </p>
+
+            <p style="margin-bottom: 0.8rem;">
+              In a monopoly market,
+            </p>
+            
+            <ul class="paragraph-list">
+              <li style="margin-bottom: 0.8rem;"><p>There is only one producer</p></li>
+              <li style="margin-bottom: 0.8rem;"><p>This producer sells a unique good or service without any close substitutes</p></li>
+              <li style="margin-bottom: 0.8rem;"><p>Out of all markets, a monopoly has the greatest market power. It can easily adjust prices to earn more profits.</p></li>
+              <li style="margin-bottom: 0.8rem;"><p>This great market power might lead to unfair behaviors, harming consumers.</p></li>
+              <li><p>It is challenging to enter a monopoly market due to great barriers to entry.</p></li>
+            </ul>
+
+            <p>
+              Alright, now that’s all types of market structures that you need to know. Hope it helps!
+            </p>
+
           </div>
           <hr class="divider-blog2 pb-120"/>
-          
-          <div class="row bottom-row pb-30">
-            <div class="card-bottom">
-              <a href="/blog?slide=2">
-                <img src="image/test1.jpg" class="thumb small" />
-              </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
-            </div>
-            <div class="card-bottom">
-              <a href="/blog?slide=2">
-                <img src="image/test1.jpg" class="thumb small" />
-              </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
-            </div>
-            <div class="card-bottom">
-              <a href="/blog?slide=2">
-                <img src="image/test1.jpg" class="thumb small" />
-              </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
-            </div>
-          </div>
         </div>
       </div>
 
       <!--Slide 3-->
       <div class="slide">
         <div class="container-blog2">
-          <h1 class="title-blog2">Changing demand</h1>
-          <h2 class="subtitle-blog2">How do you come to want less or more of something?</h2>
+          <h1 class="title-blog2 pb-30">The economics of midnight studying</h1>
           <hr class="divider-blog2" />
           <div class="content-blog2">
             <p>
-              In <a href="#">Part 1</a>, we have explored how the demand for a certain good is conceived, 
-              and see how the quantity demanded of a good (in our case, breadsticks!) can be affected by changing prices. 
-              Now, what if I say that even when the price of breadsticks doesn’t change, demand can still change. 
-              This is equivalent to saying that “Well even though the breadsticks are just as cheap and good, 
-              you may still want less of them.” So how does this happen? Economists offer us 5 main factors 
-              affecting the demand for a good/service.
+              You wake up. Drenched in sweat, you grab your phone, which has only 10% battery left, lying amid the messy pile of books and papers. "Oh no, it's already 4:30?!" You realize you fell asleep right before the final exam, despite promising yourself you would pull an all-nighter to study. You scold yourself for being so careless, but that doesn't matter anymore, because in just 3 hours, the bell signaling the start of the math and English exams will ring, marking the end of your student life. Panicked, you hastily flip through the pages of your notes. The integration equations, the complex sentence structures... you realize there's no way you can review both subjects thoroughly to get perfect scores.
             </p>
+            
+            <p>
+              However, you discover something: you can use the entire 3 hours to focus on one subject to get a perfect score, but that would mean getting a zero in the other subject, or if you choose to spend 1.5 hours on each subject, you might get 5 points in both subjects. Since you can't have both at the same time, you have to make a CHOICE. One point in English is the cost you pay for an additional point in math. Economists call this OPPORTUNITY COST, the value of the second best option forgone when a choice is made. When plotted on a graph, it looks like this:
+            </p>
+
+            <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+              <img src="image/ndslide3_1.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+            </div>
+
+            <p>
+              The graph above is the production possibility curve, representing your capability limits. Here, the 3 hours have become the scarce resource you need to use to fulfill your desire to get the highest score in each subject. Choosing any point outside the curve (point C) is an impossible goal, while any point inside the curve (point A) means you haven't tried your best. Only when you reach a point on the curve (point B) will it be the best result you can achieve.
+            </p>
+
+            <p>
+              However, after finishing your math studies, you noticed that when you switched to studying English, you couldn't achieve the efficiency you had hoped for. This happens because any productive activity generates some form of waste; in this case, it’s the fatigue from all the math calculating, which reduces your ability to focus on the next task. Therefore, the PPC for you—and for many other economies—would realistically look something like this:
+            </p>
+
+            <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+              <img src="image/ndslide3_2.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+            </div>
+            
+            <p>
+              Undeterred, you press on with the study session. Soon, dawn breaks. You step into the exam room, full of anxiety, but without regret for your choice.
+            </p>
+
+            <p style="margin-bottom: 0.8rem;">
+              Proposed structure for the post:
+            </p>
+
+            <ul class="paragraph-list" style="list-style-type: '- ';">
+              <li style="margin-bottom: 0.8rem;"><p>Introduction (the current one is good)</p></li>
+              <li style="margin-bottom: 0.8rem;"><p>Discuss the real life example and gradually introduce economics concepts:</p></li>
+                <ul class="paragraph-list" style="list-style: disc ;">
+                  <li style="margin-bottom: 0.8rem;"><p>“There’s no way you can review both subjects…” ⇒ “So you have to make a CHOICE”</p></li>
+                  <li style="margin-bottom: 0.8rem;"><p>“But which choice to make? You can use the entire 3 hours to study one subject and get a perfect score … or if you spend 1.5 hours studying each subject you might end up with 5 for both subjects” ⇒ “Losing 5 points in Mathematics is the opportunity cost of gaining 5 points in English”</p></li>
+                  <li><p>Your capacity limits can be represented by something called the production possibilities curve ….</p></li>
+                </ul>
+              <li style="margin-bottom: 0.8rem;"><p>Introduce the proper, official definition of each economic concept</p></li>
+              <li><p>Ending</p></li>
+            </ul>
+
           </div>
           <hr class="divider-blog2 pb-120"/>
-          
-          <div class="row bottom-row pb-30">
-            <div class="card-bottom">
-              <a href="/blog?slide=3">
-                <img src="image/test2.jpg" class="thumb small" />
-              </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
-            </div>
-            <div class="card-bottom">
-              <a href="/blog?slide=3">
-                <img src="image/test2.jpg" class="thumb small" />
-              </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
-            </div>
-            <div class="card-bottom">
-              <a href="/blog?slide=3">
-                <img src="image/test2.jpg" class="thumb small" />
-              </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
-            </div>
-          </div>
         </div>
       </div>
 
       <!--Slide 4-->
       <div class="slide">
         <div class="container-blog2">
-          <h1 class="title-blog2">Changing demand</h1>
-          <h2 class="subtitle-blog2">How do you come to want less or more of something?</h2>
+          <h1 class="title-blog2 pb-30">But what is Demand in Economics?</h1>
           <hr class="divider-blog2" />
           <div class="content-blog2">
             <p>
-              In <a href="#">Part 1</a>, we have explored how the demand for a certain good is conceived, 
-              and see how the quantity demanded of a good (in our case, breadsticks!) can be affected by changing prices. 
-              Now, what if I say that even when the price of breadsticks doesn’t change, demand can still change. 
-              This is equivalent to saying that “Well even though the breadsticks are just as cheap and good, 
-              you may still want less of them.” So how does this happen? Economists offer us 5 main factors 
-              affecting the demand for a good/service.
+              Don’t bluff! We all love “banh mi que” (pate breadstick), don’t we? Think about it - small, thin and crispy loaves of bread that fit perfectly in your palm, with each bite being a mouthful of flavors. It doesn’t get better than that!
             </p>
+
+            <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+              <img src="image/ndslide4_1.jpg" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+            </div>
+
+            <p>But how deep is your love for these sticks?</p>
+            
+            <p>
+              Let’s say your mom handed you 100,000 VND for food every morning. On Monday, you came to your usual bread spot and oh my heaven the bread was as cheap as a robbery: at 2,000 VND/ stick. Without hesitation, you started munching the bread, and stopped only after the 20th one when you were already filled to your throat. You kissed your favorite bread-lady goodbye and paid her 40,000 VND, saving 60,000 VND for your lunch.
+            </p>
+
+            <p>
+              On Tuesday, you came back, but the bread-lady now offered the same bread at 10,000 VND/ stick. Disheartened yet starving, you spent 50,000 VND on 5 breadsticks to sustain yourself until lunch, where you can spend the remaining 50,000 VND. Well, you technically could have spent the remaining 50,000 VND for another 5 sticks, but who in their right state of mind would trade a bowl of pho or bun bo hue for 5 breadsticks?
+            </p>
+
+            <p>
+              On Wednesday, after eating ONLY 5 sticks on Tuesday, you were craving for bread, but alas! The bread-lady shouted: “50,000 VND/ stick”. Horrified, you decided that a bowl of pho would be more filling than two breadsticks, and it would spare you some money for lunch as well.
+            </p>
+
+            <p>
+              You broke up with the bread-lady on Thursday when she increased the price to 101,000 VND, and you couldn’t buy even one breadstick.
+            </p>
+
+            <p>
+              Well, this is your personal <a>demand</a> for breadsticks!
+            </p>
+
+            <p>
+              Now, let us imagine hundreds or even thousands of other consumers like us around Hanoi, and even though we might buy our breadsticks from different sellers, together we still construct the demand for the breadstick market in the city. You can think of this <a>demand</a> for the entire market as the summation of the number of breadsticks everyone wants at each price.
+            </p>
+
+            <p>
+              In Economics, demand refers to the various quantities of goods and services that consumers are willing and able to buy at different price levels, ceteris paribus (holding everything else constant).
+            </p>
+
+            <p>
+              Remember, as a consumer, you have to be both “willing” and “able” to have demand for a good. In the situation above, there was demand on Mon and Tue, since you had enough money for breadsticks, and you wanted some bread to satisfy your cravings. On Wednesday, however, you had no demand because you had enough money, yet you were not willing to eat bread instead of pho. And obviously, you didn’t have enough money on Thursday, so no demand as well.
+            </p>
+
+            <p>
+              And with just basic common sense you would notice that when the price of breadsticks increases, the number of breadsticks eaten for breakfast decreases. I mean, how much of a craving for breadsticks must you have to buy them at 5 times the price of yesterday? And this is the prominent law of demand.
+            </p>
+
+            <p>
+              The law of demand states that there is a negative relationship between price and quantity demanded of a good or service, ceteris paribus.
+            </p>
+
+            <p>
+              The law of demand can be represented by the following diagram:
+            </p>
+
+            <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+              <img src="image/ndsilde4_2.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+            </div>
+
+            <p>
+              While this law generally holds true, humans are (of course) complicated and interesting. In certain contexts, the law of demand is actually opposed. Take Vietnam's recent gold market for example. When prices of gold increase, people don’t buy less gold, but they buy even more as prices are likely to further rise! There is, ironically, a positive relationship between price and quantity demanded of gold!
+            </p>
+
           </div>
           <hr class="divider-blog2 pb-120"/>
-          
-          <div class="row bottom-row pb-30">
-            <div class="card-bottom">
-              <a href="/blog?slide=4">
-                <img src="image/test3.jpg" class="thumb small" />
-              </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
-            </div>
-            <div class="card-bottom">
-              <a href="/blog?slide=4">
-                <img src="image/test3.jpg" class="thumb small" />
-              </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
-            </div>
-            <div class="card-bottom">
-              <a href="/blog?slide=4">
-                <img src="image/test3.jpg" class="thumb small" />
-              </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -266,40 +322,1861 @@
             <hr class="divider-blog2" />
             <div class="content-blog2">
               <p>
-                In <a href="#">Part 1</a>, we have explored how the demand for a certain good is conceived, 
-                and see how the quantity demanded of a good (in our case, breadsticks!) can be affected by changing prices. 
-                Now, what if I say that even when the price of breadsticks doesn’t change, demand can still change. 
-                This is equivalent to saying that “Well even though the breadsticks are just as cheap and good, 
-                you may still want less of them.” So how does this happen? Economists offer us 5 main factors 
-                affecting the demand for a good/service.
+                  In <a>Part 1</a>, we have explored how the demand for a certain good is conceived, and see how the quantity demanded of a good (in our case, breadsticks!) can be affected by changing prices. Now, what if I say that even when the price of breadsticks doesn’t change, demand can still change. This is equivalent to saying that “Well even though the breadsticks are just as cheap and good, you may still want less of them.” So how does this happen? Economists offer us 5 main factors affecting the demand for a good/service.
+              </p>
+
+              <p>
+                  First, let’s come back to our breadstick lady and look at you! A consumer in the market of breadsticks! A loyal customer of your favorite bread lady!
+              </p>
+
+              <p>
+                  Have you ever woken up in the morning and felt like eating something else for breakfast? Somehow on this kind of morning the breadsticks are so oily, salty and fatty because you have been munching these sticks for several days in a row. Sick of the pate and the bread, you make your way to the soy milk auntie next to your bread lady and just drink a cup of soy milk for the day (Of course, you will feel so guilty as if you’re cheating on your favorite bread lady). In this case, whatever the prices of the bread, 2,000VND, 10,000VND or 50,000VND, you would still prefer a cup of soy milk and would buy less bread. Economists say that “Your demand for breadsticks has decreased due to changing tastes and preferences”, because at every price, you don’t prefer bread as much and would not buy as many breadsticks as you used to.
+              </p>
+
+              <p>
+                  Now, let’s imagine another situation: You have been very distracting in class, your teacher has called your parents, and your mom decided to impose sanctions by cutting your breakfast allowance by 50%. This is similar to having a cut in your income. And this is kinda obvious, isn’t it? If you have less money to spend, of course you won’t buy as many breadsticks. If not then how are you gonna settle for your lunch? In this case, economists say that “Your demand for breadsticks has decreased due to decreasing income”.
+              </p>
+                  
+              <p>
+                  Oh wait! Your income drops, but there’s a pho stall just opened near your school and they are having a 50% grand opening discount. Great! This means you can enjoy a hearty bowl of pho in the morning, and still have some money to spare for lunch and dinner. How about the bread lady? Oops, probably she’d have to wait till your mom’s sanctions are lifted, or the pho stall ends their discount. In Economics, pho and breadsticks here are called substitutes because they cater for the same need: breakfast! And you have seen it, the price of pho - a substitute for breadsticks - can affect the demand for breadsticks themselves. Economists say that “Your demand for breadsticks has decreased due to changing prices of substitutes”
+              </p>
+
+              <p>
+                  Alright now that’s 3 factors. There’s one more, just as important: Your expectations of the prices of breadsticks. Remember that MASSIVE drop in prices of pork in Hanoi two years ago? Think about it, pate is mainly made of pork, so if pork price drops, breadstick sellers will likely lower their prices to attract customers while still retaining some profits. Knowing this, you decide to hold back your spending on breadsticks so enjoy the cheap prices in the future. In such cases, economists say that “Your demand for breadsticks has decreased because your expectations of future prices change”.
+              </p>
+
+              <p>
+                  Cool! Now that we have looked at you as an individual breadstick consumer. Let us now scale up and consider thousands of such consumers around Hanoi. While most factors will have the same effects as above, there is one more very easy, yet so important, factor: The number of people who eat breadsticks for breakfast! Well, if there are more people who want breadsticks for breakfast, more breadsticks are sold regardless of the prices, and the demand for breadsticks will increase. Duh! Obvious right? Economists therefore say that “The demand for breadsticks increased due to increase in population (here the number of people who enjoy breadsticks for breakfast)”.
+              </p>
+
+              <p>
+                  Oh, and in case you wonder how we visually represent this increase/ decrease in demand of the whole market, we move the entire demand curve right and left, respectively. As you can see in the diagram below, when the demand curve is to the right, more breadsticks are demanded at every price, reflecting the nature of increasing demand as we discussed above. The same applies a leftward shift indicating a drop in demand.:
               </p>
           </div>
           <hr class="divider-blog2 pb-120"/>
-          
+        </div>
+      </div>
+
+      <!--Slide 6-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">Now, what is supply in Economics?</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                “It is summertime now, every step feels heavy as you walk down the street in your neighborhood under the scorching sun of a 40-degree Celcius day in Hanoi. The sun beats down, sapping your energy. All you want is an ice cream, but in your neighborhood, there is no ice cream stall, while Trang Tien Street is ages of riding motorbikes from here. So you and your friends spot a chance to make a profit and decide to open an ice cream stall.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide6_1.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                Having that in mind, you and a few other kids in your neighborhood opened an <a>ice cream</a> stand in the yard near your houses and sold it at a starting point of 23,000 VND
+              </p>
+              <p>
+                So here, you and your friends are constructing something called the supply. But… what exactly is supply?.
+              </p>
+              <p>
+                Let’s delve deeper!
+              </p>
+              <p style="margin-bottom: 0rem;"><a>DAY 1: </a></p>
+              <p>You guys set up the kiosk on a sunny Saturday morning and started selling ice cream cones for 12,000 VND for each cone. At this price, you decided to make ice cream for the right amount of 50 ice cream cones after calculating that 12,000 VND would cover the costs of the ingredients and provide a small profit.</p>
+
+              <p style="margin-bottom: 0rem;"><a>DAY 2: </a></p>
+              <p>And dang the weather in Hanoi is getting out of control! The second day is even hotter than the first, and you run out of ice cream quickly. For the last few ice cream cones, people started bidding for your ice cream and the prices started rising. You realize this and want to sell more on the third day. Motivated by the higher potential earnings, you and your friends decided to make 100 ice cream cones, utilize your ice cream machine to the fullest, and sell them for 23,000 VND per cone.</p>
+
+              <p style="margin-bottom: 0rem;"><a>DAY 3: </a></p>
+              <p>The temperature in Hanoi continues to rise, reaching record levels. Customers are willing to pay even more for your ice cream as they bid with each other for your frozen deliciousness. Motivated by the higher potential earnings at this price, you and your friends decide to produce 150 ice cream cones for the following day….</p>
+
+              <p>But here is the problem: with the little capital that you start up with, you only have one ice cream machine. So on Day 4, while you and your friends buy more milk and sugar to make more ice cream, the ice cream machine cannot churn out these frozen delicacies fast enough. In the end, you end up wasting some ingredients, and decide to hike your price to 46.000VND to cover this loss.</p>
+
+              <p>
+                This is the law of diminishing marginal returns, where as more variable inputs (your milk and sugar) are added to a fixed input (your ice cream machine) in the short run, the extra product churned out initially increases, but eventually decreases due to the overutilization of the fixed input.
+              </p>
+
+              <p>
+                The total amount of ice cream cones available to consumers varies with the price. At different prices, you adjust the quantity of ice-cream you are willing to produce and sell, demonstrating the relationship between <a> price and supply</a>.  More importantly, by Law of Diminishing Marginal Return, as the producers use more and more factors of production (milk, sugar, etc.) their marginal costs increase so they need to hike their prices to cover the costs.
+              </p>
+
+              <p>
+                In Economics, <a>supply</a> is a basic economic principle that denotes the overall quantity of a particular product or service accessible to consumers. It can refer to the quantity available at a particular price point or the quantity available across various price levels when represented on a graph.
+              </p>
+
+              <p>Economists demonstrate the positive relationship of supply - between price and quantity supplied - via the following graph:</p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide6_2.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                So, in this case, when you raised the price of your ice cream, you made more because you thought you could make more profit. Your decisions were influenced by something called the <a >Law of Supply</a>.
+              </p>
+
+              <p>
+                <a>The Law of Supply</a>: All other factors being equal, if the price of a product rises, suppliers will increase the quantity of the product they offer, and vice versa. 
+              </p>
+
+              <p>
+                Basically, as prices go up, suppliers are willing to sell more, and as prices go down, they are willing to sell less.
+              </p>
+            </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 7-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">What causes a change in supply?</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                Your creamy delights are a hit, but various factors can impact your ability to keep those cones coming. Let’s dive into what can cause changes in supply for your ice cream business.
+              </p>
+              
+              <p>
+                1. One morning, you wake up to find that a big rainstorm hit the area overnight, and your usual supermarket is closed due to flooding. You cannot buy your ingredients there, which means you will not be able to make ice cream. In this case, economists say that you as a producer have experienced a supply shock. This and other unexpected and impactful events that affect the availability of ingredients or the ability to produce ice cream will impact supply. 
+              </p>
+
+              <p>
+                2. If the prices of inputs like milk, sugar, or flavorings increase, it will directly impact your production costs. For example, if there is a cow disease going around and the price of milk undoubtedly increases due to a shortage of milk caused by dairy farms, it would increase your cost per cone. In such a scenario, you might adjust your production quantity to maintain profitability.
+              </p>
+
+              <p>
+                3. Anticipating future changes in prices can influence your supply decisions. For example, if your expected prices for your cones increase due to rising demand during the summer season, you might produce more cones to capitalize on potential higher profits. Conversely, if you thought of a decrease in demand or an influx of new competitors driving prices down, you might adjust your production quantity accordingly to avoid excess inventory.
+              </p>
+
+              <p>
+                4. If you notice your customers are willing to pay more for a cup of frosty coconut juice, soon, you might change from coconut ice cream to selling coconut juice. Likewise, if profits for coconut ice cream are greater, you will remain loyal to selling coconut ice cream. Your decisions are driven by the desire to maximize profits. Competitive supply refers to the production of one good or another. These goods use the same resources (both coconut juice and ice cream use coconut), and it’s not possible to produce more of one without producing less of the other.
+              </p>
+
+              <p>
+                5. Government regulations and policies can affect your supply chain and operational costs. For example, if there are regulations on food safety standards or environmental regulations impacting your production process, they could increase your costs and influence your production decisions. Additionally, taxation or licensing requirements might add to your costs, impacting your profit margins and supply decisions. Let’s say the obesity rate in your area has been on a rampant rise, causing the government to impose a tax on sugar. Because sugar is one of your factors of production (hey! whoever eats plain ice cream is off their rocker!), your costs of production will rise, decreasing your supply.
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 8-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">Price Elasticity of Demand</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                Late-night study sessions and early morning classes often leave you exhausted when you wake up. The struggle to get out of bed is real, and the foggy feeling that comes with sleep deprivation makes it hard to focus. And despite all that, you have to wake up at 6 AM to get ready for school. Eventually, a cup of strong, concentrated Vietnamese phin coffee at your school canteen is your go-to every morning.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide8.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+              
+              <p>
+                One day, the price of coffee at your school canteen increases:
+              </p>
+
+              <p>
+                If you would continue to purchase it despite the price increase as you consider it indispensable for waking up and staying focused, regardless of cost. Also, a cup of coffee is only 15,000VND. Increasing that price by just a bit won’t cripple your wallet will it? This is a price-inelastic demand
+              </p>
+              
+              <p>
+                However, during periods when there are no exams, or you might find it completely fine to replace coffee with matcha or tea. In this scenario, your decision to stop buying coffee at a higher price indicates price-elastic demand. 
+              </p>
+
+              <p>
+                The two scenarios illustrate the concept of price elasticity of demand by showing how your decisions change in response to a change in price.
+              </p>
+
+              <p>
+                Price elasticity of demand is a measurement of the change in the demand for a product to a change in its price. Elastic demand is when price changes cause substantial changes that lower the quantity demanded. Inelastic demand is when a reduction in price does not increase the quantity demanded much, and an increase in price does not decrease demand that badly.
+              </p>
+
+              <p style="font-weight: bold;">
+                Let’s take a look at factors affecting price elasticity of demand
+              </p>
+
+              <p>
+                <b style="font-weight: bold;">Urgency:</b> The more urgent your need for a good or service is, the less price-elastic your demand for that good or service is. This is intuitive. If a good/ service is a necessity, consumers will be more willing to pay more when its price increases. Conversely, if a good/ service is a luxury that consumers can go without, then consumers are less willing to increase their expenditure for these goods/ services.
+              </p>
+
+              <p>
+                <b style="font-weight: bold;">First scenario:</b> When you wake up exhausted from late-night study sessions and need to be alert for early morning classes, the need for coffee to wake up and focus is urgent. In this case, even if the price of coffee at your school canteen increases, you might still buy it because the immediate need to combat fatigue and improve focus outweighs the cost consideration. This suggests more inelastic demand due to high urgency.
+              </p>
+
+              <p>
+                <b style="font-weight: bold;">Second scenario:</b> If the need for coffee is less urgent as you had a good sleep last night, you might be more sensitive to price changes. A price increase in such a scenario could lead to a decrease in your consumption of coffee, indicating more elastic demand.
+              </p>
+
+              <p style="font-weight: bold;">
+                Availability of substitutes
+              </p>
+
+              <p>
+                <b style="font-weight: bold;">Close Substitutes Are Available:</b> Imagine the price of coffee increases. If customers can easily switch to a similar product, like tea or milk, they are likely to do so. This scenario illustrates that when close substitutes are available, the demand for your product becomes more elastic. Small changes in price can lead to significant changes in the quantity demanded as customers opt for cheaper alternatives.
+              </p>
+
+              <p>
+                <b style="font-weight: bold;">Close Substitutes Are Unavailable:</b> Now, imagine there are no close substitutes available for your unique coffee. In this case, even if you raise your prices, customers who specifically want your coffee might still purchase it because they have no other equivalent option. Here, the demand for your product is inelastic, meaning price changes have a smaller effect on the quantity demanded.
+              </p>
+
+              <p>
+                This means the availability of substitutes affects the price elasticity of demand
+              </p>
+
+              <p style="font-weight: bold;">
+                Duration of the change
+              </p>
+
+              <p>
+                The demand for a good is more elastic in the long run as consumers adapt and feel comfortable going without the good:
+              </p>
+
+              <p>
+                <b style="font-weight: bold;">Short-Term Price Increase: </b>If the price increase is temporary (say, for a week or two), you might continue to buy coffee at a higher price despite feeling the pinch. The urgent need to stay alert for early morning classes may outweigh the temporary increase in cost. This suggests less elastic demand in the short term because you continue to prioritize immediate need over price sensitivity.
+              </p>
+
+              <p>
+                <b style="font-weight: bold;">Long-Term Price Increase:  </b>If the price increase becomes a long-term change, your response may become more elastic over time. You might actively seek alternatives, like bringing coffee from home or finding cheaper alternatives elsewhere, to manage your budget better. This indicates that your demand for coffee becomes more sensitive to price changes as you adapt to the new price level.
+              </p>
+
+              <p style="font-weight: bold;">
+                Small purchase - large purchase:
+              </p>
+
+              <p>
+                The impact of price changes can vary depending on whether the purchase is small or large.
+              </p>
+
+              <p>
+                <b style="font-weight: bold;">Small Purchases: </b>For example, your instant coffee powder normally costs 5,800 VND. If the price increases by 500 VND to 6,300 VND, individual buyers might not feel much difference and continue to buy as usual, meaning demand remains relatively unchanged.
+              </p>
+
+              <p>
+                <b style="font-weight: bold;">Large Purchases: </b>In contrast, for bulk buyers who need a million bags, the price increase from 5,800 VND to 6,300 VND translates to a significant increase in total cost—from 5.8 billion VND to 6.3 billion VND. This large price change can greatly affect demand, as bulk buyers might reduce their order sizes or seek alternatives to manage costs.
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+      <!--Slide 9-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">Income Elasticity of Demand</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                During your summer holiday, your mom rewards you with extra money because you scored a 10 on your semester test. With this higher income, your spending habits on food might change. 
+              </p>
+
+              <p>
+                To understand this change better, let us define a new concept called the Income Elasticity of Demand (YED):
+              </p>
+
+              <p>
+                Income elasticity of demand measures the responsiveness of demand for a particular good to changes in consumer income. If demand increases a lot with income, it has high-income elasticity. Vice versa, the demand for a good is said to have low-income elasticity when it doesn’t increase much with income. And if the demand decreases with increasing income, it has negative income elasticity.
+              </p>
+
+              <p style="font-weight: bold;">
+                Formula for Income Elasticity of Demand:
+              </p>
+
+              <p>
+                <b style="font-weight: bold;">Income Elasticity of Demand (YED)</b> = 
+                \( \frac{\tfrac{D1 - D0}{D1 + D0}}{\tfrac{I1 - I0}{I1 + I0}} \)
+              </p>
+
+              <p style="margin-bottom: 0;">
+                D0 = Initial quantity demanded 
+              </p>
+
+              <p style="margin-bottom: 0;">
+                D1 =  Final quantity demanded
+              </p>
+
+              <p style="margin-bottom: 0;">
+                I0 =  Initial real income
+              </p>
+
+              <p style="margin-bottom: 0;">
+                I1  =  Final real income
+              </p>
+
+              <p style="font-weight: bold;">
+                The value of YED helps classify goods into three categories:
+              </p>
+
+              <p>
+                <p style="font-weight: bold;">Luxury Goods (YED>1):</p> A luxury good is defined as having a YED greater than 1. This implies that for every one-dollar increase in income, more than this one dollar will be spent on luxury items. This is partly because consumers stop using cheaper substitutes and start buying more of these luxuries. Take for example:
+              </p>
+
+              <p>
+                <b style="font-weight: bold;">Wagyu Beef Pho:</b> With your increased income, you might start opting for more expensive dishes like Wagyu Beef Pho. The demand for such luxury food items tends to increase significantly with higher income, indicating a high positive income elasticity of demand.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide9_1.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                <b style="font-weight: bold;">Necessities (<span>0 &lt; YED &lt; 1</span>): </b> (<span>0 &lt; YED &lt; 1</span>): A necessity is a good with <span>0 &lt; YED &lt; 1</span>. That is, for every one-dollar increase in the income of consumers, less than this 1$ increase will be spent on necessities. This is because consumers, likely, have already been consuming these necessities at a close-to-saturated amount. The remains of this one dollar might be directed towards other goods that the consumers do not have “enough” yet.
+              </p>
+
+              <p style="font-weight: bold;">Noodles:</p>
+
+              <p>
+                This is the everyday dish that most people enjoy regularly. As your income increases, you might consume these normal goods more frequently or choose slightly better versions. Still, the rise in demand is positive, reflecting a positive income elasticity of demand.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide9_2.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                 <b style="font-weight: bold;">Inferior Goods (YED &lt; 0):</b> An inferior good is one with a YED less than 0, meaning that as income increases, spending on these goods decreases. When consumers are richer, they will phase out these cheap options and opt for more expensive ones with higher quality.
+              </p>
+
+              <p>
+                <b style="font-weight: bold;">Economy Rice:</b> These are considered more affordable and basic options. When your income rises, you may consume these less frequently, as you can now afford better quality meals. The demand for these goods may decrease with higher income, indicating negative income elasticity of demand.
+              </p>
+
+              <p>
+                You might also want to introduce Engel curve here to demonstrate the relationship between the income and the demand for a single good
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 10-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">Stretchy supply?</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                Let us consider two scenarios.
+              </p>
+
+              <p>
+                In the first one, you are the owner of a roadside Vietnamese coffee stall, sourcing ingredients yourself and preparing fresh coffee every morning.
+              </p>
+
+              <p>
+                In the second one, you are the owner of a workplace coffee store where students park themselves for a few hours everyday to study.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide10.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                And lucky for you, it is exam season and both of your businesses are taking off. More and more students are chugging coffee every morning to stay awake, and more and more students are visiting your workspace coffee store to revise for their exams. It is your chance to expand and scale up your businesses!
+              </p>
+
+              <p>
+                But the question is, “Does your revenue increase equally in both scenarios?”. To answer this, we have to look at the supply of your businesses and see how it reacts  to this exam season.
+              </p>
+
+              <p>
+                For your roadside coffee stall, when you notice that you run out of coffee to sell to students more and more often, it is just common sense that you scale up your businesses to earn more profits. You invest in a few more phin filters, you prepare more ground coffee, and you also purchase three extra cans of condensed milk every morning. You might have to increase the price of each cup of coffee (Why? Remember the law of diminishing marginal returns?). Still, the rising coffee price cannot counteract the students’ daily thirst for caffeine, and you manage to almost double your revenues every day. The quantity of coffee supplied every day increases significantly.
+              </p>
+
+              <p>
+                But is this the case for the workspace coffee store? Your shop is getting more and more crowded, so packed at times that students were turned away due to the sheer volume of people. You know you are losing potential customers, and you are dying to expand the size of your coffee shop. But think about it… What are the options to expand your shop? Open another branch in the area and upgrade it to an enterprise? Build another floor on top of your current shop for more customers? Expand your shop with galvanized steel squares? Whatever your choice is, expanding a workspace coffee shop is not a matter which can be done in a day or two. Unfortunately, by the time you finish expanding, the exam season will have passed and students won’t come to your shop that often. You will run the risk of losing all your investments in expanding the shop! So, eventually, you decide that the best you can do is to set up a few more tables in the current shop to occupy more students and increase your revenues by just a little bit.
+              </p>
+
+              <p>
+                Wait… So despite the same potential to increase the quantities of products sold to customers, different scenarios will yield different outcomes? Exactly! This is due to a concept in Economics called Price Elasticity of Supply.
+              </p>
+
+              <p>
+                Price Elasticity of Supply is a measure of the responsiveness of the quantity supplied of a good or service to a change in its price. The more elastic the supply of a good is, the greater the increase in quantity supplied when price rises, and vice versa.
+              </p>
+
+              <p>
+                In the first scenario, the supply of your roadside coffee is price-elastic, because an increase in price due to students’ cravings for coffee leads to a significant increase in the quantity of coffee supplied to consumers. Conversely, in the second scenario, the supply of your workspace coffee service is price-inelastic because despite an increase in price due to students’ greater demand for places to study, the quantity supplied of your service only increases by a bit.
+              </p>
+
+              <p>
+                In this case, the reason for the difference in price elasticity of supply is the mobilizability of factors of production. For your roadside coffee, it’s relatively easy to produce more coffee: just buy more phin filters and start brewing some more! But for your workspace coffee store, the story is not so simple - you need to find new locations, hire new staff, or establish new branches to scale up your business.
+              </p>
+
+              <p>
+                Beside the mobilizability of factors of production, there are other factors that can also impact the price elasticity of supply, such as the risks involved, duration of time, or technology. For the interested reader, you can find out more about these factors here!
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 11-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">EQUILIBRIUM</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                It is summer holiday and Dave’s family members have all traveled somewhere, leaving him home lonely. He decided to sell decks of Uno cards - a popular board game for family bonds -  so that he can have enough money to visit Nha Trang - a lovely beach city in the central region of Vietnam.
+              </p>
+
+              <p>
+                Dave has a graph showing the Uno cards market’s demand and supply curve. By analyzing this, he could get the market price and maximize his revenues.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide11_1.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                He uses 3 representative prices - 3$, 5$ and 10$.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide11_2.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                First, he analyzes the market status in the first scenario - the market price is 3$. Recall from our discussion on the demand law (if not, check it out )? that relatively low price would attract a lot of customers - 90. However, that price simultaneously impedes suppliers from participating in the market - only 10 suppliers would agree to sell a deck of Uno cards for 3$. The reason? The average cost of producing a deck of cards is somewhere higher than 3$ (remember that Law of Diminishing Marginal Return? - if not, check it out here).
+              </p>
+
+              <p>
+                Now, imagine what would happen if there are many people who want the cards but only a few producers willing to supply it? Economists say that there is a shortage present. And what will these people do? They will start bidding for the goods - like an auction, if you want to think of it that way. In that auction, prices will increase and increase and increase. The price may continue to rise until it reaches a certain threshold - the equilibrium. Therefore, we conclude that shortage exerts an upward pressure on the market price.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide11_3.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                The 10$ price is also not the market price, since the quantity supplied will far exceed the quantity demanded, causing loss to the economy. Specifically, there is only a demand of 10 decks of Uno cards, while suppliers would produce 100 decks at this price, based on Graph II. 
+              </p>
+
+              <p>
+                In this case, a lot of suppliers are willing to supply, but only few people want to buy. Economists call this surplus.  Thus, purveyors will try their best to attract customers by applying promotions, providing more cards in a traditional Uno deck...  After a period of time, the price will reduce to a certain point, just as the previous scenario. Hence, we can say that redundancy puts a downward pressure on market price.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide11_4.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                The 5$ point, also the intersection point of the demand and supply curve, would be the market price in this case. At any higher price, there will be a downward pressure due to a surplus, and at any lower price, there will be an upward pressure. Therefore, the market price is at exactly 5$ - not more, not less - hence make the quantity supplied meet the quantity demanded(graph III). 
+              </p>
+
+              <p>
+                That intersection point is called the Equilibrium point, and this status of the Uno cards market in particular and other markets in general is called Equilibrium.
+              </p>
+
+              <p>
+                In previous scenarios, we mentioned a “threshold” where the price will rise to or decline to, and equilibrium point is exactly that “threshold”. Generally, a free market is believed to tend toward equilibrium. A dearth of any one good would create a higher price, which would reduce demand, providing suppliers incentives to reduce price to create competitive advantage. The same would occur in reverse order provided there was excess in any one market, and so did the Uno market.
+              </p>
+
+              <p>
+                Equilibrium is the state in which market supply and demand balance each other, and as a result prices become stable.
+              </p>
+
+              <p>
+                The Equilibrium price is where the supply of goods matches demand
+              </p>
+
+              <p>
+                To make this more explicit, we can calculate the revenues for each case. The revenues equal the price times quantity of goods sold. 
+              </p>
+
+              <p>
+                For the first scenario, suppliers can only produce 10 decks, then only at most 10 decks could be sold, the revenues equal 3$ x 10 = 30$.
+              </p>
+
+              <p>
+                For the second situation, when the price is 10$, customers only demand 10 decks, so the revenues would be 10$ x 10 = 100$.
+              </p>
+
+              <p>
+                At the equilibrium price, customers have the demand of 50 decks of Uno cards, so the revenues would be 50$ x 50 = 2500$, the largest revenues.
+              </p>
+
+              <p>
+                Likewise, any price under or above that equilibrium price would result in lower revenues. The market price would be the equilibrium price, also the intersection point of supply curve and demand curve of that market.
+              </p>
+
+              <p>
+                By evaluating the market wisely, Dave made enough money for the trip to Nha Trang. He had a good time relaxing and taking great photos of the magnificent nature there.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide11_5.jpg" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 12-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">The wealth of a nation</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                Do you know why some countries are considered “poor” while others are “rich.” How exactly do you measure something like that? Well, according to economists, it all depends on how many things and services a country can produce during a year, which is calculated using GDP and GNI.
+              </p>
+
+              <p>
+                GDP, which stands for Gross Domestic Products, measures the value of all final goods and services produced within a country. Economists calculate GDP by multiplying the price of these final goods and services by their quantities sold. Goods are tangible products such as toys, clothes, computers,... while services are intangible products like therapy, catering and massage. Final products refers only to products that are available for sale. That is, if a bread is baked, only the value of the bread will be counted, but the wheat that is used to make that bread won't because it would have been already reflected in the price of the bread. Finally, but most importantly, to be factored into GDP these goods have to be made inside of the country. Therefore, if a car is made in Japan but sold in Vietnam, it counts towards Japan’s GDP, not Vietnam’s.
+              </p>
+
+              <p>
+                GDP is the measurement of the value of all final goods and services produced within a country
+              </p>
+
+              <p>
+                GNI, on the other hand, stands for Gross National Income. It is similar to GDP but, while GDP focuses on where things are made, GNI focuses on who earns the money. Like GDP, it also counts the value of goods and services produced within a country. However,  it includes money earned by residents through their investment or work outside of the country. For example, Mr Pham Nhat Vuong owns electric car dealerships in the US, so when he earns money from it, that income is part of Vietnam’s GNI. On the other hand, GNI also subtracts money that is earned inside of the country but owned by foreigners. Therefore, GNI usually gives us a better picture of the total income earned by the country’s people, regardless of where the money comes from.
+              </p>
+
+              <p>
+                GNI = GDP + income earned by residents from other countries - income earned by foreigners within the country
+              </p>
+
+              <p>
+                Measuring GDP and GNI helps us understand how a country's economy is doing. It’s like checking the health of an economy. If the GDP and GNI are growing, it usually means the economy is strong, with plenty of jobs, services, and products. People are likely earning good money and living well. We can compare GDP and GNI of different countries to see which economies are stronger or growing faster. Policy makers can use these numbers to make decisions. For example, if the GDP is falling, the government might try to create more jobs or invest in new projects to boost the economy.
+              </p>
+
+              <p style="margin-bottom: 0;">
+                Use of GDP and GNI:
+              </p>
+
+            <ul class="paragraph-list" style="list-style-type: decimal ;">
+              <li style="margin-bottom: 0;"><p>Comparing economies to see who is more prosperous</p></li>
+              <li style="margin-bottom: 0;"><p>Help government make decisions</p></li>
+              <li><p>Reflects the people’s living standard</p></li>
+            </ul>
+
+            <p>Nevertheless, there are drawbacks to these methods.</p>
+
+            <p>
+              Because GDP includes all sectors of the economy, and the economy is so large, collecting data takes a long time. Therefore, there may be inaccuracies from when the data is collected to the actual present data. 
+            </p>
+
+            <p>
+              GDP also does not factor in unmarketed products - DIY goods and services. For example, if you decide to bake your own bread instead of buying it, it will reflect a decrease in GDP, even though the amount of goods stays the same. 
+            </p>
+
+            <p>
+              Moreover, GDP does not factor in externalities, which makes it less suitable as an indicator of quality of life. You may have heard about some constructions causing dust pollution in some areas of Hanoi. Therefore, even though there is an increase in GDP, people’s lives do not become better.
+            </p>
+
+            <p>
+              GDP may also increase when people toil longer hours, or simply because of population increase. Therefore, it is not a definite measurement of human happiness.
+            </p>
+
+            <p style="margin-bottom: 0;">
+              Drawbacks of GDP
+            </p>
+
+            <ul class="paragraph-list" style="list-style-type: decimal ;">
+              <li style="margin-bottom: 0;"><p>Data inaccuracies</p></li>
+              <li style="margin-bottom: 0;"><p>Exclusion of DIY/ informal products</p></li>
+              <li style="margin-bottom: 0;"><p>External cost (pollution, traffic congestion,..)</p></li>
+              <li style="margin-bottom: 0;"><p>Other quality of life (longer working hour, population increase,... that does not increase living standard)</p></li>
+            </ul>
+
+            <p>
+              => Not a definite tool to indicate living standards
+            </p>
+
+            <p>
+              So, now that you know what GDP and GNI are, the next time you hear someone talk about them, you’ll know they’re discussing how much stuff a country is making and how much money its people are earning. Happy learning!
+            </p>
+
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 13-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">The driving force of the economy</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                You might have heard something like “Our government needs to keep aggregate demand high to prevent an economic recession” on TV. But what exactly is aggregate demand, and how does it affect the economy?
+              </p>
+
+              <p>
+                Think back to when you learned about the demand curve, which shows the relationship between a product’s price and the quantity demanded. Now, imagine scaling this up to the entire economy. Aggregate demand is essentially the total demand for all goods and services in an economy at different price levels. 
+              </p>
+
+              <p>
+                Think about the price of a product in a market. Now we need something that can indicate the price of all the goods and services in the country: the price level. To find it, you add up the prices of a basket of essential goods and services to get the aggregate price level. At different price levels, imagine summing up quantities of all goods demanded to get real GDP (Gross Domestic Product). This gives you a new curve representing the demand for goods and services across all markets in the economy in relation to the price level, as shown in the diagram below.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide13.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                There are two theories as to why this curve is downward sloping. First, the more obvious: wealth effect. When the price of essential goods and services increase, suddenly, money, or other assets that you own, become less valuable. Therefore, it makes sense that you would cut back on spending to save up, which decreases GDP. Another theory suggests that aggregate demand is also controlled by the interest rate, or the interest rate effect. Basically, when the price level rises, you would need more money to buy goods, right? but you don’t always have to have the money to be able to buy something. You can take out a loan. That is how most people pay for expensive things like cars, or houses. Now when the price level increases, people need more money to make purchases so money becomes more scarce. Lenders will then raise the interest rate, meaning the money you have to pay back also increases, so you may take out less loan, therefore buying less. That is why when interest rate increases, GDP also decreases and vice versa.
+              </p>
+
+              <p>
+                But this curve isn't static—it changes, much like our moods. Unlike microeconomic demand where the buyers are usually consumers, aggregate demand consists of four main components: Consumption (by consumers), Investment (by firms), Government Spending (by government, duh!), and Net Exports (by other nations). Changes in any of these components shift the aggregate demand curve. For consumption, for example if people buy more food, clothes, or services, it increases the total aggregate demand and real GDP, while investments are made when individuals or companies buy capital stock, that is, they are buying more machines, or building more factories. The government may also contribute through the use of taxation and spending. When the government decreases tax, people have more money to spend so it would increase AD, or when they decide to build more infrastructure, or increase spending into social programs, those money also become people’s income and subsequently, increase aggregate demand.
+              </p>
+
+              <p>
+                So, why does this graph matter? Because it directly relates to the economy's health. High demand means more business for firms, and will allow them to increase production, and invest in new equipment to accommodate the demand. Over time, it will lead to long-term economic growth. Conversely, when people cut back on spending and investment, businesses scale down, causing unemployment and economic hardship. That's why it's crucial for the government to monitor aggregate demand. By doing so, they can implement measures to stimulate the economy during recessions or control inflation when needed.
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 14-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">The backbone of our modern life</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                You may have heard that during the Covid 19 pandemic, Vietnam managed to mitigate some of the negative effects of the lockdown while other countries, like Brazil and India, suffered from lack of commodities and high food prices. That’s partly thanks to our country’s effort to maintain the aggregate supply. So what is the aggregate supply, and how important is it exactly?
+              </p>
+
+              <p>
+                We shall only consider the monetarist model in this blog post. The aggregate supply is also divided into 2 types: short run and long run
+              </p>
+
+              <p>
+                Short run aggregate supply (SRAS) works almost similarly like our normal supply curve. When price goes up, quantity supplied goes up, and vice versa, only this time it is not just one product, but every product and services combined. So imagine scaling up everything from one market to multiple markets in the economy. Price of a product will become price level - the index that reflects how expensive all goods/ services in an economy are. Meanwhile, what is aggregate output? Yes, real GDP!
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide14_1.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                Makes sense, right? Now look at the long run aggregate supply curve (LRAS)
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide14_2.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                Notice how the quantity supplied does not change when the price level changes. Now that’s weird. “Wouldn’t firms capitalize on the increase in price to supply more products and services?” you may think. That is true in the short run when input price is “sticky”, like for example a lot of workers are unable to change their salaries due to their contract, so when price level increases, employers can make them work over time for no additional cost. However, in the long run, contracts may expire, and workers can demand higher wages to match the increased price level, and will always decrease in supply back to the long run quantity supplied
+              </p>
+
+              <p>
+                Now that you know how it operates, how does this affect the economy, and more importantly, people’s well-being?
+              </p>
+
+              <p>
+                First, the long run aggregate supply curve is directly related to long-term economic growth. Because it represents the production capacity of an economy when all prices have adjusted, it also captures the most optimal production quantity. Does that sound similar? That’s because it is directly linked to the Production Possibility Curve.
+              </p>
+
+              <p>
+                A shift in PPC (i.e increase in productivity) is accompanied by a shift in LRAS:
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide14_3.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                Therefore, it is crucial for the government to aim to increase LRAS through monitoring and promoting its growth through investment.
+              </p>
+
+              <p>
+                Second of all, as LRAS is the optimal production quantity, it can also be a benchmark to understand the current situation of the economy.
+              </p>
+
+              <p>
+                For example, when the current short run equilibrium quantity is less than the long run equilibrium quantity, it can be understood that resources are not fully utilized, and the economy is underperforming. Government can see this and implement expansionary policies to bring it back to equilibrium price.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide14_4.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                On the other hand, short run equilibrium quantity can also be more than the long run equilibrium. “Didn’t you say any quantity outside of the PPC is unattainable?”, you may think. Well, it is possible, but it is not stable. It may mean that workers are overworking to achieve the quantity, which is never healthy. Government can also see this and maybe raise tax or cut spending to lead the economy to a healthier quantity.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide14_5.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                Back to our real life situation. The reason why Vietnam was comparatively successful in maintaining the supply chain is partly because the government worked closely with suppliers to support transportation of goods and services during quarantine, as well as give companies in the supply chain stimulus packages and financial aids. Therefore, the Aggregate Demand - Aggregate Supply model of Vietnam looked something like this
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide14_6.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                As you can see, by increasing the aggregate supply, the government managed to drive down prices, as well as ensuring sufficient supplies of goods and services for everyone, by increasing the real GDP (total value of aggregate output) from Q to Qe.
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 15-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">Why is our money so weird?</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                Have you ever wondered why in Vietnam our smallest cash bill is 1000 dong and why we often deal with transactions involving hundreds of thousands or even millions of dong? Wouldn’t it be simpler if we adjusted our currency’s value to make calculations easier?
+              </p>
+
+              <p>
+                The reason stems from the rampant inflation Vietnam experienced during the 1970s and 1980s. So, what exactly are inflation, deflation, and disinflation?
+              </p>
+
+              <p>
+                Inflation is a sustained increase in price level in an economy.
+              </p>
+
+              <p>
+                Remember when you were a kid, and a bowl of beef pho at your local restaurant cost only 25,000 dong? Nowadays, you won’t find it for less than 35,000 dong. How did that happen?
+              </p>
+
+              <p>
+                One cause of inflation is a decrease in aggregate supply - referred to as cost-push inflation Take our national dish - pho - for example. To make pho, you need noodles, which are made from rice. Imagine if a year of terrible storms destroyed many rice fields. Rice would become rarer and more expensive, forcing pho restaurants to raise their prices to cover the increased costs. This is close to what happened in Vietnam during 2022 and 2023 when rice prices increased by almost 50% due to global supply chain shortages, leading to the higher prices we see today.
+              </p>
+
+              <p>
+                The other type of inflation, demand-pull inflation, is caused by an increase in AD. In other words, when people in an economy want more goods and services, they cause a shortage, which makes goods “scarcer” and drives their prices up.
+              </p>
+
+              <p>
+                But can prices go down? The phenomenon when there is a sustained decrease in price level in an economy is deflation. And actually it doesn't sound bad right? Cheap goods and stuff. Wouldn't that be good for everyone since everything would become cheaper? 
+              </p>
+
+              <p>
+                Deflation happened during the Great Depression in 1929. Many people had invested in the stock market, and when stock prices plummeted, they didn't have enough money to buy goods. This led to a decrease in prices, but at the same time, businesses going bankrupt, higher unemployment, and even less business activity. That’s why although inflation seems bad, deflation can be far more harmful.
+              </p>
+
+              <p>
+                The key is balance: allowing prices to rise so businesses can operate without letting them rise so much that it hurts consumers. This is where disinflation comes in. Disinflation is the slowing down of the inflation rate without causing deflation, keeping prices stable. This allows you to enjoy a bowl of pho without worrying whether its price will double or triple the next day, making it the optimal goal for any economy.
+              </p>
+
+              <p>
+                Now, back to our initial discussion. What happened in the 1970s and 1980s? That’s right, the Vietnam War. The prolonged conflict destroyed infrastructure, displaced workers, and demolished factories. This broke the supply chain, leading to shortages and inflated prices for all goods and services. Workers saw their savings wiped out overnight, and left everyone worse off than before. This is why it is ever so important to understand economics to help prevent such scenarios from happening again in our country.
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 16-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">Market Reserves - Destroy The Curves</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                The market for reserves refers to the process when small banks borrow money from the central bank reserves to meet their temporary needs. This is a win-win situation since it helps the small banks maintain stability in their systems while providing short-term interests to the central banks. 
+              </p>
+
+              <p>
+                This concept is both cool and tedious in equal measures; however, in this essay, I will focus on the interesting sides, which present the practical usage of the reserved market that we could apply in our daily lives.
+              </p>
+
+              <p>
+                First of all, I would love to mention the personal reserves that you could do by yourself. For individuals, the central bank will be equivalent to their savings. Let’s say you suddenly lose your job due to redundancy or one member of your family comes down with sickness, your preparation will help prevent you from borrowing money and going into debt. 
+              </p>
+
+              <p>
+                There are millions of kinds of savings, therefore, you could open a savings account to gain monthly interest or splurge your money on tradable stocks that you can sell off quickly in an emergency. Nevertheless, reserves are not solely for emergencies. People could also set aside money for their children’s education or a housing estate. If individuals make separate plans for those things, they will be more likely to invest in a long-term and ensured flow of money in order to earn more over time. 
+              </p>
+
+              <p>
+                On a larger scale, reservation plays a pivotal role in the national wealth. For example, the current president of the United States - Donald Trump - has paid a visit to various Middle Eastern countries to assure fuel resources, since America is an enormous country and they mainly use cars to commute. Without long-term fuel suppliers, they would be more likely to face a recession shortly. 
+              </p>
+
+              <p>
+                Okay, I think there is enough information and examples, let’s move on to the intriguing part: How to make actual profits based on this concept. 
+              </p>
+
+              <p>
+                Let’s narrow it down to a specific setting. Imagine I only have 800,000 dollars but my friend wants to borrow a million dollars. Luckily, I have good credit and reputation, so the bank only charges me for an incredibly lower interest rate of 6%, whereas the others have to pay them back a 10% rate. What I would do next is borrow the remaining 200,000 to round it up to a million, then offer to lend my friend 1,000,000 with the normal interest, 10%. By doing that, not only could I gain a 4% interest in my revenue, but also strengthen my bond with my friends. I kill two birds with one stone. 
+              </p>
+
+              <p>
+                To sum up, in this particular situation, the bank plays the role of the central bank and I contribute as the small bank. However, I am the ultimate beneficiary, unlike what happens in the process of the market for reserves.
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 17-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">Fiscal policy and monetary policy</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                Fiscal policy and Monetary policy are two of the most effective ways to ensure a nation or a society’s development. In this essay, these concepts will be explored via two brief anecdotes.
+              </p>
+
+              <p>
+                Narrowing it down to a particular setting – my hometown, Thai Binh – shops here are quiet and lacking in vibrancy. To be more specific, a local fish shop at the flea market fails to maintain a consistent number of customers, and that number eventually plummets over time. As a consequence, the fresh fish being displayed will be wasted, burdening the owner. That just not to mention another victim in this chain of adverse events: the fishmen. Without demand, the supply that the seamen offer will go down the drain, less sea trips being made and ultimately leading to job redundancy among the workers in this field. In the long run, the authorities will be the ultimate unwilling beneficiary when the national wealth dramatically decreases. This is the perfect time to put the Fiscal Policy into practice, the government could lower taxes such as income or corporate tax and invest strategically in infrastructure, educational and healthcare systems. These actions are fiscal policy at work, the authorities capitalize on their funds to boost the economy by encouraging spendings, creating instant jobs then mitigating unemployment.
+              </p>
+
+              <p>
+                Meanwhile, the manager of the local bank witnesses another rising problem: a decreasing number of people tend to not borrow from his bank due to the high interest rate. Seeing this, he decides to lower the bank’s interest rate in order to facilitate business owners who want to expand their company or families who want to afford a house. By doing this, the bank manager is using monetary policy, he adjusts the money supply and interest rates to influence the economy. However, this action is a double-edged sword since not so long later, inflation considerably affects the society. Once again, monetary policy is used, but this time, it contributes to the rise of interest rates to maintain equilibrium among the society. This action might exacerbate unemployment and slow down growth, but it helps ensure price stability.
+              </p>
+
+              <p>
+                These two policies contributed to a reform at my hometown. Over the following months, more and more workers hired for the public projects like constructing roads and buildings, shops became active again since now people have money to spend. Local cafe shops blossomed at every corner thanks to cheaper loans. The economy of Thai Binh began to hum again.
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 18-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">Exchange rate</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                If you’ve ever heard someone sigh, “The dollar went up again,” while trying to pay tuition abroad, then you’ve already brushed up against the idea of exchange rates — even if you didn’t realize it. It might sound dry and technical, but for Vietnamese students preparing to study overseas, exchange rates can truly make or break their plans.
+              </p>
+
+              <p>
+                Picture this: a student has just been accepted to a university in the U.S. Last month, one U.S. dollar was worth around 24,000 VND. Today, it’s jumped to 25,000 VND. At first, that change might seem tiny, but if tuition is $20,000, the family will suddenly have to pay about 20 million VND more than they expected. That’s a painful shock for parents who may have saved for years to give their child a shot at a better future.
+              </p>
+
+              <p>
+                So what exactly is an exchange rate? Put simply, it’s the price of one currency in terms of another. In Vietnam, people usually watch the USD/VND rate, which shows how many dong you need to buy one U.S. dollar. When that rate goes up, it means the dong has depreciated — lost value compared to the dollar — so it takes more dong to get the same number of dollars. Conversely, when the exchange rate falls, it means the dong has appreciated, gaining value and making foreign purchases a bit more affordable.
+              </p>
+
+              <p>
+                Why do exchange rates change so much? The most basic reason is supply and demand. Every summer, for example, thousands of Vietnamese families need dollars to pay for tuition overseas. That surge in demand pushes the price of dollars up.
+              </p>
+
+              <p>
+                But behind these changes are deeper economic forces, often remembered by the acronym TIPSI:
+              </p>
+
+              <ul class="paragraph-list" style="list-style-type: '-   ';">
+                <li><p>T (Trade of goods) — If Vietnam imports more than it exports, demand for foreign currency rises, weakening the dong.</p></li>
+                <li><p>I (Interest rates) — Higher U.S. interest rates attract investment, increasing demand for the dollar.</p></li>
+                <li><p>P (Price levels) — If inflation is high in Vietnam, the dong loses purchasing power and depreciates.</p></li>
+                <li><p>S (Speculation) — Expectations about the future of the dong or dollar can cause people to buy or sell rapidly.</p></li>
+                <li><p>I (Income) — A growing economy often means more imports, which increases demand for foreign currencies.</p></li>
+              </ul>
+
+              <p>
+                The State Bank of Vietnam sometimes intervenes to stabilize sharp movements, but not every fluctuation can be controlled.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide18.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                For students and their families, these shifts can be stressful to handle. Most families carefully plan to cover tuition, housing, and travel costs. When the exchange rate shoots up without warning, their entire budget can collapse. Some parents end up borrowing more or cutting back on other expenses just to make up the difference. That’s why so many families keep a close watch on the exchange rate for months before sending money abroad, hoping to catch a more favorable moment.
+              </p>
+
+              <p>
+                And it’s not just tuition costs. Plane tickets, rental deposits, and daily living expenses during the first months abroad are all priced in dollars or other foreign currencies. If the dong weakens, everything gets more expensive. Even a small difference of a few hundred dong per dollar can add up to millions over four years of studying abroad.
+              </p>
+
+              <p>
+                In the end, the exchange rate is more than just a number on a bank screen — it’s the bridge between a family’s hard-earned savings and their child’s education dreams. When it shifts in the wrong direction, the impact is immediate and deeply personal. For many students, it could mean rethinking where to study, how to live, or even whether they can finish their degree at all.
+              </p>
+
+              <p>
+                So the next time you hear someone say, “The dollar went up,” remember that it’s not just a headline. It affects thousands of Vietnamese students and their families in a very real way. If you ever plan to study abroad yourself, keeping an eye on exchange rates isn’t just smart — it might help you protect your dreams.
+              </p>
+
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 19-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">UNEMPLOYMENT</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                Finishing university should feel like a fresh start, but for many young people in Vietnam, the excitement quickly turns into stress. Take Linh, for example, a 23-year-old graduate from Hanoi. She had good grades, joined clubs, and finished an internship. Yet six months after graduating, she still cannot find a job. Her parents worry, her friends share the same struggle, and Linh begins to wonder if she did something wrong. But is it really her fault?
+              </p>
+
+              <p>
+                The truth is that Linh’s story shows how complicated unemployment can be. When the COVID-19 pandemic hit, it shook the whole economy. Many businesses lost customers, earned less money, and stopped hiring new workers. Some even had to lay people off. This kind of job loss happens when the economy takes a downturn, so there are simply fewer jobs for everyone. That is one reason Linh cannot find work, even though she is qualified.
+              </p>
+
+              <p>
+                This kind of job loss is known as cyclical unemployment — when people lose jobs because the economy goes into a downturn. It’s not about someone lacking ability, but rather that companies are cutting costs or shutting down. Linh is part of a generation affected by this cycle.
+              </p>
+
+              <p>
+                But that is not the only problem. Linh is also dealing with another type of unemployment that happens when people are in between jobs or looking for their first position. Even in a normal economy, it takes time to match job seekers with the right employers. Linh wants a job that uses her skills and gives her opportunities to grow, so it makes sense that she does not accept just any offer right away.
+              </p>
+
+              <p>
+                Economists call this frictional unemployment — the kind that happens when someone is in between jobs or searching for the right opportunity. It’s normal in any healthy economy because even the best match takes time. Linh is experiencing this type, since she’s still looking for something that fits her skills and long-term goals.
+              </p>
+
+              <p>
+                There is another challenge too. Vietnam’s economy is changing fast. More businesses now use modern technology, and many look for people with skills in data or online work. University programs, however, sometimes do not teach these new skills well enough. So even though graduates like Linh have studied hard, they may not fully meet what employers are asking for. This mismatch between skills and job demands is called structural unemployment. It happens when the structure of the economy shifts faster than education and training systems can keep up. Even hardworking graduates can be left behind. This is how a gap appears between what students learn and what the job market needs. It means many young people are left waiting and applying over and over again.
+              </p>
+
+              <p>
+                All of these reasons come together to explain why some amount of unemployment always exists, even when an economy is healthy. People switch jobs, industries change, and sometimes shocks like a pandemic hit unexpectedly. The most important thing is making sure this situation does not last too long or leave young people feeling hopeless.
+              </p>
+
+              <p>
+                Vietnam’s leaders have seen this problem and are trying to help. They have set up job fairs, opened skills training programs, and encouraged companies to hire young workers. But it will still take time for universities and businesses to fully work together so graduates can match what employers truly want.
+              </p>
+
+              <p>
+                In the end, Linh’s story is more than just a personal challenge. It shows how finding work is connected to big forces in society, from the global economy to changes in technology and education. When we look closely, we see that unemployment is not simply about being lazy or unlucky, but about how the world of work is changing around us. Solving it will take patience, understanding, and teamwork from everyone.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide19.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 20-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">IF SOME COUNTRIES ARE MORE PRODUCTIVE, THEN WHY WOULD THEY TRADE WITH OTHER COUNTRIES?</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                Hung and Minato are friends, Hung is Vietnamese and Minato is Japanese. Hung and Minato sell their country's specialties - banh mi and sushi, respectively, so they eat them almost everyday. Now, as they have got bored, Hung wants to try some sushi and Minato wants to eat banh mi, but they can’t find any places near them that make or sell each other’s goods. What should they do? The answer is quite obvious: to exchange some banh mi for some sushi. However, they have to come to Vietnam or Japan or through some mediatories to trade, so they decided to trade other things - formulas of producing those foods, just by sending some emails or text messages. 
+              </p>
+
+              <p>
+                This situation is simple because Hung cannot make sushi while Minato cannot make banh mi. Therefore, the benefit of exchange - which we will refer to as “trade” from now on to align with economic terminologies -  is that both of them can enjoy delicacies from another country. In Economics, that situation is referred to as an absolute advantage.
+              </p>
+
+              <p>
+                Absolute advantage is when a producer can provide a good or service in greater quantity for the same cost, or the same quantity at a lower cost than its competitors.
+              </p>
+
+              <p>
+                But oh my days how the tables have turned! After practicing for years, now Hung can make sushi even faster than that of Minato, and it takes him just 1 hour to make one sushi, while it’s 2 hours for Minato. Hung can make a banh mi in just one hour too, and Minato is 6 times less productive than that.
+              </p>
+
+              <table>
+                <tr>
+                  <th></th>
+                  <th>Banh mi</th>
+                  <th>Sushi</th>
+                </tr>
+                <tr>
+                  <td>Hung</td>
+                  <td>1 hour</td>
+                  <td>1 hour</td>
+                </tr>
+                <tr>
+                  <td>Minato</td>
+                  <td>6 hours</td>
+                  <td>2 hours</td>
+                </tr>
+              </table>
+              <p>
+                Now, should they TRADE? Well, the answer seems to be YES for Minato, but Hung may NOT consent, because it is quite apparent that Hung can make both of them quicker than Minato could, then should he trade? 
+              </p>
+              
+              <p>
+                Actually, TRADE can still make both of them better-off.
+              </p>
+
+              <p>
+                Since we have learnt about opportunity costs, let’s do some calculations. Hung can make a sushi or a banh mi in one hour, so, in order to make ONE banh mi, he has to forgo ONE sushi, and vice versa. For Minato, he has to give up THREE sushi to make a single banh mi, but to make one sushi, he just has to forgo ONE-THIRD of a banh mi.
+              </p>
+
+              <table>
+                <tr>
+                  <th></th>
+                  <th>Opportunity cost for a banh mi</th>
+                  <th>Opportunity cost for a roll of sushi</th>
+                </tr>
+                <tr>
+                  <td>Hung</td>
+                  <td>1 sushi</td>
+                  <td>1 banh mi</td>
+                </tr>
+                <tr>
+                  <td>Minato</td>
+                  <td>3 sushi</td>
+                  <td>⅓ banh mi</td>
+                </tr>
+              </table>
+              <p style="margin-bottom: 0;">
+                Now consider two cases, let’s say they have 24 hours, what can they make?
+              </p>
+
+              <p style="margin-bottom: 0;">
+                Case 1: Divide them equally: 12 hours for sushi and 12 hours for banh mi and there is NO TRADE
+              </p>
+
+              <p>
+                Case 2: Minato now spent all the time making what he makes at lowest opportunity cost(sushi) and Hung spent two more hours making what he produces at lowest opportunity costs(banh mi), then, Hung TRADE 2 banh mi for 4 sushi
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndsilde20.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                In case 1, if they divided work equally, Hung would have 12 each, while Minato would have 6 sushi and 1 banh mi, total productivity is 13 banh mi and 18 sushi. In case 2, at first, Hung produced 14 banh mi and 10 sushi, Minato made 12 sushi and no banh mi. Ordinarily, Hung has to forgo 1 banh mi to make 1 sushi, but when he trades, he forgoes 1 banh mi for 2 sushi, which is more beneficial. He decided to trade as stated - 2 banh mi for 4 sushi - and made the same amount of banh mi as in the first circumstance, but instead of having 12 sushi, now he has 14 of it. By the same token, Minato used to forgo 3 sushi for 1 banh mi, but with trade, he only has to give up 2 sushi for a banh mi! Since then, both of them are better-off, as you can easily compare. That's called comparative advantage in Economics.
+              </p>
+
+              <p>
+                Comparative advantage is an economy's ability to produce a particular good or service at a lower opportunity cost than its trading partners. Comparative advantage is used to explain why companies, countries, or individuals can benefit from trade.
+              </p>
+
+              <p>
+                The difference between ABSOLUTE ADVANTAGE and COMPARATIVE ADVANTAGE is that the former refers to the superiority of one’s ability to produce a specific good BETTER(quantity or volume), while the latter refers to one’s ability to produce a good at a LOWER OPPORTUNITY COST - the potential benefits that an investor has to forgo when choose an option over another.
+              </p>
+
+              <p>
+                As you can see, after having the recipe of making sushi, Hung has absolute advantage in making sushi and banh mi - because he can produce both of them quicker - but he doesn’t have comparative advantage over making banh mi, since he has to give up more than his colleague - Minato - to make one banh mi.
+              </p>
+              <p>
+                Foregoing concepts will be fundamental for an important lesson in Economics - Free Trade/International Trade and Trade Protectionism, which we will discuss later. Hope it helps
+              </p>
+            </div>
+            <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 21-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">PROSPERITY OR PRESERVING TRADITIONS? FREE TRADE VS. TRADE PROTECTIONISM</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                Let’s go back to Hung and Minato and see why they should trade (<a style="color: blue;">COMPARATIVE ADVANTAGE & ABSOLUTE ADVANTAGE</a>)
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide21_1.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                Firstly, they trade because one wants what another has - that’s preference. Hung wants sushi and Minato wants banh mi.
+              </p>
+
+              <p>
+                Secondly, Hung doesn’t know how to make sushi, and even if he does, chances are that he won’t be as good as Minato. The same goes for Minato and banh mi. Hence, they focus on what they are good at and trade. This is called specialization and knowledge division , just like working in pairs. 
+              </p>
+
+              <p>
+                Last but not least, one has to forgo more to make one sushi but can give up less to make a banh mi, and vice versa -> TRADE. This is the concept of comparative advantage, which is covered in details in the last post.
+              </p>
+
+              <p>
+                Let’s wrap this reasons up in the language of Economics:
+              </p>
+
+              <p style="font-weight: bold; margin-bottom: 0;">
+                BENEFITS OF TRADE:
+              </p>
+
+              <ul class="paragraph-list" style="list-style-type: '-   ';">
+                <li style="margin-bottom: 0;"><p>Trade makes people better off when preferences differ</p></li>
+                <li style="margin-bottom: 0;"><p>Trade increases productivity through specialization and the division of knowledge</p></li>
+                <li><p>Trade increases productivity through specialization according to comparative advantage.</p></li>
+              </ul>
+
+              <p>
+                If two or more countries agree to trade with no or only a few barriers, they are said to engage in FREE TRADE.
+              </p>
+
+              <p>
+                A free trade agreement is a pact between two or more nations to reduce barriers to imports and exports among them. Under a free trade policy, goods and services can be bought and sold across international borders with little or no government tariffs, quotas, subsidies, or prohibitions to inhibit their exchange.
+              </p>
+
+              <p>
+                After some months of free trading, the government sees that Minato is trading too much sushi for banh mi (don’t ask me why the Japanese government pays that much attention to a Japanese guy overseas). However, since sushi is a traditional food of Japan, the government doesn’t want it to be traded that much, so they implement a restriction policy - 1 banh mi made by Hung can only trade for one Minato’s sushi. Let’s analyze this situation. Hung has no incentive to trade now because he has to forgo the same amount of banh mi for a sushi as he could do on his own, and trading also includes some extra fees like transportation, tariffs,... Hence, absolutely NO TRADE occurs. In other words, they are both worse off. That’s an example of TRADE PROTECTIONISM.
+              </p>
+
+              <p>
+                Trade protectionism refers to government policies that restrict international trade to help domestic industries. Protectionist policies are usually implemented with the goal of improving economic activity within a domestic economy but can also be implemented for safety or quality concerns.
+              </p>
+
+              <p>
+                Tariffs, quotas, and subsidies are some common policy tools a government can use in enacting protectionist policies. Although protectionism is usually used to serve practical purposes such as protecting domestic production or for national security, critics argue that this could lead to the decrease of welfare overall, due to some explicit reasons.
+              </p>
+
+              <p>
+                Initially, one Hung’s banh mi can be traded for 2 Minato’s sushi, but since the tariffs are applied, Minato must pay an extra half a sushi for every banh mi he imports - it’s 2.5 sushi for 1 banh mi on average. Now, because Minato has to pay a tax in the form of tariffs on the banh mi that he is importing, he decided to pass this increased cost onto consumers in the form of higher prices. Since the domestic price goes up, the domestic production also increases. Thus, we can see some results arise from protectionism:
+              </p>
+
+              <ul class="paragraph-list" style="list-style-type: '-   ';">
+                <li style="margin-bottom: 0;"><p>Rise in price</p></li>
+                <li style="margin-bottom: 0;"><p>Rise in domestic production</p></li>
+                <li style="margin-bottom: 0;"><p>Reduction in domestic consumption</p></li>
+                <li><p>Reduction in imports</p></li>
+              </ul>
+
+              <p>
+                The positive and negative effects seem to be equal in amount, however, it’s bad for the country overall in terms of economics. Delving into the reasons why that’s the case would require more comprehensive knowledge, so I will put some references and further readings at the end of this lesson.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide21_2.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                Free trade is good, from the perspective of an economist, but, as a part of the country, there are TRADITIONS that must be preserved, there are things that are more important than the prosperity of the country. We need to figure out what those important things are to protect them timely before trading makes them totally disappear, especially during this fast-paced globalization. Nevertheless, we can not evaluate exactly which one is more vital - better off or traditions - since it depends on each person’s perspective. 
+              </p>
+
+              <p>
+                Hope it helps!
+              </p>
+
+              <p style="margin-bottom: 0;">
+                Resources for further readings and researches:
+              </p>
+
+              <p style="margin-bottom: 0;">
+                <a href="https://alison.com/topic/learn/69147/arguments-against-international-trade" style="color: blue;">
+                  https://alison.com/topic/learn/69147/arguments-against-international-trade
+                </a>
+              </p>
+
+              <p>
+                <a href="https://academic.oup.com/qje/article/135/1/1/5626442?searchresult=1" style="color: blue;">
+                  https://academic.oup.com/qje/article/135/1/1/5626442?searchresult=1
+                </a>
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 22-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">Academic PPC 01 - You cannot be the jack of all academic trade</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                This might be a controversial point of view, but after being a full-time student for 18 years, I find the curriculum, whether in primary, secondary or high schools, extremely demanding. Students are taught 7 to 8 different subjects and are expected to do decently (if not excel) at all of them. And failing a class is equivalent to having your parents called for a discussion on your sluggish and lackluster behavior throughout the semester. While it can be argued that studying a variety of subjects allows high school students to explore their interests for tertiary education, I believe that it’s still not reasonable to expect an 18-year-old to do well at all subjects.
+              </p>
+
+              <p>
+                And from a perspective of Economics, this is why.
+              </p>
+
+              <p style="margin-bottom: 0;">
+                The academic PPC
+              </p>
+              <p>
+                Ever since the Economics lesson on opportunity costs and PPC, I have found these concepts stuck in my head for longer than I thought, simply because how relatable they can be in our daily lives.
+              </p>
+
+              <p>
+                Let us think of student A’s capability to study well as a PPC. Something like this:
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide22_1.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p style="text-align: center;">
+                Figure 1: PPC of a certain student A
+              </p>
+
+              <p>
+                The concept of PPC remains totally unchanged in the context of academic capabilities. Taking inspiration from the classic PPC definition, I define student A’s academic PPC as follows:
+              </p>
+
+              <p>
+                Student A’s academic PPC is the combination of the maximum scores student A can achieve in two different subjects, given that student A studies as hard and as effectively as possible.
+              </p>
+              
+              <p>
+                An economy chooses a point, either inside or on the PPC, to allocate its resources between the production of two goods. Likewise, imagine a student who is also trying to allocate his efforts between studying two subjects, Mathematics and Literature in figure 1, with 10 and 8 being the highest score he can achieve in each subject respectively.
+              </p>
+
+              <p>
+                Let’s consider a case where student A studies at point A which is inside the academic PPC.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide22_2.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p style="text-align: center;">
+                Figure 2. Student A studies at a point inside his academic PPC
+              </p>
+
+              <p>
+                When an economy produces at a point inside the PPC, economists say that this economy does not fully and efficiently employ all of its factors of production. By the exact same logic, in this case student A is not making “full” and “efficient” use of his efforts. In other words, he is not trying his best, thus getting only a 5 for Mathematics and a 4 for Literature. If he had tried a little harder, he would have gotten a better result for both subjects.
+              </p>
+
+              <p>
+                And yes, after getting scolded by his parents, student A decides to try his very very best for the next test. Therefore, he studies effectively hard, approaching his limits (maybe his brain’s capacity, or burning out, etc.). Here, analogous to an economy fully employing its resources, the student will be studying at a point on his academic PPC:
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide22_3.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p style="text-align: center;">
+                Figure 3. Student A trying his very best for all the subjects
+              </p>
+
+              <p>
+                However, his final scores depend on the tactic he chose. He can choose point C, allocating his efforts between two subjects equally to get an 8 for Maths and a 6 for Literature. He might focus solely on Math at point B for 10 and not study a single word for Literature for a 0, and vice versa at point D. In any case, he has done his best for the exam.
+              </p>
+
+              <p>
+                Welp, that was student A’s limit. Any point lying outside of his academic PPC curve will hence be impossible to achieve, such as point E. Even if student A grinds all the subjects diligently, there is no way for him to reach point E in figure 3. But that’s not to say point E is totally impossible. Student A might be able to reach it if his academic PPC shifts, but more on that in the next post.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide22_4.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p style="text-align: center;">
+                Figure 4. A point where student A can never reach (At least for now)
+              </p>
+
+              <p>
+                So here’s why I would argue that, at least for most students, expecting them to excel at every single subject in high school is unreasonable. These students, even if they pour their hearts into studying, can only choose between points B, C and D. But they are expected to perform at point E all the time. That is economically impossible (in the short run at least)!
+              </p>
+
+              <p>
+                Well we have applied PPC - one of the fundamental concepts of Economics - into the context of high school to demonstrate that excelling at all subjects is too exacting of an expectation for 18-year-olds. But how about the implications? Is our PPC only applicable at such a basic level? Of course the answer is no! The further applications of PPC in academic context will be explored in the next post. Stay tuned!
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 23-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">Academic PPC 02 - Know your strengths, and be accepting of your limits</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                In the last post, we have investigated the concept of academic PPC - essentially a classic PPC curve in the context of studying - as well as how to interpret this PPC variant. But it gets even more exciting when other properties of an economic PPC still make perfect sense in the context of studying! So how? Let us dive right in.
+              </p>
+
+              <p>
+                Different students, different capabilities
+              </p>
+
+              <p>
+                Recall that in classical economics theories, the PPC of an economy is usually bent outwards because its resources are not equally suited for the production of both goods. For example, an economy endowed with the factor of production of land, say Vietnam, is in a much better position to export rice than a geographically small country like Singapore.
+              </p>
+
+              <p>
+                And isn’t this the case for our academic PPC as well? One cannot deny that just like economies, students’ brains and interests are different. Some are right-brained and logical, while others are left-brained and creative. Therefore, their academic capacities vary across the subjects. Let us consider two students: Student A who is interested in Mathematics and Student B who is strong in Literature.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide23_1.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p style="text-align: center;">
+                Figure 1. The academic PPCs of two students with different learning capabilities
+              </p>
+
+              <p>
+                Well, because these students’ interests are different, their learning capacities are different and their academic PPC is also different. As seen, student A’s brain might be better suited for Maths so the academic PPC is more bent towards Mathematics. Meanwhile, student B’s PPC is more bent towards Literature. And this can be applied to any combination of subjects, showing how unique the learning capabilities of each student is!
+              </p>
+
+              <p>
+                So what can we do with this knowledge that different students’ PPCs are shaped differently? Stay tuned for the discussion in the next post on “Comparative advantage”!
+              </p>
+
+              <p>
+                Some people are born different, and others are not so lucky
+              </p>
+
+              <p>
+                The sad truth is that… some students are blessed with brains which are just better suited for the academic environment. Have you ever tried your best, worked your hardest, toiled your greatest for an exam only to be obliterated by another student who barely studied anything? It sucks, but it happens, and it can be explained by the concepts of academic PPC.
+              </p>
+
+              <p>
+                Let’s consider the PPCs of two students: an average student and an academic weapon.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide23_2.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p style="text-align: center;">
+                Figure 2. The difference in academic PPCs of different people
+              </p>
+
+              <p>
+                I think the explanation should become clear by now. From the graph, even if the normal student tries his best, that is, studying at a point on the inner PPC, he might very well be beaten by an academic weapon studying below her full capacities - at a point inside the larger PPC. So the next time you lose to a classmate who is born different, don’t be too harsh on yourself. People are just different, and you should be proud that  you have done your best!
+              </p>
+
+              <p>
+                Investing in yourself, shifting your own PPC!
+              </p>
+
+              <p>
+                Well, the section above sounds a bit demoralizing, doesn’t it? But fret not, because having different learning capacities doesn’t mean that your academic PPC will be static and you will be stuck at that inferior position forever.
+              </p>
+
+              <p>
+                I personally believe in human potential. There must be a way to shift your PPC outward, and I believe it lies in the willingness to learn and improve yourself. Think of the four factors of production in Economics: land, labor, capital, and entrepreneurship. In economic theories, an improvement of these factors leads to long-term economic growth, and an outward shift of PPC. Let us think… Which factors out of these four are applicable to our studies?
+              </p>
+
+              <p>
+                If you say “capital” and “labor”, you nail it! A student who is healthy, who sleeps well and who has the right learning mindset will acquire new knowledge faster, thereby improving learning capacities. And hey, we are living in an era of technology! I believe a student with the ability to leverage productivity-boosting tools like chatGPT, or free online courses, are more likely to learn new things and learn them more effectively. As a result, this student’s academic PPC should also shift outwards.
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide23_3.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p style="text-align: center;">
+                Figure 3. Movement of one’s academic PPC from training and investing in oneself
+              </p>
+
+              <p>
+                That is to say, don’t give up on yourself! Each person is born and blessed differently, but where we start should not be the only determinant of where we end. 
+              </p>
+
+              <p>
+                Keep breathing, keep learning, and keep shifting your academic PPC outwards!
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 24-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">THỪA CÒN HƠN THIẾU(EXCESS THAN LACK) - IS IT ALWAYS TRUE?</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                This is a Vietnamese norm that comes from our traditions of hospitality and cordiality as we don’t want any of our guests to get home without being satisfied with the quality and the quantity of the food. Since then, this notion has become familiar to Vietnamese, and as we can see, things are usually done meticulously and exquisitely(Bát Tràng porcelain, Vạn Phúc silk,..) and perfect scores in exams are highly appreciated. However, there are some obvious adverse impacts of this: Groceries are often bought excessively, the importance of marks and scores are over-amplified,... Well then, let’s look at this norm through the lens of the Law of Diminishing Marginal Returns(LDMR) that we have learned before.
+              </p>
+
+              <p>
+                First, let’s do a quick recap of LDMR:
+              </p>
+
+              <p>
+                LDMR says that after some optimal level of capacity is reached, adding an additional factor of production will actually result in smaller increases in output.
+              </p>
+
+              <p>
+                Let’s say: You are given the task of preparing food for your family for the next whole week, and now, you want to buy some vegetables, say, amaranth. Suppose that your family can finish a bundle of amaranth in 3 days. The problem is that, even being kept in the refrigerator, amaranth will be spoiled after 7 days. In other words, after a week, you have got to throw away the remaining amaranth, regardless how much it may cost. So, what is the optimal number of amaranth bundles to be bought? We shall answer this question via the lens of LDMR! 
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide24_1.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                So, this is how economics evaluates this case:
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide24_2.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                Now, as economists, let us perceive the marginal product of labor (MRPL) (the example used in Part 1) in this case as the bonus health one more bundle of amaranth gives us. You can think of bonus health here as the vitamins and fibers that would do you good when eating amaranth.
+              </p>
+
+              <p>
+                If you buy 1 bundle, that first bundle is consumed fresh and gives you loads of vitamins. Let us loosely quantify these vitamins as 8 units of bonus health. Now, if you buy one more bundle, the second bundle will have to wait in your fridge to be consumed. Vitamins decrease with time as you leave amaranth in the fridge for too long, so by the time it is consumed, the amaranth only gives you 4 units of bonus health. What if you buy so much that the amaranth begins to spoil even before you can finish them? Obviously, eating spoiled amaranth would make you sick, so the bonus health goes to negative if you consume the spoiled bundles. 
+              </p>
+
+              <p>
+                So as we have discussed, you should hire more AS LONG AS the MRPL is greater than the wage, which, in this case, assume that bonus health is MRPL and the fixed market wage is 0 (because well, technically you are not paying any health bonuses to benefit from amaranth, are you?), you may buy more AS LONG AS the bonus health is greater than zero, since you don’t want to have any problems with your physical health. However, the best way to boost your health is that you buy 1 bundle of amaranth whenever you finish the current one, as the bonus health you get will still decrease after several days, but in return, you need to go to the market more; it all depends on you.
+              </p>
+
+              <p>
+                Now the question is: how can you make that diagram? How can you calculate the bonus health? How can you depict all that? Actually, you can’t, since you don’t have time for that, and there are simply no “bonus health” measurements . In fact, you can easily calculate it’s optimal number just by using a simple calculation - the calculation which perhaps you use everyday: 
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide24_3.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                7 days and amaranth will be spoiled, 3 days to eat a bundle, so 2.33 is the optimal amount of bundles to buy. However, what we want to emphasize is the fact that how LDMR can be useful in everyday life, and how everyday life is related to LDMR in particular and to economics in general. Hope it helps!
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 25-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">GIVING IT ALL TO TOP EVERY EXAM YOU SIT FOR? HERE IS WHY IT IS NOT WORTH IT FROM THE LENS OF ECONOMICS.</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                Growing up in Asian households, we are always urged by our parents to give it our best in exams to secure as high a score as possible. And don’t get me wrong, there is absolutely nothing wrong with that! Working hard is part and parcel of success, I believe. But sometimes, this “give it our best” can become a little extreme - students bloat themselves with coffee, crush their mental health or burn the midnight oil (till exhaustion!) From the perspective of Economics, and Law of Diminishing Marginal Returns(LDMR), specifically, let us argue that this is not an optimal way to allocate your efforts.
+              </p>
+
+              <p>
+                Let’s look at the marginal efforts required to increase your score by one band in IELTS. You don’t know the first thing about English, then it may take you about 500 hours of learning and practicing to get a band 7. However, one thing we have got to acknowledge is that the higher the band score, the harder you can achieve it. Increasing from band 4 to band 5 requires about 40 hours of practicing, since this is a quite easy level. But, to get a band 9 means that you have to get at least two skills with perfect scores and the remaining two skills must be higher than or equal to 8.5, if one skill is equal to 8 then you need to get three 9’s . Going from band 8 to band 9 therefore requires hundreds of hours of research and practice, on average, since the criterias are much more rigorous. Prior to December 2023, there were just about 10 Vietnamese actually getting band 9 in IELTS, while that number for band 8 is a hundred times higher. For visualization, let us plot a blue “Marginal Efforts” curve showing the amount of effort needed to reach each band score. As you may see, the effort required to increase your band scores increases exponentially! 
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide25_1.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+              
+              <p>
+                Now, how about the benefits that you obtain from increasing your band scores? Let us add another red curve called the “Marginal Benefits” curve. 
+              </p>
+              
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide25_2.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p>
+                But what exactly are the “marginal benefits” we are talking about here? You can think of them as the perks you get from a higher IELT band score: greater chances for scholarships, direct university admission, you name it. As you can see from the marginal benefits curve, the marginal benefits of getting a 7.0 band and a 9.0 band do not differ that much, but there is a H U G E gap in the efforts you need to put into revising your English. Think about it: you spend an additional 500 hours and the benefits you get in return are much less than what you deserve. In other words, it is somewhat like trading  500,000 dong for a smaller amount, say 300,000 dong. Hence, our argument is that this 500 hours could have been spent on something else - developing your skills, networking, revising for other tests, etc. - where the marginal benefits are still rising fast! In that way, you can maximize the total benefits reaped for the efforts you chip in! 
+              </p>
+
+              <p>
+                So what is the optimal band score? Yes, it is the intersection between the marginal efforts (costs), and marginal benefits (revenues) where you maximize your gains (profits) from studying. If you over-study beyond this point, for every unit of effort you are getting less than what you deserve. In other words, you are making a loss. You should instead be spending your efforts on something else. Otherwise, If you intend to get to the score somewhere under the intersection point, then you may have some accomplishments that are worth more than what you have invested, but those achievements are not considerable. And you can do more! You can study just a bit more and get more than what you have put in. You can make more profits! It’s like working for 200 hours to get 250 thousand dong, but you can’t do many things with that amount of money, and of course you are not allowed to work twice or do any tricks to double or triple that money, so just do it the simple way: working for 700 hours to get 700 thousand dong - optimal choice. Nevertheless, that’s your choice.
+              </p>
+
+              <p>
+                Now you may have a better understanding of what the equilibrium tells us, and why LDMR works in almost every case; and maybe, you now have a compelling statement to persuade your parents that “striving for the top at all costs” is not worth it. Hope it helps!
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+
+      <!--Slide 26-->
+      <div class="slide">
+          <div class="container-blog2">
+            <h1 class="title-blog2 pb-30">The Academic Comparative Advantage - Studying in a Group!</h1>
+            <hr class="divider-blog2" />
+            <div class="content-blog2">
+              <p>
+                Hey there, welcome back to another discussion on economic theories in the context of studying. This discussion is (somewhat) a follow-up of the last one on the academic PPC, so be sure to check it out here before you continue reading this post.
+              </p>
+
+              <p>
+                Now, we have explored the different shapes and sizes of the academic PPC in the last post, showing how different students are good at different subjects, and some are just naturally better than others at studying in general. And in classical economics, when one talks about PPC, what should one think of? Opportunity costs, yes. Production capacities yes.
+              </p>
+
+              <p>
+                And comparative advantage, YES YES YES!
+              </p>
+
+              <p>
+                In classical economics, an economy is said to have a comparative advantage in producing a certain good A when it is able to produce good A at a lower opportunity cost than another country B. The source of comparative advantage usually comes from factor endowment, such as favorable agricultural conditions (for tropical countries), skilled and educated labor force, or advanced physical capital and infrastructure.
+              </p>
+
+              <p>
+                Welp, the same goes for studying. Students will have comparative advantage in different subjects: A logical, right-brained student? Maybe Mathematics or Sciences… A creative, left-brained one? Maybe Arts and Literature. So how can we interpret these differences in the academic context? Let me present this matrix of student A and student B.
+              </p>
+
+              <table>
+                <tr>
+                  <th>Subject \ Student</th>
+                  <th>Student A</th>
+                  <th>Student B</th>
+                </tr>
+                <tr>
+                  <td>Mathematics</td>
+                  <td>10</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td>Literature</td>
+                  <td>8</td>
+                  <td>7</td>
+                </tr>
+              </table>
+
+              <p style="text-align: center;">
+                Figure 1. Matrix showing the learning capacities of student A and student B
+              </p>
+              
+              <p>
+                At first glance, we can already see who is the academic weapon here. Student A is better than student B in both subjects, but comparatively better at Mathematics. Let us also calculate the opportunity cost of studying Mathematics and Literature for both students below:
+              </p>
+
+              <table>
+                <tr>
+                  <th>Opportunity costs of studying</th>
+                  <th>Student A</th>
+                  <th>Student B</th>
+                </tr>
+                <tr>
+                  <td>Mathematics</td>
+                  <td>\( \displaystyle \frac{8}{10} = 0.8 \) Literature scores</td>
+                  <td>\( \displaystyle \frac{7}{5} = 1.4 \) Literature scores</td>
+                </tr>
+                <tr>
+                  <td>Literature</td>
+                  <td>\( \displaystyle \frac{10}{8} = 1.25 \) Mathematics scores</td>
+                  <td>\( \displaystyle \frac{5}{7} = 0.71 \) Mathematics scores</td>
+                </tr>
+              </table>
+
+              <p style="text-align: center;">
+                Figure 2. Opportunity costs of both students for studying Mathematics and Literature
+              </p>
+
+              <p>
+                When we translate their differences to a PPC diagram. Here is how it looks:
+              </p>
+            
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide26_1.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+              <p style="text-align: center;">
+                Figure 2. The academic PPC of student A and student B
+              </p>
+
+              <p>
+                In case you’re wondering why the PPCs are all straight here, it’s because of the assumption that resources are equally suited for the production of both goods to conveniently explain the theory of comparative advantage. Even if the PPCs become bent outwards as usual, the theory will still hold.
+              </p>
+
+              <p>
+                Now, according to the theory of comparative advantage, what can both students do to improve their scores?
+              </p>
+
+              <p>
+                The answer is free trade, which, in the academic context, means studying together, exchanging notes and knowledge. Student A, who is comparatively stronger in Mathematics and therefore has a lower opportunity cost of learning this subject, should focus on studying and making Mathematics notes. Meanwhile, student B should focus on learning Literature due to the lower opportunity costs of 0.71 Mathematics scores. This is the underlying principle of specialization, which is believed to achieve global allocative efficiency in classical economics.
+              </p>
+
+              <p>
+                And in case you are still not convinced that exchanging notes and knowledge allows both students to improve their overall scores, let’s assume that they exchange their knowledge based on the following rates: 1 Mathematics score for 1 Literature score.
+              </p>
+
+              <p>
+                You might wonder: “Why does giving each other notes lower the scores for each subject? It’s not like we’re transacting anything right?”. Well ,true, we are not buying or selling anything, but do keep in mind that student A “importing” notes from the other student to study, for example, means student A will have to forgo some Mathematics and therefore lower Maths score.
+              </p>
+
+              <table>
+                <tr>
+                  <th>Subject \ Student</th>
+                  <th>Student A</th>
+                  <th>Student B</th>
+                </tr>
+                <tr>
+                  <td>Mathematics learnt by oneself</td>
+                  <td>10</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td>Literature learnt by oneself</td>
+                  <td>0</td>
+                  <td>7</td>
+                </tr>
+
+                <tr>
+                  <td>Mathematics after exchanging</td>
+                  <td>8</td>
+                  <td>2</td>
+                </tr>
+
+                <tr>
+                  <td>Literature after exchanging</td>
+                  <td>2</td>
+                  <td>5</td>
+                </tr>
+              </table>
+
+              <p>
+                Illustrated on the PPC diagram, we can see the positive impact of free trade already: Both students are actually getting scores that lie outside of their academic PPC! (Okay I know the score don’t look that impressive, but the point is that these students are actually getting results that supposedly lie beyond their potential of they study alone)
+              </p>
+
+              <div class="card-top" style="display: flex; flex-direction: column; align-items: center; max-width: 46.875rem; margin: 0 auto;">
+                <img src="image/ndslide26_2.png" class="thumb large pb-30" style="display: block; max-width: 100%; height: auto;">
+              </div>
+
+               <p style="text-align: center;">
+                Figure 3. The impact of studying in a group
+              </p>
+
+              <p>
+                Therefore, the next time you spot an academic weapon in your class, don’t get salty and uphold a hostile competitive attitude against the person. Instead, work together and help each other, and you will be able to partly tap on their academic capabilities to improve your own study!
+              </p>
+          </div>
+          <hr class="divider-blog2 pb-120"/>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--ẢNH-->
+  <div class="slider-container">
+    <div class="slider-wrapper">
+      <div class="slide active">
+        <div class="container-blog2">  
           <div class="row bottom-row pb-30">
             <div class="card-bottom">
-              <a href="/blog?slide=5">
-                <img src="image/test4.jpg" class="thumb small" />
+              <a href="#" class="thumb-link" data-slide="1">
+                <img src="image/test.jpg" class="thumb small" />
               </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
+              <h3>Introduction to Economics and Ceteris Paribus</h3>
+              <p>But what is economics?</p>
             </div>
             <div class="card-bottom">
-              <a href="/blog?slide=5">
-                <img src="image/test4.jpg" class="thumb small" />
+              <a href="#" class="thumb-link" data-slide="2">
+                <img src="image/test1.jpg" class="thumb small" />
               </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
+              <h3>Market and Types of market</h3>
+              <p>But what is a market?</p>
             </div>
             <div class="card-bottom">
-              <a href="/blog?slide=5">
+              <a href="#" class="thumb-link" data-slide="3">
+                <img src="image/test2.jpg" class="thumb small" />
+              </a>
+              <h3>Opportunity Costs and PPC</h3>
+              <p>The economics of midnight studying</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Slide 2-->
+      <div class="slide">
+        <div class="container-blog2">
+          <div class="row bottom-row pb-30">
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="4">
+                <img src="image/test3.jpg" class="thumb small" />
+              </a>
+              <h3>Introduction to Demand</h3>
+              <p>But what the hell is demand?</p>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="5">
                 <img src="image/test4.jpg" class="thumb small" />
               </a>
-              <h3>Title</h3>
-              <div class="line-cardbottom"></div>
-              <small>In <u>Part 1</u>, we have explored how the demand for a certain good is conceived...</small>
+              <h3>Introduction to Demand</h3>
+              <h3>Changing demand - How do you come to want more or less of something?</h3>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="6">
+                <img src="image/test5.jpg" class="thumb small" />
+              </a>
+              <h3>Introduction to Supply</h3>
+              <p>Now, what is supply? </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Slide 3-->
+      <div class="slide">
+        <div class="container-blog2">
+          <div class="row bottom-row pb-30">
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="7">
+                <img src="image/test6.jpg" class="thumb small" />
+              </a>
+              <h3>Introduction to Supply</h3>
+              <p>Changing Supply - When producers respond to their costs</p>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="8">
+                <img src="image/test7.jpg" class="thumb small" />
+              </a>
+              <h3>Price Elasticity of Demand</h3>
+              <p>Understanding Price Elasticity of Demand</p>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="9">
+                <img src="image/test8.jpg" class="thumb small" />
+              </a>
+              <h3>Income Elasticity of Demand</h3>
+              <p>Dive into Income Elasticity of Demand</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Slide 4-->
+      <div class="slide">
+        <div class="container-blog2">
+          <div class="row bottom-row pb-30">
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="10">
+                <img src="image/test9.jpg" class="thumb small" />
+              </a>
+              <h3>Price Elasticity of Supply</h3>
+              <p>How stretchy is your supply?</p>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="11">
+                <img src="image/test10.jpg" class="thumb small" />
+              </a>
+              <h3>Market equilibrium</h3>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="12">
+                <img src="image/test11.jpg" class="thumb small" />
+              </a>
+              <h3>GDP and GNI</h3>
+              <p>The wealth of a nation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--Slide 5-->
+      <div class="slide">
+        <div class="container-blog2">
+          <div class="row bottom-row pb-30">
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="13">
+                <img src="image/test12.jpg" class="thumb small" />
+              </a>
+              <h3>Aggregate Demand</h3>
+              <p>The driving force of the economy</p>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="14">
+                <img src="image/test13.jpg" class="thumb small" />
+              </a>
+              <h3>Aggregate Supply</h3>
+              <p>The backbone of our modern life</p>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="15">
+                <img src="image/test14.jpg" class="thumb small" />
+              </a>
+              <h3>Inflation/ Deflation/ Disinflation</h3>
+              <p>Why is our money so weird?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Slide 6-->
+      <div class="slide">
+        <div class="container-blog2">
+          <div class="row bottom-row pb-30">
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="16">
+                <img src="image/test15.jpg" class="thumb small" />
+              </a>
+              <h3>Markets for Reserves</h3>
+              <p>Market Reserves - Destroy The Curves</p>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="17">
+                <img src="image/test16.jpg" class="thumb small" />
+              </a>
+              <h3>Fiscal policy and monetary policy</h3>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="18">
+                <img src="image/test17.jpg" class="thumb small" />
+              </a>
+              <h3>Exchange rate</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Slide 7-->
+      <div class="slide">
+        <div class="container-blog2">
+          <div class="row bottom-row pb-30">
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="19">
+                <img src="image/test18.jpg" class="thumb small" />
+              </a>
+              <h3>Unemployment</h3>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="20">
+                <img src="image/test19.jpg" class="thumb small" />
+              </a>
+              <h3>Absolute Advantage & Comparative Advantage</h3>
+              <p>IF SOME COUNTRIES ARE MORE PRODUCTIVE, THEN WHY WOULD THEY TRADE WITH OTHER COUNTRIES? - COMPARATIVE ADVANTAGE & ABSOLUTE ADVANTAGE</p>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="21">
+                <img src="image/test20.jpg" class="thumb small" />
+              </a>
+              <h3>Free Trade vs. Trade Protectionism</h3>
+              <p>PROSPERITY OR PRESERVING TRADITIONS?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Slide 8-->
+      <div class="slide">
+        <div class="container-blog2">
+          <div class="row bottom-row pb-30">
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="22">
+                <img src="image/test21.jpg" class="thumb small" />
+              </a>
+              <h3>The economics of efforts</h3>
+              <p>You cannot be the jack of all academic trade</p>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="23">
+                <img src="image/test22.jpg" class="thumb small" />
+              </a>
+              <h3>The economics of efforts</h3>
+              <p>Know your strengths, and be accepting of your limits</p>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="24">
+                <img src="image/test23.jpg" class="thumb small" />
+              </a>
+              <h3>The economics of efforts</h3>
+              <p>THỪA CÒN HƠN THIẾU(EXCESS THAN LACK) - IS IT ALWAYS TRUE?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Slide 9-->
+      <div class="slide">
+        <div class="container-blog2">
+          <div class="row bottom-row pb-30">
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="25">
+                <img src="image/test24.jpg" class="thumb small" />
+              </a>
+              <h3>Free Trade vs. Trade Protectionism</h3>
+              <p>GIVING IT ALL TO TOP EVERY EXAM YOU SIT FOR? HERE IS WHY IT IS NOT WORTH IT FROM THE LENS OF ECONOMICS.</p>
+            </div>
+            <div class="card-bottom">
+              <a href="#" class="thumb-link" data-slide="26">
+                <img src="image/test25.jpg" class="thumb small" />
+              </a>
+              <h3>The economics of efforts</h3>
+              <p>Studying in a group of learners - standing on the shoulders of academic giants</p>
             </div>
           </div>
         </div>
@@ -313,10 +2190,12 @@
       <span></span>
       <span></span>
       <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </div>
-
-  <!-- Newsletter Section -->
   <!-- Newsletter Section -->
   <section class="newsletter">
     <h2>Newsletter</h2>
@@ -330,5 +2209,8 @@
     </form>
   </section>
   <script src="script.js"></script>
+  <script id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </body>
 </html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web thieu nhi</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-wrapper">
+      <div class="menu-toggle" id="mobile-menu">&#9776;</div>
+      <div class="nav-menu">
+        <a href="/home">home</a>
+        <a href="/blog" >blog</a>
+        <a href="/home#about">about</a>
+        <a href="/quiz" class="active mr-6">quiz</a>
+      </div>
+
+
+      <div class="search-box">
+        <input type="text" placeholder="Search">
+        <img src="image/search.svg" alt="Search" class="search-icon">
+        <ul class="suggestions"></ul>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero_quiz">
+  </section>
+
+  <!--Content quiz-->
+  <div class="content_quiz">
+    <div class="content_wrapper">
+      <h2>
+        Factors affecting demand
+      </h2>
+      <p>
+         It’s not a business without times of ups and downs. And guess what, after banh mi, pho is the second word added to the Oxford dictionary, inducing a huge surge in preferences, thus demand, for this delicacy. People are flocking to have for themselves bowls of pho every morning. And what kind of Hanoian pho does not come with youtiao (a kind of fried dough usually enjoyed with Vietnamese noodles)?
+      </p>
+      <p>
+        It is a MUST to buy youtiao when having pho.
+      </p>
+      <p>
+        How will this increase in demand for pho affect the demand for youtiao?
+      </p>
+      <div class="quiz-row">
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">A.</span>
+            <span class="option-text">No impact because they are different goods</span>
+        </button>
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">B.</span>
+            <span class="option-text">It might rise. It might fall. We cannot tell</span>
+        </button>
+      </div>
+
+      <div class="quiz-row">
+        <button class="quiz-option" data-correct="false">
+            <span class="option-label">C.</span>
+            <span class="option-text">Decrease in demand</span>
+        </button>
+        <button class="quiz-option" data-correct="true">
+            <span class="option-label">D.</span>
+            <span class="option-text">Increase in demand</span>
+        </button>
+      </div>
+      <div id="answer-section" class="hidden">
+        <div class="explain">
+          <h3><strong>Answer: Point D</strong></h3>
+          <hr>
+          <h4>Explanation:</h4>
+          <p>
+            Youtiao and pho in this case have joint demand  - that is, they are goods that are often used together. When a customer enjoys a bowl of pho, that customer tends to order a bowl of youtiao to complement it as well. Therefore, if the demand for pho increases, the demand for youtiao will also increase!
+          </p>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="round-btn" id="prev-btn">
+          <img src="image/arrow-left.svg" alt="Prev">
+        </button>
+        <button class="round-btn" id="next-btn">
+          <img src="image/arrow-right.svg" alt="Next">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter">
+    <h2>Newsletter</h2>
+    <div class="divider"></div>
+    <p class="subtext">Enter your Email Address</p>
+    <form>
+      <div class="input-wrapper">
+        <input type="email" placeholder="Enter your Email Address" required>
+        <button type="submit">Subscribe</button>
+      </div>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
