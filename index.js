@@ -9,9 +9,8 @@ app.get('/', (req, res) => {
   res.redirect('/home');
 });
 
-// Route động cho tất cả các trang
 app.get('/:page', (req, res) => {
-  const page = req.params.page; // lấy tên trang từ URL
+  const page = req.params.page;
   const filePath = path.join(__dirname, 'public', `${page}.html`);
   res.sendFile(filePath, (err) => {
     if (err) {
