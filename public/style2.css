@@ -140,8 +140,9 @@ body {
   background: transparent;
   color: #FFF;
   font-family: 'Helvetica Neue1', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   font-weight: 300;
+  height: 70%;
 }
 
 .search-box input::placeholder {
@@ -151,7 +152,6 @@ body {
 .search-box .search-icon {
   width: 1.8rem;
   height: 1.8rem;
-  margin-left: 0.25rem;
   cursor: pointer;
   transition: 0.3s;
 }
