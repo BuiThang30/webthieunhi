@@ -719,6 +719,7 @@ th, td {
   text-align: center;
   text-decoration: none;
   margin-bottom: 1.25rem;
+    border: 1px solid #000;
 }
 
 .start-btn:hover {
